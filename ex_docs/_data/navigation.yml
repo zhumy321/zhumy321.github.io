@@ -1,4 +1,4 @@
-  # example navigation
+# example navigation
 foo:
   - title: "Parent Link 1"
     url: /parent-1-page-url/
@@ -19,13 +19,15 @@ foo:
 
 
 # main links
-main: # main menu 
-  - title: "Recent Posts"
+main:
+  - title: "Quick-Start Guide"
+    url: /docs/quick-start-guide/
+  - title: "About"
+    url: /about/
+  - title: "Sample Posts"
     url: /year-archive/
   - title: "Sample Collections"
     url: /collection-archive/
-  - title: "About"
-    url: /about/
   - title: "Terms &amp; Privacy Policy"
     url: /terms/
 
