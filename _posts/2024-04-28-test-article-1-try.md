@@ -7,22 +7,22 @@
 # share: true
 # related: true
 # show_date: true # true, false (default) 感觉这两行没有用啊
-# 以上都可以在post的此处覆盖
+# 以上都可以在post的此处覆盖  
 # 你需要在post中单独新增的：
 title:  "测试文本文章1" # 不写的话会从文件名自动生成。但标题不宜太长
 excerpt: "这是文章1的摘要。" # 摘要
-# author: "Irene ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
-last_modified_at: 2024-04-28T13:30:02-08:00 # 可不写，但layout则要写
+author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
+header: # 这张图会出现在文章页面的上方而且很大
+  image: /assets/images/img_20220803_221239.jpg
+  caption: Photo by the author # 图片水印，如"Photo credit: [**Unsplash**](https://unsplash.com)"
+last_modified_at: 2024-04-28T13:30:02+08:00 # 可不写，但layout则要写。+8是东八区
 categories: 
-  - 杂谈
-  - 学习
-  - 生活
+  - 回忆录
 tags:
   - 本站
-  - chat
-  - 标签1号
-  - 标签2号
-  - 标签3号
+  - 生活
+  - 杂谈
+  - 学习
 toc: true # true, false都可以
 toc_label: "目录名字随便取" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)

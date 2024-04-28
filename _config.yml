@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "dark" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dirt" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "zh-CN" # "en-US"
@@ -21,8 +21,8 @@ title_separator          : "-" #
 subtitle                 : "2024重整的新版" # "Version 2.0" site tagline that appears below site title in masthead
 name                     : &name "Minyi ZHU"
 description              : &description "A personal sharing website"
-url                      : "https://zhumy321.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : "https://zhumy321.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "zhumy321/zhumy321.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -120,9 +120,9 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto：Irene_Z_@outlook.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://zhumy321.github.io"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://zhumy321.github.io"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   url: "https://twitter.com/"
@@ -226,7 +226,8 @@ sass:
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+# paginate_path: /page:num/ #这是默认的
+paginate_path: /assets/page:num/ # 不改的话就会以文章list为主页了
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 

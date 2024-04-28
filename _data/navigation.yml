@@ -20,12 +20,14 @@ foo:
 
 # main links
 main: # main menu
-  - title: "文章"
-    url: /year-archive/
+  # - title: "文章"
+  #   url: /year-archive/ # 这个url给到主页的“最近发布”按钮了
+  - title: "主页"
+    url: /
   - title: "分类"
     url: /categories/
-  # - title: "Tags"
-  #   url: /tags/
+  - title: "标签"
+    url: /tags/
   # - title: "Pages"
   #   url: /page-archive/
   # - title: "Collections"
@@ -33,7 +35,51 @@ main: # main menu
   - title: "关于"
     url: /about/
 
-# # documentation links
+# sidebar navigation list sample
+sidebar-sample:
+  - title: "Parent Page A"
+    children:
+      - title: "Child Page A1"
+        url: /
+      - title: "Child Page A2"
+        url: /
+      - title: "Child Page A3"
+        url: /
+      - title: "Child Page A4"
+        url: /
+  - title: "Parent Page B"
+    children:
+      - title: "Child Page B1"
+        url: /
+      - title: "Child Page B2"
+        url: /
+      - title: "Child Page B3"
+        url: /
+      - title: "Child Page B4"
+        url: /
+      - title: "Child Page B5"
+        url: /
+  - title: "Parent Page C"
+    children:
+      - title: "Child Page C1"
+        url: /
+      - title: "Child Page C2"
+        url: /
+      - title: "Child Page C3"
+        url: /
+      - title: "Child Page C4"
+        url: /
+      - title: "Child Page C5"
+        url: /
+  - title: "Parent Page D"
+    children:
+      - title: "Child Page D1"
+        url: /
+      - title: "Child Page D2"
+        url: /
+
+
+# for example the docs as sidebar menu:
 # docs:
 #   - title: Getting Started
 #     children:
@@ -89,48 +135,3 @@ main: # main menu
 #         url: /docs/license/
 #       - title: "Terms &amp; Privacy Policy"
 #         url: /terms/
-
-# sidebar navigation list sample
-sidebar-sample:
-  - title: "Parent Page A"
-    children:
-      - title: "Child Page A1"
-        url: /
-      - title: "Child Page A2"
-        url: /
-      - title: "Child Page A3"
-        url: /
-      - title: "Child Page A4"
-        url: /
-  - title: "Parent Page B"
-    children:
-      - title: "Child Page B1"
-        url: /
-      - title: "Child Page B2"
-        url: /
-      - title: "Child Page B3"
-        url: /
-      - title: "Child Page B4"
-        url: /
-      - title: "Child Page B5"
-        url: /
-  - title: "Parent Page C"
-    children:
-      - title: "Child Page C1"
-        url: /
-      - title: "Child Page C2"
-        url: /
-      - title: "Child Page C3"
-        url: /
-      - title: "Child Page C4"
-        url: /
-      - title: "Child Page C5"
-        url: /
-  - title: "Parent Page D"
-    children:
-      - title: "Child Page D1"
-        url: /
-      - title: "Child Page D2"
-        url: /
-
-

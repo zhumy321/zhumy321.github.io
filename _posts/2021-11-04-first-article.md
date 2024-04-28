@@ -4,10 +4,10 @@ title:  "开“站”记"
 excerpt: "不知道能写多久，不知道还会写些什么东西。技术类的东西尝试用英文写？
 ——不知道，总之，再看吧。" # 摘要
 categories: 
-  - 杂谈
+  - 回忆录
 tags:
+  - 杂谈
   - 本站
-  - 关于
 toc: false # true, false
 toc_label: "My Table of Contents" # or, "Getting started","导航", or left blank
 toc_icon: "cog" # or left blank

@@ -1,16 +1,16 @@
 # Authors
 
-Irene ZHU:
-  name        : "Irene ZHU"
-  bio         : # "Life is worth living"
+Minyi ZHU:
+  name        : "Minyi ZHU"
+  bio         : "人生海海，山山而川，不过尔尔"
   avatar      : "/assets/images/irene_z_avatar.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:Irene_Z_@outlook.com"
-    # - label: "Github"
-    #   icon: "fas fa-fw fa-link"
-    #   url: "https://zhumy321.github.io"
+    - label: "Github"
+      icon: "fas fa-fw fa-link"
+      url: "https://zhumy321.github.io"
 
 
 # Name FamilyName:
