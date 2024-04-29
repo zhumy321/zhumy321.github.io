@@ -1,7 +1,7 @@
 ---
-# author: "Irene ZHU"
 title:  "开“站”记（二）"
 excerpt: "还是不知道能写多久、会写些什么东西。随遇而安吧~" 
+author: "Minyi ZHU" 
 categories: 
   - 回忆录
 tags:

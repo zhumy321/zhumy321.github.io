@@ -1,4 +1,8 @@
 ---
+# 注意哈??? 研究网站的时候记得去https://mmistakes.github.io/minimal-mistakes/docs/configuration/逐一检查配置。至于图表，在https://fontawesome.com/start找
+
+
+
 # yml文件中对posts的values的默认设置：
 # layout: single
 # author_profile: true # if false 则让作者信息从sidebar消失
@@ -9,13 +13,13 @@
 # show_date: true # true, false (default) 感觉这两行没有用啊
 # 以上都可以在post的此处覆盖  
 # 你需要在post中单独新增的：
-title:  "测试文本文章1" # 不写的话会从文件名自动生成。但标题不宜太长
-excerpt: "这是文章1的摘要。" # 摘要
+title:  "测试文本文章2" # 不写的话会从文件名自动生成。但标题不宜太长
+excerpt: "这是文章2的摘要。" # 摘要
 author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
 header: # 这张图会出现在文章页面的上方而且很大
   image: /assets/images/img_20220803_221239.jpg
   caption: Photo by the author # 图片水印，如"Photo credit: [**Unsplash**](https://unsplash.com)"
-last_modified_at: 2024-04-28T13:30:02+08:00 # 可不写，但layout则要写。+8是东八区
+last_modified_at: 2024-04-27T13:30:02+08:00 # 可不写，但layout则要写。+8是东八区
 categories: 
   - 回忆录
 tags:
