@@ -16,21 +16,21 @@ feature_row:
     alt: "customizable" # 不知道alt是啥意思
     title: "生活"
     excerpt: "Life and serendipities."
-    url: "/tags/#生活/" # 框框1下按钮跳转的网址, 是一个permalink
+    url: "/tags/#生活" # 框框1下按钮跳转的网址, 是一个permalink
     btn_class: "btn--primary"
     btn_label: "去瞅一眼" # 框框1配套的跳转按钮
   - image_path: /assets/images/captive-of-theskyscraper.jpg
     alt: "alt:"
     title: "想法"
     excerpt: "The world and the meanings."
-    url: "/tags/#杂谈/"
+    url: "/tags/#想法"
     btn_class: "btn--primary"
     btn_label: "去瞅一眼"
   - image_path: /assets/images/img_20211117_134334.jpg
     alt: "alt:"
     title: "学习"
     excerpt: "Am I better than yesterday?"
-    url: "/tags/#学习/"
+    url: "/tags/#学习"
     btn_class: "btn--primary"
     btn_label: "去瞅一眼"      
 ---
