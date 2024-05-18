@@ -6,4 +6,5 @@ categories:
 tags:
   - 吐槽
 ---
-The more and longer meetings a company has, the lousier crap it is. – My words.
+
+The more and longer the meetings, the crappier the company is. – My words.

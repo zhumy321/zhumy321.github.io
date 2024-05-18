@@ -34,7 +34,6 @@ toc_sticky: false # "Stick" table of contents to the top of a page
 
 以及提前说明，有一些比如换行、加粗这种操作有多种实现方式，有的编辑器支持，有的不支持，这里记录的都是兼容性比较高的，不容易出岔子
 
-# 基本语法
 ## 标题
 就是简单的# 标题的名字，井号的数量代表标题的级数。  下方也可以添加任意数量的 == 号来标识一级标题、 -- 号来标识二级标题。
 
@@ -108,37 +107,11 @@ toc_sticky: false # "Stick" table of contents to the top of a page
 在要转义的字符前面加enter键旁边的那个斜杠就可以。
 ## 内嵌HTML
 
-# 拓展语法
-## 删除线
-用两个`~把要删除的部分前后包裹起来就可以（跟用两个星号加粗字体是一样的用法）
+## 清单
 
-## 任务列表语法
 - [x] 做好删改
 - [ ] 上传github
 - [ ] 检查网站现状
 
-## 表格
-
-
-## 围栏代码块
-
-
-## 脚注
-
-
-## 标题编号
-
-
-## 定义列表
-
-
-## emoji
-有两种方法可以加入emoji表情，第一种是你直接去复制黏贴这个表情（如果你的应用程序支持，那在你黏贴之后表情会自动变成对应的HTML之类的表示，不过注意HTML页面编码得要是UTF-8）。emoji表情可以在这里找到
-[emojipedia](https://emojipedia.org/)
-
-另一种则是键盘敲emoji shortcodes，他们是表情符号的名字，以英文冒号开头和结尾。比如帐篷的emoji，你可以在markdown里面手敲为   冒号tent冒号，出来就会是这样:tent:
-
-笑哭则是 冒号joy冒号，出来就会是这样 :joy:
-
-
-## 自动网址链接
+## 拓展语法
+在[Markdown语法拓展部分](https://markdown.com.cn/extended-syntax/ "官方文档的拓展部分")
