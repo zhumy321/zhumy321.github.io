@@ -24,7 +24,7 @@ tags:
 toc: true # true, false都可以
 toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
-toc_sticky: false # "Stick" table of contents to the top of a page
+toc_sticky: true # "Stick" table of contents to the top of a page. true: toc floats. false: toc fixed
 # link: https://github.com # 感觉不太对，这个link应该出现在超链接部分的引用中，但是试验后发现会变成文章标题的url，所以注释掉了
 ---
 
@@ -118,10 +118,44 @@ toc_sticky: false # "Stick" table of contents to the top of a page
 - [ ] 检查网站现状
 
 ## 表格
+使用三个或多个连字符（---）创建每列的标题，并使用管道（|）分隔每列。可以选择在表的任一端添加管道。
 
+```
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+```
+
+出来就会是这样：
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
+表格对齐等
 
 ## 围栏代码块
+在代码块之前和之后的行上使用三个反引号（(```）或三个波浪号（~~~）
+~~~
+\~~~
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+\~~~
+~~~
 
+出来就会是这样：
+
+~~~
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+~~~
 
 ## 脚注
 

@@ -3,7 +3,8 @@
 Minyi ZHU:
   name        : "Minyi ZHU"
   bio         : "人生海海，山山而川，不过尔尔"
-  avatar      : "/assets/images/irene_z_avatar.jpg"
+  # avatar      : "/assets/images/irene_z_avatar.jpg"
+  avatar      : "https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/irene_z_avatar.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

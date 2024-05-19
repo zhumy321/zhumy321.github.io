@@ -112,7 +112,8 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/irene_z_avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  # avatar           : "/assets/images/irene_z_avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/irene_z_avatar.jpg"
   bio              : "人生海海，山山而川，不过尔尔"
   location         : "Shenzhen, China"
   # email            : "Irene_Z_@outlook.com"
@@ -295,7 +296,7 @@ defaults:
     values:
       layout: single
       author_profile: true # if false 则让作者信息从sidebar消失
-      read_time: true
+      read_time: false
       comments: false # not ready yet
       share: true
       related: true

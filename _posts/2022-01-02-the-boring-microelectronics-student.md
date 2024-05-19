@@ -25,7 +25,7 @@ tags:
 toc: true # true, false都可以
 toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
-toc_sticky: false # "Stick" table of contents to the top of a page
+toc_sticky: true # "Stick" table of contents to the top of a page
 # link: https://github.com # 感觉不太对，这个link应该出现在超链接部分的引用中，但是试验后发现会变成文章标题的url，所以注释掉了
 ---
 
