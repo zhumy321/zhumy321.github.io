@@ -22,7 +22,7 @@ permalink: /about/
 
 ## About here
 
-> I built my personal sharing website in 2021 with server and WordPress, the domain name "mango-st-irreg.xyz" and "zhuminyi.xyz" had both been used. But in 2024.4 I started to migrate the website here (with Github pages). If everything goes well, later on I shall update all new sharings here, including things relevant to my life, work, thinking, learning, etc. If these can bring you assistance, spark thoughts, or inspire you, I would feel delighted and honored. but of course if there are any mistakes, feel free to email me, and I would be immensely grateful!
+> I built my personal sharing website in 2021 with server and WordPress, the domain name "mango-st-irreg.xyz" was first and then "zhuminyi.xyz" was used. But in 2024.4 I started to migrate the website here (with Github pages). If everything goes well, later on I shall update all new sharings here, including things relevant to my life, work, thinking, learning, etc. If these can bring you assistance, spark thoughts, or inspire you, I would feel delighted and honored. but of course if there are any mistakes, feel free to email me, and I would be immensely grateful!
 
 > 我在2021年用服务器和WordPress搭建过自己的个人博客网站，先后使用了域名“mango-st-irreg.xyz”和“zhuminyi.xyz”，不过现在（2024.4），我开始把网站迁移到Github pages上来。如果一切顺利，以后我会在这里更新所有博客，基本上是生活、工作、思考、学习等等相关的内容。如果我的一些思考或者经历能给你带来帮助，我会很开心，如果你有什么想讨论的，也很欢迎给我发邮件！
 

@@ -176,3 +176,8 @@ toc_sticky: true # "Stick" table of contents to the top of a page. true: toc flo
 
 
 ## 自动网址链接
+
+
+## 日历
+
+我写文章的时候想到可以用Markdown表格来做日历，不过我上网查的时候发现已经有人这么想过了，而且直接有人做了个工具，很好用，是[Markdown Calendar](https://mdcal.matavelli.io/ "Markdown Calendar")
