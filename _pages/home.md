@@ -23,7 +23,7 @@ feature_row:
     alt: "alt:"
     title: "想法"
     excerpt: "The world and the meanings."
-    url: "/tags/#想法/杂谈"
+    url: "/tags/#想法-杂谈"
     btn_class: "btn--primary"
     btn_label: "去瞅一眼"
   - image_path: /assets/images/img_20211117_134334.jpg

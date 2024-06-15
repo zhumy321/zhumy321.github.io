@@ -9,7 +9,7 @@ last_modified_at: 2021-11-18T18:57:02+08:00 # 可不写，但layout则要写。+
 categories: 
   - 正经的
 tags:
-  - 想法/杂谈
+  - 想法-杂谈
 toc: false # true, false都可以
 toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
