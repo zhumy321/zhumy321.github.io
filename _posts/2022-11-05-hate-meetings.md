@@ -4,7 +4,7 @@ author: "Minyi ZHU"
 categories: 
   - 流水账
 tags:
-  - 吐槽
+  - 其他
 ---
 
 The more and longer the meetings, the crappier the company is. – My words.

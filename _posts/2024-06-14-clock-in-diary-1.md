@@ -9,7 +9,7 @@ last_modified_at: 2024-06-15T11:00:00+08:00 # 可不写，但layout则要写。+
 categories: 
   - clock-in-diary打工日记
 tags:
-  - 暂无标签
+  - 工作
 toc: true # true, false都可以
 toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)

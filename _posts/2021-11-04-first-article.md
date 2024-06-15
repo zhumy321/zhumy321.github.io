@@ -6,7 +6,7 @@ excerpt: "不知道能写多久，不知道还会写些什么东西。技术类�
 categories: 
   - 回忆录
 tags:
-  - 本站
+  - 其他
 toc: false # true, false
 toc_label: "My Table of Contents" # or, "Getting started","导航", or left blank
 toc_icon: "cog" # or left blank

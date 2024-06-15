@@ -10,8 +10,8 @@
 # show_date: true # true, false (default) 感觉这两行没有用啊
 # 以上都可以在post的此处覆盖  
 # 你需要在post中单独新增的：
-title:  Markdown notes整理自用 # 不写的话会从文件名自动生成。但标题不宜太长
-excerpt: "测试文章用例：为方便自己查找而整理的markdown语法" # 摘要
+title:  Markdown语法整理自用 # 不写的话会从文件名自动生成。但标题不宜太长
+excerpt: "为方便自己查找而整理的markdown语法，也作为测试文章使用" # 摘要
 author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
 # header: # 这张图会出现在文章页面的上方而且很大
 #   image: /assets/images/img_20220803_221239.jpg

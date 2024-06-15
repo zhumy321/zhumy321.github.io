@@ -7,9 +7,9 @@ author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要
 #   caption: Photo by the author # 图片水印，如"Photo credit: [**Unsplash**](https://unsplash.com)"
 last_modified_at: 2021-11-18T18:57:02+08:00 # 可不写，但layout则要写。+8是东八区
 categories: 
-  - 杂谈
+  - 正经的
 tags:
-  - 想法
+  - 想法/杂谈
 toc: false # true, false都可以
 toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
