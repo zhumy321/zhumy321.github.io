@@ -11,7 +11,7 @@ categories:
 tags:
   - 想法-杂谈
   - 学习
-toc: true # true, false都可以
+toc: fa;se # true, false都可以
 toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true # "Stick" table of contents to the top of a page. true: toc floats. false: toc fixed

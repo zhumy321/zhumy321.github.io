@@ -2,11 +2,6 @@
 title:  新年礼物 # 不写的话会从文件名自动生成。但标题不宜太长
 excerpt: " 被人喜欢是一件幸运的事情。这是最意料之外的新年礼物。 " # 摘要
 author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
-
-header: # 这张图会出现在文章页面的上方而且很大
-  image: https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20211226_000017.jpg
-  caption: Photo by the author # 图片水印，如"Photo credit: [**Unsplash**](https://unsplash.com)"
-
 last_modified_at: 2021-12-25T01:49:50+08:00 # 可不写，但layout则要写。+8是东八区
 categories: 
   - 回忆录
