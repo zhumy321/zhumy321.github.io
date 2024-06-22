@@ -14,7 +14,8 @@ tags:
 toc: true # true, false都可以
 toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
-toc_sticky: true # 
+toc_sticky: true #
+read_time: false 
 ---
 Be like...
 

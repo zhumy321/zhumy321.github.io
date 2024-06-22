@@ -1,13 +1,22 @@
 ---
-title:  "难得悠闲"
-excerpt: "难得悠闲一下，我想了想，发现其实最简单的快乐其实也是最让人安心的快乐，大大的惊喜容易让人“受宠若惊”，小小的满足才是真的踏实。"
-author: "Minyi ZHU"
+title:  难得悠闲 # 不写的话会从文件名自动生成。但标题不宜太长
+excerpt: "难得悠闲一下，我想了想，发现其实最简单的快乐其实也是最让人安心的快乐，大大的惊喜容易让人“受宠若惊”，小小的满足才是真的踏实。" # 摘要
+author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
+# header: # 这张图会出现在文章页面的上方而且很大
+#   image: /assets/images/img_20220803_221239.jpg
+#   caption: Photo by the author # 图片水印，如"Photo credit: [**Unsplash**](https://unsplash.com)"
+last_modified_at: 2021-11-18T18:57:02+08:00 # 可不写，但layout则要写。+8是东八区
 categories: 
   - 回忆录
 tags:
   - 生活
+toc: false # true, false都可以
+toc_label: "目录" # or left blank
+toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
+toc_sticky: true # "Stick" table of contents to the top of a page
+# link: https://github.com # 感觉不太对，这个link应该出现在超链接部分的引用中，但是试验后发现会变成文章标题的url，所以注释掉了
 ---
-难得悠闲
+
 终于又到周末了。
 
 即使是每周只有两节课的学期，也能被大大小小的、莫名其妙的事情填满。每周一周四上午去上课，周二周四下午工作，其他时间除了偶尔和吉他社的朋友们待在一起外，都是在图书馆或实验室，或者为了奇奇怪怪但不做又不行的屁大点事东奔西跑的路上。（中行的预留信息不规范要本人去改、双十一的快递得去拿、图书馆预约的书到了得按时去领…诸如此类）
