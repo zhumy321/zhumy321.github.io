@@ -36,6 +36,7 @@ toc_sticky: true # "Stick" table of contents to the top of a page. true: toc flo
 
 ---
 
+有很多文章都忘了加摘要。
 
 ikigai
 
@@ -43,6 +44,11 @@ ikigai
 
 
 ## 对职业生涯的思考
+
+2023-10-17 09:19:37
+#忽然之间 我开着我的人生小火车，在轨道之外的地方横冲直撞
+
+gap文章用#1
 
 2023-05-07 22:59:21
 

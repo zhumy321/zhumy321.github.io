@@ -1,6 +1,6 @@
 ---
 title:  书城的小插曲 # 不写的话会从文件名自动生成。但标题不宜太长
-excerpt: "" # 摘要
+excerpt: "或许大家一生就只相遇这一次、一小会，但我总觉得就是这种短暂才会让人觉得生活很奇妙、很有趣。" # 摘要
 author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
 last_modified_at: 2022-09-12T18:32:02+08:00 # 可不写，但layout则要写。+8是东八区
 categories: 
