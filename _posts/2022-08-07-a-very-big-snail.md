@@ -11,6 +11,7 @@ categories:
 tags:
   - 图片
   - 生活
+words_per_minute: 30
 ---
 
 2022-08-07 11:22:55 

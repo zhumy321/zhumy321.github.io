@@ -8,6 +8,7 @@ categories:
 tags:
   - 生活
 toc: false # true, false都可以
+words_per_minute: 30
 ---
 
 今天去复查彩超，心脏终于恢复了。

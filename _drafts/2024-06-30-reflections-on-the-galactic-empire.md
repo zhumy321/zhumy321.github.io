@@ -33,7 +33,7 @@ toc_sticky: true # "Stick" table of contents to the top of a page. true: toc flo
 # related: true
 # show_date: true # true, false (default) 
 # 以上都可以在post的此处覆盖  
-
+words_per_minute: 30 # Reading time
 ---
 
 我的微信读书app里有一套许久以前朋友推荐的《银河帝国》，由于系列太长，之前一直在app里没动过，这次终于有勇气点开了。

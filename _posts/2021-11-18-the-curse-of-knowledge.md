@@ -15,6 +15,9 @@ toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true # "Stick" table of contents to the top of a page
 # link: https://github.com # 感觉不太对，这个link应该出现在超链接部分的引用中，但是试验后发现会变成文章标题的url，所以注释掉了
+
+words_per_minute: 10 # 经我实验，中文则将WPM设置为总字数除600为好
+# 英文则设为200
 ---
 
 许久前听过一个说法，大意是一个人在学会了某个知识之后，就很难再想起自己学它时遇到的困惑，也很难理解别人为什么学不会了。前几天我找到了它的学名，叫“知识的诅咒” (Curse of knowledge)。

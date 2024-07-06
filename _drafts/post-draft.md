@@ -33,7 +33,10 @@ toc_sticky: true # "Stick" table of contents to the top of a page. true: toc flo
 # share: true
 # related: true
 # show_date: true # true, false (default) 
-# 以上都可以在post的此处覆盖  
+# 以上都可以在post的此处覆盖
+
+words_per_minute: 30 # 经我实验，中文则将WPM设置为30为好
+# 英文则设为200
 
 ---
 

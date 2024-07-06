@@ -1,6 +1,6 @@
 ---
-title:  今天交到一个新朋友 # 不写的话会从文件名自动生成。但标题不宜太长
-# excerpt: " " # 摘要
+title:  今天交到了新朋友 # 不写的话会从文件名自动生成。但标题不宜太长
+excerpt: " " # 摘要
 author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
 
 # header: # 这张图会出现在文章页面的上方而且很大
@@ -20,10 +20,8 @@ toc: false # true, false都可以
 toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
-
+words_per_minute: 30
 ---
-
-今天交到一个新朋友，叫小郭。
 
 最近的周末常在家附近的一家小咖啡餐饮店自习，小郭是店主的亲戚，寒假来帮忙顺便赚外快。今天刚准备离开的时候
 <!-- Miss Coffee -->

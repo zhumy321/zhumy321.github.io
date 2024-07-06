@@ -11,6 +11,8 @@ toc: false # true, false
 toc_label: "My Table of Contents" # or, "Getting started","导航", or left blank
 toc_icon: "cog" # or left blank
 toc_sticky: false # "Stick" table of contents to the top of a page by adding `toc_sticky: true` to its YAML Front Matter.
+
+words_per_minute: 4 
 ---
 
 

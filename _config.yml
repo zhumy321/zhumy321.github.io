@@ -68,7 +68,7 @@ atom_feed:
   hide                   : true # true, false (default)
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search_provider          :  # lunr (default), algolia, google
 lunr:
   search_within_pages    : # true, false (default)
 algolia:
@@ -296,7 +296,7 @@ defaults:
     values:
       layout: single
       author_profile: true # if false 则让作者信息从sidebar消失
-      read_time: false
+      read_time: true
       comments: false # not ready yet
       share: true
       related: true

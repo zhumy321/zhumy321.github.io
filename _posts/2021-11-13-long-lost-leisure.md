@@ -5,7 +5,7 @@ author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要
 # header: # 这张图会出现在文章页面的上方而且很大
 #   image: /assets/images/img_20220803_221239.jpg
 #   caption: Photo by the author # 图片水印，如"Photo credit: [**Unsplash**](https://unsplash.com)"
-last_modified_at: 2021-11-18T18:57:02+08:00 # 可不写，但layout则要写。+8是东八区
+last_modified_at: 2021-11-13T18:57:02+08:00 # 可不写，但layout则要写。+8是东八区
 categories: 
   - 回忆录
 tags:
@@ -15,6 +15,7 @@ toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true # "Stick" table of contents to the top of a page
 # link: https://github.com # 感觉不太对，这个link应该出现在超链接部分的引用中，但是试验后发现会变成文章标题的url，所以注释掉了
+words_per_minute: 3 # 
 ---
 
 终于又到周末了。
@@ -40,6 +41,6 @@ toc_sticky: true # "Stick" table of contents to the top of a page
 
 这得益于大学生的假期没有作业，不过想来，我快没多少假期了。
 
-扯远了。我的烤鱼外卖和奶茶都到了，我看这是一条很年幼的鱼，因为它一个鱼只能勉强铺满外卖盒子的70%左右，更可怜的是，它只配了几条豆腐皮和一团嚼来无味的豆芽。但是没办法，我是花了钱的，而且鱼的味道挺好的，所以我还是把鱼给吃干净了。豆芽很好，我以后都不会再点了。奶茶还是不错的，想起我昨晚捏着鼻子喝下去的连花清瘟颗粒，这一杯厚芋泥波波奶茶简直让人感激涕零。
+扯远了。我的烤鱼外卖和奶茶都到了，我看这是一条很年幼的鱼，因为它一个鱼只能勉强铺满外卖盒子的70%左右，更可怜的是，它只配了几条豆腐皮和一团嚼来无味的豆芽。但是没办法，我是花了钱的，而且鱼的味道挺好的，所以我还是把鱼给吃干净了。豆芽很“好”，我以后都不会再点了。奶茶还是不错的，想起我昨晚捏着鼻子喝下去的连花清瘟颗粒，这一杯厚芋泥波波奶茶简直让人感激涕零。
 
 难得悠闲一下，我想了想，发现其实最简单的快乐其实也是最让人安心的快乐，大大的惊喜容易让人“受宠若惊”，小小的满足才是真的踏实。接下来我要去拿我双十一买的凡士林和A4纸，去看吉他社今晚的组Band大会，然后看看书，稳稳睡一觉，明天再起来和例行日程好好斗争。

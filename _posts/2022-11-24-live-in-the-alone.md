@@ -11,6 +11,7 @@ categories:
 tags:
   - 想法-杂谈
   - 学习
+words_per_minute: 200
 ---
 
 > 在网易看哈佛大学幸福课时做的笔记

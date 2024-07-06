@@ -1,12 +1,13 @@
 ---
 title:  我什么也不是 # 不写的话会从文件名自动生成。但标题不宜太长
-excerpt: " I am nothing. " # 摘要
+excerpt: " 所以我终于可以自由地做我自己了。 " # 摘要
 author: "Minyi ZHU" # 不写则默认config.yml的网站作者
 last_modified_at: 2024-01-13T12:29:08+08:00 # 可不写，但layout则要写。+8是东八区
 categories: 
   - 流水账
 tags:
   - 学习
+words_per_minute: 30
 ---
 
 <!-- 2024-01-13 12:29:08 #Readings/诗歌词句 -->

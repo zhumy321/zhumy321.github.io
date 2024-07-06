@@ -11,6 +11,7 @@ toc: false # true, false都可以
 toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true # "Stick" table of contents to the top of a page. true: toc floats. false: toc fixed
+words_per_minute: 7 
 ---
 
 今天在书城，因为最近突然好奇想学五笔，所以整理了一下文件后就开始在书城看B站上的教程。刚好坐在我右边的一位女士看到了，她盯了几秒钟，然后问我：“在学五笔啊？”我说是的，然后她就很热心地告诉我可以用金山打字通练，像我这样（看视频）学的话会很慢的。

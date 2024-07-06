@@ -9,21 +9,7 @@ tags:
   - 想法-杂谈
   - 生活
 toc: false # true, false都可以
-toc_label: "目录" # or left blank
-toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
-toc_sticky: true # "Stick" table of contents to the top of a page. true: toc floats. false: toc fixed
-# link: https://github.com # 感觉不太对，这个link应该出现在超链接部分的引用中，但是试验后发现会变成文章标题的url，所以注释掉了
-
-# yml文件values的默认设置如下，可以重新覆盖。图表上是可在https://fontawesome.com/start找
-# layout: single
-# author_profile: true # if false 则让作者信息从sidebar消失
-# read_time: false
-# comments: false
-# share: true
-# related: true
-# show_date: true # true, false (default) 
-# 以上都可以在post的此处覆盖  
-
+words_per_minute: 30
 ---
 
 今天是12月25号，2021年的圣诞节。

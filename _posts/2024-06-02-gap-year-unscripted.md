@@ -15,6 +15,7 @@ toc: true # true, false都可以
 toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true # "Stick" table of contents to the top of a page. true: toc floats. false: toc fixed
+words_per_minute: 10
 ---
 
 每当有人得知我自2023年5月至2024年5月之间的这个空档，都会很好奇，然后询问gap的这一年中我都做了些什么。我总是打马虎眼回答说，“都是一些很无聊的事情，你不会感兴趣的”，或者“就是看书啊练练琴什么的，大部分时候在睡觉”，诸如此类。其实也不算是撒谎，这里面很长一段时间我确实是处于康复中，主要的事情就是休息。最困扰的是心脏问题，其次是神经系统有一点异常，睡不好、容易手抖，情绪也很消极。此外，我想做的很多事情在一般人看来也确实是挺无聊挺奇怪的，为了不花太多时间向人解释，我通常也不主动提这些爱好或想法。
