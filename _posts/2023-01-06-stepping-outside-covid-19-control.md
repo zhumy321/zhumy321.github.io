@@ -43,6 +43,7 @@ read_time: true
 2022-12-12 07:38:09 <br>
 今天零点国务院发公告，通信行程卡小程序要下线了。感慨。三年，三年。
 
+![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20221212_211336_com.tencent.mm.jpg)
 
 2023-01-06 14:51:20 <br>
 新闻说今年春运客流预计20.95亿。
