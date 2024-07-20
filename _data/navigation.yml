@@ -24,16 +24,28 @@ main: # main menu
   #   url: /year-archive/ # 这个url给到主页的“最近发布”按钮了
   - title: "主页"
     url: /
-  - title: "分类"
-    url: /categories/
-  - title: "标签"
-    url: /tags/
-  # - title: "Pages"
-  #   url: /page-archive/
-  # - title: "Collections"
-  #   url: /collection-archive/
+  - title: "流水账"
+    url: /categories/#流水账
+  - title: "正经的"
+    url: /categories/#正经的
+  - title: "回忆录"
+    url: /categories/#回忆录
+  - title: "汇总"
+    url: /year-archive/
   - title: "关于"
     url: /about/
+# 我的main的最初版：
+# main: # main menu
+#   - title: "主页"
+#     url: /
+#   - title: "分类"
+#     url: /categories/
+#   - title: "标签"
+#     url: /tags/
+#   - title: "关于"
+#     url: /about/
+
+
 
 # sidebar navigation list sample
 sidebar-sample:
@@ -78,60 +90,14 @@ sidebar-sample:
       - title: "Child Page D2"
         url: /
 
-
-# for example the docs as sidebar menu:
-# docs:
-#   - title: Getting Started
-#     children:
-#       - title: "Quick-Start Guide"
-#         url: /docs/quick-start-guide/
-#       - title: "Structure"
-#         url: /docs/structure/
-#       - title: "Installation"
-#         url: /docs/installation/
-#       - title: "Upgrading"
-#         url: /docs/upgrading/
-#   - title: Customization
-#     children:
-#       - title: "Configuration"
-#         url: /docs/configuration/
-#       - title: "Overriding Theme Defaults"
-#         url: /docs/overriding-theme-defaults/
-#       - title: "Navigation"
-#         url: /docs/navigation/
-#       - title: "UI Text"
-#         url: /docs/ui-text/
-#       - title: "Authors"
-#         url: /docs/authors/
-#       - title: "Layouts"
-#         url: /docs/layouts/
-#   - title: Content
-#     children:
-#       - title: "Working with Posts"
-#         url: /docs/posts/
-#       - title: "Working with Pages"
-#         url: /docs/pages/
-#       - title: "Working with Collections"
-#         url: /docs/collections/
-#       - title: "Helpers"
-#         url: /docs/helpers/
-#       - title: "Utility Classes"
-#         url: /docs/utility-classes/
-#   - title: Extras
-#     children:
-#       - title: "Stylesheets"
-#         url: /docs/stylesheets/
-#       - title: "JavaScript"
-#         url: /docs/javascript/
-#   - title: Meta
-#     children:
-#       - title: "History"
-#         url: /docs/history/
-#       - title: "Contributing"
-#         url: /docs/contributing/
-#       - title: "Old 2.2 Docs"
-#         url: /docs/docs-2-2/
-#       - title: "License"
-#         url: /docs/license/
-#       - title: "Terms &amp; Privacy Policy"
-#         url: /terms/
+sidebar-clock-in-diary:
+  - title: 
+    children:
+      - title: "2024年6月上"
+        url: /clock-in-diary/clock-in-diary-1/
+      - title: "2024年6月下"
+        url: /clock-in-diary/clock-in-diary-2/
+      - title: "2024年7月上"
+        url: /clock-in-diary/clock-in-diary-3/
+      - title: "2024年7月下"
+        url: /clock-in-diary/clock-in-diary-4/

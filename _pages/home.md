@@ -7,10 +7,11 @@ header:
   overlay_image: /assets/images/seaside-fireworks-with-friends.png
   caption: Photo by the best friends ever in SZU Bandclub 
   actions:
-    - label: "<i class='fas fa-arrow-circle-right'></i> 最近发布"
-      url: "/year-archive/" # 这个url可能也要改???
+    - label: "<i class='fas fa-arrow-circle-right'></i> 更多图片"
+      url: "/tags/#图片" # 这个url可能也要改???
 # excerpt: >
 #   A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios. # 这是飘在overlay图片上的文字
+
 feature_row:
   - image_path: /assets/images/riding-bike.jpg
     alt: "customizable" # 不知道alt是啥意思
@@ -32,7 +33,7 @@ feature_row:
     excerpt: "Am I better than yesterday?"
     url: "/tags/#学习"
     btn_class: "btn--primary"
-    btn_label: "去瞅一眼"      
+    btn_label: "去瞅一眼"     
 ---
 
 {% include feature_row %}

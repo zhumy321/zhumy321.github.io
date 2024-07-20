@@ -19,6 +19,7 @@ categories:
   - 流水账
 tags:
   - 生活
+  - 看书
 toc: false # true, false都可以
 toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
