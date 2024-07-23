@@ -12,7 +12,9 @@ sidebar:
 words_per_minute: 30 # Reading time
 ---
 
-这是打工日记降落页
+这是打工日记降落页~~~
+
+gap结束之后要重新开始工作了，加油鸭！
 
 <!-- 添加完成后去navigation.yml文件里面的sidebar-clock-in-diary添加一下这个上班记录的小目录 -->
 

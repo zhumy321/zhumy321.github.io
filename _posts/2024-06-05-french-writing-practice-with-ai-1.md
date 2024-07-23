@@ -20,15 +20,21 @@ read_time: true
 words_per_minute: 100
 ---
 
-## How come the French writing learning? （为啥会有这次的法语写作练习）
+## 为啥会有这次的法语写作练习
+
+How come the French writing learning? 
 
 Since I've been learning French for months, I have always wanted to try writing essays or articles in French. A fun thing is, recently I discovered a Chinese AI tool called "[Tian Gong](www.tiangong.cn "天工AI")" (Let's call it TG instead), which functions kind of like chatGPT but is a different large-scale model. With TG, the users can DIY an intelligent agent as they wish, for example you can creat a "Personal Nutritionist", "Coding assistant", or "Novel Generator" and chat with them. <br>Comparing to chatGPT, TG is free, more personalized and convenient for me use ( it comes with a nice free app version also). It struck me today that I can try to make use of it to practice and improve my French. And I did have a satisfying try.
 
 好久没写英语了，上面也写了一段练练手。大概就是说，我自己学法语也有一段时间了，一直想试试听说读写里的“写”来着。正巧最近在玩一个AI叫[天工](www.tiangong.cn "天工AI")，是个可以交互的人工智能，而且免费、可以DIY不同的智能体，像官方有代码助手、网文生成器、诗词文库之类的。在国内，用天工比chatGPT方便、有免费app，而且可以DIY，这点就很顺眼。所以这两件事情让我就想到，可以创建一个智能体，专门拿来帮助自己学法语。
 
-## How to get AI to create practice problems（如何让AI给我出题目）
+## 如何让AI给我出题目
 
-### Creat an agent（创建一个智能体）
+How to get AI to create practice problems? 
+
+### 创建一个智能体
+
+Creat an agent
 
 I created a TG agent, named it "**French Teaching Whiz**"，and told it that its function was to "practice French conversations with you, solidify basic French knowledge, and advance your understanding of French grammar", and its role was set as below (this can be generated automatically):
 ~~~
@@ -58,7 +64,7 @@ Opening Line: "Hi, I am the French teaching whiz."
 
 ~~~
 
-我在天工创建了一个智能体，给它取名叫“**法语教学小能手**”，然后把它功能配置为“与你练习法语对话，巩固法语基础与进阶语法”，角色配置为（这是系统帮我生成的）：
+我在天工创建了一个智能体，给它取名叫“**法语教学小能手**”，然后把它功能配置为“与你练习法语对话，巩固法语基础与进阶语法”，角色配置为（系统可以提供生成的功能）：
 ~~~
 
 # 角色描述
@@ -87,7 +93,9 @@ Opening Line: "Hi, I am the French teaching whiz."
 开场白 「嗨，我是法语教学小能手」
 ~~~
 
-### Interacting with the agent（与智能体交互）
+### 与智能体交互
+
+Interacting with the agent
 
 > ME: Whiz, donne-moi un sujet de petit essai simple, je vais écrire un petit essai, et tu me donneras des commentaires et une note.
 
@@ -97,7 +105,9 @@ Opening Line: "Hi, I am the French teaching whiz."
 <br><br>Tu peux écrire sur la façon dont la technologie affecte ta vie quotidienne, les avantages et les inconvénients que tu vois, et comment tu penses qu'elle pourrait changer l'avenir. Essaye de parler de ton expérience personnelle autant que possible et donne des exemples concrets.
 <br><br>Ecrit autant que tu peux, et quand tu as terminé, je te donnerai des commentaires et une note. Bon courage!
  
-## My First Attempt at writing（第一次尝试写小作文）
+## 第一次尝试写小作文
+
+My First Attempt at writing
 
 La technologie dans ma vie quotidienne
 
@@ -108,7 +118,9 @@ Par exemple, tous les jours mon alarme sonne et je me suis lève a l'heure. Je v
 Mais simultanément, les technologies ont des effets néfastes. Je communique avec mes amis par les mobiles et rencontre rarement. Les machines font trop de choses simples et je perd le compétence en le faire. C'est un peu ennuyeux.
 
 
-## Comments from the AI （AI给的小作文评价）
+## AI给的小作文评价
+
+Comments from the AI 
 
 Whiz said:
 
@@ -133,7 +145,9 @@ Whiz said:
 
 > 评分：6/10 继续练习，你会做得更好！如果你想的话，我们可以进一步讨论，我可以帮你改正你的文章。
 
-## Model essay（让智能体给范文）
+## 让智能体给范文
+
+Model essay
 
 > ME: Selon le contenu de mon petit essai, vous devez écrire un modèle de texte pour moi à titre de référence.
 

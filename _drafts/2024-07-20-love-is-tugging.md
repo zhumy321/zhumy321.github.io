@@ -3,7 +3,7 @@
 
 
 title:  爱是拉扯 # 不写的话会从文件名自动生成。但标题不宜太长
-excerpt: " 可不写 " # 摘要
+excerpt: "" # 摘要
 author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
 
 # header: # 这张图会出现在文章页面的上方而且很大

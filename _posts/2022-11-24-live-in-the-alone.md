@@ -14,10 +14,10 @@ tags:
 words_per_minute: 200
 ---
 
-> 在网易看哈佛大学幸福课时做的笔记
+在网易看哈佛大学幸福课时做的笔记
 
-Live not for battles won.
+> Live not for battles won.
 
-Live not for the end of the song
+> Live not for the end of the song.
 
-Live in the along
+> Live in the along.

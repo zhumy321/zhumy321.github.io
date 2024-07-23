@@ -2,7 +2,7 @@
 # examples go and see https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
 title:  人生的意义与选择 # 不写的话会从文件名自动生成。但标题不宜太长
-excerpt: "自GAP以来的这将近一年半中，我时常反省自己曾经的对工作、未来规划的决定，时常回顾去年GAP中的人生感悟、GAP结束后何去何从的想法，现在也时常不由自主地思考自己的未来和调整一些或短期或长期的决定。？" # 摘要
+excerpt: "写在毕业两周年整。" # 摘要
 author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
 
 header: # 这张图会出现在文章页面的上方而且很大
@@ -35,6 +35,7 @@ toc_sticky: true # "Stick" table of contents to the top of a page. true: toc flo
 words_per_minute: 30 # Reading time
 ---
 
+自GAP以来的这将近一年半中，我时常反省自己曾经的对工作、未来规划的决定，时常回顾去年GAP中的人生感悟、GAP结束后何去何从的想法，现在也时常不由自主地思考自己的未来和调整一些或短期或长期的决定。？
 
 ## 刚毕业工作时的我
 
