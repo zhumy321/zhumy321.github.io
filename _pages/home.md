@@ -3,14 +3,15 @@ layout: splash
 permalink: / 
 hidden: true
 header:
-  overlay_color: "#5e616c"
+  # overlay_color: "#5e616c"
   overlay_image: /assets/images/seaside-fireworks-with-friends.png
   caption: Photo by the best friends ever in SZU Bandclub 
   actions:
     - label: "<i class='fas fa-arrow-circle-right'></i> 更多图片"
-      url: "/tags/#图片" # 这个url可能也要改???
-# excerpt: >
-#   A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios. # 这是飘在overlay图片上的文字
+      url: "/tags/#图片"
+excerpt: >
+  <br /> We can have it all, just not at once. <br />  <br /> 
+# 这是飘在overlay图片上的文字，加<br />是为了图片展示的高度更大些。用<small></small>框住的话就会是小一点的字
 
 feature_row:
   - image_path: /assets/images/riding-bike.jpg
