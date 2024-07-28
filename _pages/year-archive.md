@@ -10,7 +10,7 @@ author_profile: true
 
 [按标签](/tags/){: .btn .btn--primary}
 
-[打工日记](/clock-in-diary/clock-in-diary/){: .btn .btn--primary}
+[打工日记](/clock-in-diary/clock-in-diary-1/){: .btn .btn--primary}
 
 <!-- [按年份](){: .btn .btn--primary} -->
  

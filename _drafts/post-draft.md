@@ -15,7 +15,7 @@ author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要
 # header:
   # teaser: "unsplash-gallery-image-2-th.jpg"
 
-last_modified_at: 2024-06-02T19:00:02+08:00 # 可不写，但layout则要写。+8是东八区
+last_modified_at: 2024-08-01T19:00:02+08:00 # 可不写，但layout则要写。+8是东八区
 categories: 
   - Jekyll
 tags:

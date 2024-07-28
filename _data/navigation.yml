@@ -91,13 +91,13 @@ sidebar-sample:
         url: /
 
 sidebar-clock-in-diary:
-  - title: 
+  - title: 2024 
     children:
-      - title: "2024年6月上"
-        url: /clock-in-diary/clock-in-diary-1/
-      - title: "2024年6月下"
+      - title: "2024年6月"
+        url: /clock-in-diary/clock-in-diary-1/ # 从year-archive的page的按钮点进来
+      - title: "2024年7月"
         url: /clock-in-diary/clock-in-diary-2/
-      - title: "2024年7月上"
-        url: /clock-in-diary/clock-in-diary-3/
-      - title: "2024年7月下"
-        url: /clock-in-diary/clock-in-diary-4/
+      # - title: "2024年8月"
+      #   url: /clock-in-diary/clock-in-diary-3/
+      # - title: "2024年9月"
+      #   url: /clock-in-diary/clock-in-diary-4/
