@@ -97,7 +97,7 @@ sidebar-clock-in-diary:
         url: /clock-in-diary/clock-in-diary-1/ # 从year-archive的page的按钮点进来
       - title: "2024年7月"
         url: /clock-in-diary/clock-in-diary-2/
-      # - title: "2024年8月"
-      #   url: /clock-in-diary/clock-in-diary-3/
+      - title: "2024年8月"
+        url: /clock-in-diary/clock-in-diary-3/
       # - title: "2024年9月"
       #   url: /clock-in-diary/clock-in-diary-4/
