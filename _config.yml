@@ -218,6 +218,22 @@ kramdown:
   enable_coderay: false
 
 
+# Collections
+collections: #这里主要是我自己整理的合集，是独立于博客之外的文章们
+#   docs:
+#     output: true
+    # permalink: /:collection/:path/
+  learning-linux:
+    output: true
+    permalink: /:collection/:path/
+  clock-in-diary:
+    output: true
+    permalink: /:collection/:path/
+  # recipes:
+  #   output: true
+  #   permalink: /:collection/:path/
+
+
 # Sass/SCSS
 sass:
   sass_dir: _sass
@@ -287,6 +303,9 @@ compress_html:
   ignore:
     envs: development
 
+
+
+
 # Defaults
 defaults:
   # _posts
@@ -309,9 +328,45 @@ defaults:
     values:
       layout: single
       author_profile: true
-
-  # 这些好像是对应着名字_开头的文件夹？
-  # _resume
+  # # _docs
+  # - scope:
+  #     path: ""
+  #     type: docs
+  #   values:
+  #     layout: single
+  #     read_time: false
+  #     author_profile: false
+  #     share: false
+  #     comments: false
+  #     sidebar:
+  #       nav: "docs"
+  # _recipes
+  # - scope:
+  #     path: ""
+  #     type: recipes
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comments: true
+  # _clock-in-diary
+  - scope:
+      path: ""
+      type: clock-in-diary
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _learning-linux
+  - scope:
+      path: ""
+      type: _learning-linux
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  # _resume  # 简历的内容完全还没整
   - scope:
       path: "_resume"
       type: resume

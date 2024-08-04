@@ -20,31 +20,20 @@ foo:
 
 # main links
 main: # main menu
-  # - title: "文章"
-  #   url: /year-archive/ # 这个url给到主页的“最近发布”按钮了
   - title: "主页"
     url: /
-  - title: "流水账"
-    url: /categories/#流水账
-  - title: "正经的"
-    url: /categories/#正经的
-  - title: "回忆录"
-    url: /categories/#回忆录
-  - title: "汇总"
-    url: /year-archive/
+  # - title: "流水账"
+  #   url: /categories/#流水账
+  # - title: "正经的"
+  #   url: /categories/#正经的
+  # - title: "回忆录"
+  #   url: /categories/#回忆录
+  - title: "Blog汇总"
+    url: /year-archive/ 
+  - title: "专栏归档"
+    url: /collection-archive/
   - title: "关于"
     url: /about/
-# 我的main的最初版：
-# main: # main menu
-#   - title: "主页"
-#     url: /
-#   - title: "分类"
-#     url: /categories/
-#   - title: "标签"
-#     url: /tags/
-#   - title: "关于"
-#     url: /about/
-
 
 
 # sidebar navigation list sample
@@ -101,3 +90,13 @@ sidebar-clock-in-diary:
         url: /clock-in-diary/clock-in-diary-3/
       # - title: "2024年9月"
       #   url: /clock-in-diary/clock-in-diary-4/
+
+
+sidebar-learn-linux:
+  - title: Linux学习
+    children:
+      - title: "2024年8月"
+        url: /learning-linux/linux101-1/
+      # - title: "2024年9月"
+      #   url: /clock-in-diary/clock-in-diary-4/
+
