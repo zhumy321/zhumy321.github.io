@@ -3,7 +3,6 @@
 # gif的动图也是可以添加的哈
 
 title:  一二三四 # 不写的话会从文件名自动生成。但标题不宜太长
-# permalink: /docs/clock-in-diary-?/ 若是打工日记的文章，则要加这一个链接
 excerpt: "" # 摘要，可不写
 author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
 

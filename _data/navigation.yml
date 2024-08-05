@@ -83,19 +83,23 @@ sidebar-clock-in-diary:
   - title: 2024 
     children:
       - title: "2024年6月"
-        url: /clock-in-diary/clock-in-diary-1/ # 从year-archive的page的按钮点进来
+        url: /clock-in-diary/clock-in-diary-1/ 
       - title: "2024年7月"
         url: /clock-in-diary/clock-in-diary-2/
       - title: "2024年8月"
         url: /clock-in-diary/clock-in-diary-3/
       # - title: "2024年9月"
       #   url: /clock-in-diary/clock-in-diary-4/
+  # - title: 2025
+  #   children:
+  #     - title: "2025年1月"
+  #       url: /clock-in-diary/clock-in-diary-1/ 
 
 
 sidebar-learn-linux:
-  - title: Linux学习
+  - title: 
     children:
-      - title: "2024年8月"
+      - title: "Linux101-1"
         url: /learning-linux/linux101-1/
       # - title: "2024年9月"
       #   url: /clock-in-diary/clock-in-diary-4/

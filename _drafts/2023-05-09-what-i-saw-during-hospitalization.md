@@ -8,7 +8,7 @@ author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要
 last_modified_at: 2023-05-09T16:17:32+08:00 # 未定
 # last_modified_at: 2024-06-28T22:00:00+08:00 # 可不写，但layout则要写。+8是东八区
 categories: 
-  - clock-in-diary打工日记
+
 tags:
   - 工作
 toc: true # true, false都可以
