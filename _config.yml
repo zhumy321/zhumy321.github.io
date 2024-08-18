@@ -223,7 +223,7 @@ collections: #这里主要是我自己整理的合集，是独立于博客之外
 #   docs:
 #     output: true
     # permalink: /:collection/:path/
-  learning-linux:
+  about-new-energy:
     output: true
     permalink: /:collection/:path/
   clock-in-diary:
@@ -358,10 +358,10 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _learning-linux
+  # _about-new-energy
   - scope:
       path: ""
-      type: learning-linux # 注意这里是没有_前缀的
+      type: about-new-energy # 注意这里是没有_前缀的
     values:
       layout: single
       author_profile: true

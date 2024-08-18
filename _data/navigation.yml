@@ -96,11 +96,11 @@ sidebar-clock-in-diary:
   #       url: /clock-in-diary/clock-in-diary-1/ 
 
 
-sidebar-learn-linux:
+sidebar-about-new-energy:
   - title: 
     children:
-      - title: "Linux101-1"
-        url: /learning-linux/linux101-1/
+      - title: "about-new-energy-1"
+        url: /about-new-energy/ESStest-1/
       # - title: "2024年9月"
       #   url: /clock-in-diary/clock-in-diary-4/
 
