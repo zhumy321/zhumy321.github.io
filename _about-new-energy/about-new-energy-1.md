@@ -1,5 +1,5 @@
 ---
-title:  test-Irene的Linux101-1 # 
+title:  test-Irene的new energy 101-1 # 
 permalink: /about-new-energy/ESStest-1/
 excerpt: "" # 摘要，可不写
 # author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
