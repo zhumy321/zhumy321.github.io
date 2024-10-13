@@ -30,6 +30,16 @@ Be like...
 ## 深圳湾草坪
 ![深圳湾草坪](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/mmexport1625678535074.jpg)
 
+## Besties
+
+![Bestie Tang](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20241003_230622.jpg)
+
+![Bestie Lee](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/mmexport1727936415242.jpg)
+
+![Bestie Jane](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/mmexport1727962269891.jpg)
+
+![Best of us](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/mmexport1727968714819.jpg)
+
 
 ## 魔友聚会
 ![魔友聚会](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/cuber_friends.jpg)
