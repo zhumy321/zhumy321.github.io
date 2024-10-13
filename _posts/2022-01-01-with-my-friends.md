@@ -30,8 +30,11 @@ Be like...
 ## 深圳湾草坪
 ![深圳湾草坪](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/mmexport1625678535074.jpg)
 
-## Besties
+## 魔友聚会
+![魔友聚会](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/cuber_friends.jpg)
+魔友魔聚不玩魔方，还挺魔幻的。
 
+## Besties
 ![Bestie Tang](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20241003_230622.jpg)
 
 ![Bestie Lee](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/mmexport1727936415242.jpg)
@@ -41,9 +44,8 @@ Be like...
 ![Best of us](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/mmexport1727968714819.jpg)
 
 
-## 魔友聚会
-![魔友聚会](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/cuber_friends.jpg)
-魔友魔聚不玩魔方，还挺魔幻的。
+
+
 
 
 未完，待续...
