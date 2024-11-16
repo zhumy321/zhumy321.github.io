@@ -31,7 +31,9 @@ words_per_minute: 30
 
 
 
-从这里开始是正文。其实如果愿意花时间看的话，在[Markdown语法官网](https://markdown.com.cn "最好的markdown教程")很清楚，但本文是精简整理给自己看的，同时作为github pages的一个测试文本。
+从这里开始是正文。其实如果愿意花时间看的话，在[Markdown语法官网](https://markdown.com.cn "最好的markdown教程")很清楚，还有这个[开源文档](https://osdoc.net/md/)也不错
+
+但本文是精简整理给自己看的，同时作为github pages的一个测试文本。
 
 以及提前说明，有一些比如换行、加粗这种操作有多种实现方式，有的编辑器支持，有的不支持，这里记录的都是兼容性比较高的，不容易出岔子
 

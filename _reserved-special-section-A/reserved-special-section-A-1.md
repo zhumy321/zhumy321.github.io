@@ -1,6 +1,6 @@
 ---
-title:  test-Irene的new energy 101-1 # 
-permalink: /about-new-energy/ESStest-1/
+title:  Irene预留的专栏A # 
+permalink: /reserved-special-section-A/A-1/
 excerpt: "" # 摘要，可不写
 # author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
 author_profile: false # 让作者信息从sidebar消失
@@ -14,8 +14,7 @@ toc_sticky: true # "Stick" table of contents to the top of a page. true: toc flo
 words_per_minute: 200 # 经我实验，中文则将WPM设置为30为好
 # 英文则设为200
 sidebar:
-  title: "关于新能源"
-  nav: sidebar-about-new-energy # 这是在yaml文件里你要找到的那个导航栏的名字
+  title: "sidebar-reserved-special-section-A"
+  nav: sidebar-reserved-special-section-A # 这是在yaml文件里你要找到的那个导航栏的名字
 ---
 
-test sth

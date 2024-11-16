@@ -223,15 +223,20 @@ collections: #这里主要是我自己整理的合集，是独立于博客之外
 #   docs:
 #     output: true
     # permalink: /:collection/:path/
-  about-new-energy:
+  about-new-energy: # 新能源相关
     output: true
     permalink: /:collection/:path/
-  clock-in-diary:
+  clock-in-diary: # 打工日记
     output: true
     permalink: /:collection/:path/
   # recipes:
   #   output: true
   #   permalink: /:collection/:path/
+  reserved-special-section-A:
+    output: true
+    permalink: /:collection/:path/
+
+
 
 
 # Sass/SCSS
@@ -377,3 +382,14 @@ defaults:
       share: false
       comments: false
       sidebar:
+  # _reserved-special-section-A:
+  - scope:
+      path: ""
+      type: reserved-special-section-A # 注意这里是没有_前缀的
+    values:
+      layout: single
+      author_profile: true
+      share: true
+
+
+  
