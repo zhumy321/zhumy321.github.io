@@ -25,7 +25,7 @@ words_per_minute: 30 # 经我实验，中文则将WPM设置为30为好
 流程如下：
 ![图-1](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-1.png)
 
-- 把下载下来的exe文件用管理员身份运行：
+- 把下载下来的.exe文件用管理员身份运行：
 ![图-2](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-2.png)
 
 - 选择安装的路径，然后点Next：
@@ -117,7 +117,7 @@ To be added…
 
 
 - 前往官网下载自己所需要的MinGW版本即可，流程如下：
-- 如果有网，下载了exe文件后直接点击执行即可(https://sourceforge.net/projects/mingw/)。此处举例主要是离线安装哈：下载好安装MinGW压缩包( https://sourceforge.net/projects/mingw-w64/ 选择files然后往下拉)，zip或者7z都可以 
+- 如果有网，下载了.exe文件后直接点击执行即可(https://sourceforge.net/projects/mingw/)。此处举例主要是离线安装哈：下载好安装MinGW压缩包( https://sourceforge.net/projects/mingw-w64/ 选择files然后往下拉)，zip或者7z都可以 
 - 在你想指定的文件夹下新建MinGW文件夹（可以是Program Files (x86)也可以直接在C盘，或者你希望放的其他文件夹），把解压之后的mingw64文件夹放到MinGW下
 
 ![图1-4](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_C_Edited_1_4.png)
@@ -175,12 +175,11 @@ To be added…
 <br>如果显示No Build System，大概率是编码或者格式问题，这个情况应该是自己再把配置编译系统的代码纯手敲一遍就可以解决。
 
 
-## Python
+## 配置Python环境
 
 ### 下载Python
 
-- 准备软件Python
-- 前往官网下载并安装Python，这里以编辑此文时的最新版本Python为例，下载好并运行python.exe
+- 前往[官网](https://www.python.org/downloads/windows/)下载并安装Python，这里以编辑此文时的最新版本Python为例，下载好并运行python.exe
 - 没有什么特殊要求的话就点选Install Now，注意勾选Add Path，不过之后自己再去环境变量添加Path也行。安装好之后找到Python的路径。你可以通过菜单找到它的路径（配置编译系统的时候要用）
 比如下面（注意斜杠）： 
 ```
@@ -215,10 +214,10 @@ C:/Users/IreneZ/AppData/Local/Programs/Python/Python310/python.exe
 
 
 
-- 测试一下能不能用
+- 测试一下能不能用<br>
 新建一个文件，编写Python代码，把右下角的Plain Text改为Python，选择Build System为刚刚配置的编译系统（例中是Python10），在Sublime Text 3中按快捷键Ctrl + B查看是否有结果输出
 
 ![图14-16](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_PY_Edited_8_9.png)
 
 
-OK!
+## OK!

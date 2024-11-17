@@ -229,14 +229,18 @@ collections: #这里主要是我自己整理的合集，是独立于博客之外
   clock-in-diary: # 打工日记
     output: true
     permalink: /:collection/:path/
-  # recipes:
+  # recipes: 这是模板自带的原来的例子
   #   output: true
   #   permalink: /:collection/:path/
   reserved-special-section-A:
     output: true
     permalink: /:collection/:path/
-
-
+  circuits-notes:
+    output: true
+    permalink: /:collection/:path/
+  math-notes:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Sass/SCSS
@@ -345,7 +349,7 @@ defaults:
   #     comments: false
   #     sidebar:
   #       nav: "docs"
-  # _recipes
+  # _recipes # 这里注释掉的是原模板中的例子
   # - scope:
   #     path: ""
   #     type: recipes
@@ -354,7 +358,9 @@ defaults:
   #     author_profile: true
   #     share: true
   #     comments: true
-  # _clock-in-diary
+
+
+  # _clock-in-diary # 注意这里有_前缀
   - scope:
       path: ""
       type: clock-in-diary
@@ -363,7 +369,7 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _about-new-energy
+  # _about-new-energy # 注意这里有_前缀
   - scope:
       path: ""
       type: about-new-energy # 注意这里是没有_前缀的
@@ -371,7 +377,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-  # _resume  # 简历的内容完全还没整
+  # _resume  # 简历的内容完全还没整。# 注意这里有_前缀
   - scope:
       path: "_resume"
       type: resume
@@ -382,7 +388,7 @@ defaults:
       share: false
       comments: false
       sidebar:
-  # _reserved-special-section-A:
+  # _reserved-special-section-A: # 注意这里有_前缀
   - scope:
       path: ""
       type: reserved-special-section-A # 注意这里是没有_前缀的
@@ -390,6 +396,34 @@ defaults:
       layout: single
       author_profile: true
       share: true
-
-
-  
+  # _circuits-notes: # 注意这里有_前缀
+  - scope:
+      path: ""
+      type: circuits-notes # 注意这里是没有_前缀的
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # _math-notes: # 注意这里有_前缀
+  - scope:
+      path: ""
+      type: math-notes # 注意这里是没有_前缀的
+    values:
+      layout: single
+      author_profile: true
+      share: true
+# 补充：新增一个名为special-column专栏需要：
+# 1. 在_config.yml里面的collections:部分增加对应special-column的output和permalink
+# 2. 在_config.yml里面的defaults:部分增加如上对应special-column的scope中的type。
+# 3. 在navigation.yml里面增加对应special-column的导航栏sidebar-special-column，和
+#    title可以自拟，但url必须与文章里面的permalink一致
+# 4. 在_pages文件夹里面增加一个对应special-column的special-column.md文件，且将这个文件
+#    里面的title改为对应的'Special Column'、将里面的permalink和collection分
+#    别改为/special-column/和special-column。注意这里的permalink要和_config.yml里面
+#    的collections的permalink一致；此外内容中的Sample document...collection `_special-column`.记得也要改
+# 5. 在zhumy321.github.io文件夹里面新增一个文件夹，名为_special-column，
+#    然后里面就可以在这个文件夹里放对应内容的文章了，如special-column-1.md。
+#    注意permalink要写: /special-column/special-column-1/，路径最
+#    尾对应这个文章的md文件名。且导航栏title你可以自拟但nav要写对为sidebar-special-column，与
+#    第2点中的导航栏名称一致
+#    

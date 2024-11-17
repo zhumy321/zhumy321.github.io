@@ -17,7 +17,6 @@ foo:
       - title: "Child Link 3"
         url: /child-3-page-url/
 
-
 # main links
 main: # main menu
   - title: "主页"
@@ -34,7 +33,6 @@ main: # main menu
     url: /collection-archive/
   - title: "关于"
     url: /about/
-
 
 # sidebar navigation list sample
 sidebar-sample:
@@ -95,7 +93,6 @@ sidebar-clock-in-diary:
   #     - title: "2025年1月"
   #       url: /clock-in-diary/clock-in-diary-1/ 
 
-
 sidebar-about-new-energy:
   - title: 
     children:
@@ -111,3 +108,14 @@ sidebar-reserved-special-section-A:
         url: /reserved-special-section-A/A-1/
       # - title: "2024年9月"
       #   url: /clock-in-diary/clock-in-diary-4/
+
+sidebar-circuits-notes:
+  - title: 
+    children:
+      - title: "电分基础笔记-1"
+        url: /circuits-notes/circuits-notes-chinese-1/
+sidebar-math-notes:
+  - title: 
+    children:
+      - title: "数学学习笔记-1"
+        url: /math-notes/math-notes-chinese-1/
