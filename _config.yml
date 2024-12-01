@@ -232,7 +232,7 @@ collections: #这里主要是我自己整理的合集，是独立于博客之外
   # recipes: 这是模板自带的原来的例子
   #   output: true
   #   permalink: /:collection/:path/
-  reserved-special-section-A:
+  niche-and-solo:
     output: true
     permalink: /:collection/:path/
   circuits-notes:
@@ -388,10 +388,10 @@ defaults:
       share: false
       comments: false
       sidebar:
-  # _reserved-special-section-A: # 注意这里有_前缀
+  # _niche-and-solo: # 注意这里有_前缀
   - scope:
       path: ""
-      type: reserved-special-section-A # 注意这里是没有_前缀的
+      type: niche-and-solo # 注意这里是没有_前缀的
     values:
       layout: single
       author_profile: true
@@ -424,6 +424,6 @@ defaults:
 # 5. 在zhumy321.github.io文件夹里面新增一个文件夹，名为_special-column，
 #    然后里面就可以在这个文件夹里放对应内容的文章了，如special-column-1.md。
 #    注意permalink要写: /special-column/special-column-1/，路径最
-#    尾对应这个文章的md文件名。且导航栏title你可以自拟但nav要写对为sidebar-special-column，与
+#    尾对应这个文章的md文件名。导航栏title你可以自拟但nav要写对为sidebar-special-column，与
 #    第2点中的导航栏名称一致
 #    

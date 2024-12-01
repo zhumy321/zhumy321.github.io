@@ -16,9 +16,16 @@ permalink: /about/
 
 ## About me
 
-> Welcome to this site :smile:. So nice to see you here. My name is ZHU Minyi (ZHU is the family name), and I have also an English name "Irene", which my foreign teachers, classmates and some friends would use to call me. I graduated from Shenzhen University in 2022, majoring in Microelectronics. I am interested in a lot of things, such as speedcubing, amateur radio, music, reading...
+> Welcome to this site :smile:. So nice to see you here. 
 
-> 欢迎来到本站 :smile:。很高兴在这里见到你。我叫朱珉伊，我的外教、同学和一些朋友也可能会叫我的英文名“Irene”。我于2022年毕业于深圳大学，主修专业是微电子，但我对很多专业之外的东西都感兴趣，比如魔方速拧、业余无线电、音乐、阅读...
+<!-- My name is ZHU Minyi (ZHU is the family name), and I have also an English name "Irene", which my foreign teachers, classmates and some friends would use to call me. I graduated from Shenzhen University in 2022, majoring in Microelectronics. I am interested in a lot of things, such as speedcubing, amateur radio, music, reading... -->
+
+
+> 欢迎来到本站 :smile:。很高兴在这里见到你。
+
+
+<!-- 我叫朱珉伊，我的外教、同学和一些朋友也可能会叫我的英文名“Irene”。我于2022年毕业于深圳大学，主修专业是微电子，但我对很多专业之外的东西都感兴趣，比如魔方速拧、业余无线电、音乐、阅读... -->
+
 
 ## About here
 

@@ -101,13 +101,14 @@ sidebar-about-new-energy:
       # - title: "2024年9月"
       #   url: /clock-in-diary/clock-in-diary-4/
 
-sidebar-reserved-special-section-A:
+sidebar-niche-and-solo:
   - title: 
     children:
-      - title: "reserved-special-section-A-1"
-        url: /reserved-special-section-A/A-1/
-      # - title: "2024年9月"
-      #   url: /clock-in-diary/clock-in-diary-4/
+      - title: "如何使用算盘"
+        url: /niche-and-solo/1/
+      - title: "游戏*Turing Complete*与数字电路"
+        url: /niche-and-solo/2/
+
 
 sidebar-circuits-notes:
   - title: 
