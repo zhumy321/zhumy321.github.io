@@ -1,11 +1,10 @@
 ---
 title: 如何从图片提取签名 # 
 permalink: /niche-and-solo/3/
-excerpt: "How to extract a signature from a picture"
-" # 摘要，可不写
+excerpt: "How to extract a signature from a picture" # 摘要，可不写
 # author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
 author_profile: false # 让作者信息从sidebar消失
-last_modified_at: 2024-12-01T22:00:00+08:00 # 
+last_modified_at: 2024-12-14T22:00:00+08:00 # 
 # redirect_from:
 #   - /theme-setup/
 toc: true # true, false都可以
