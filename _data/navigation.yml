@@ -108,6 +108,8 @@ sidebar-niche-and-solo:
         url: /niche-and-solo/1/
       - title: "游戏*Turing Complete*与数字电路"
         url: /niche-and-solo/2/
+      - title: "如何从图片提取签名"
+        url: /niche-and-solo/3/
 
 
 sidebar-circuits-notes:
