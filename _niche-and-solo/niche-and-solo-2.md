@@ -1,7 +1,7 @@
 ---
 title: 游戏*Turing Complete*与数字电路 # 
 permalink: /niche-and-solo/2/
-excerpt: "How to use an abacus" # 摘要，可不写
+excerpt: "Look into the game Turing Complete" # 摘要，可不写
 author_profile: false # 让作者信息从sidebar消失
 last_modified_at: 2024-12-01T22:00:00+08:00 # 
 toc: true # true, false都可以

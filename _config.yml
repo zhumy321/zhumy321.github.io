@@ -226,7 +226,7 @@ collections: #这里主要是我自己整理的合集，是独立于博客之外
   about-new-energy: # 新能源相关
     output: true
     permalink: /:collection/:path/
-  clock-in-diary: # 打工日记
+  diary-and-clock-in: # 打工日记
     output: true
     permalink: /:collection/:path/
   # recipes: 这是模板自带的原来的例子
@@ -360,10 +360,10 @@ defaults:
   #     comments: true
 
 
-  # _clock-in-diary # 注意这里有_前缀
+  # _diary-and-clock-in # 注意这里有_前缀
   - scope:
       path: ""
-      type: clock-in-diary
+      type: diary-and-clock-in
     values:
       layout: single
       author_profile: true

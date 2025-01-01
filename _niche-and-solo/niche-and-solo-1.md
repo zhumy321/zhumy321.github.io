@@ -1,5 +1,5 @@
 ---
-title:  如何使用算盘 # 
+title: 如何使用算盘 # 
 permalink: /niche-and-solo/1/
 excerpt: "How to use an abacus" # 摘要，可不写
 # author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
@@ -101,3 +101,5 @@ III. 若数字 A × D 不进位，而发现 实首 = 法首 = 积首，即积首
 
 
 ## 4. 算盘除法
+
+

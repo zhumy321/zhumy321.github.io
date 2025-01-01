@@ -1,6 +1,6 @@
 ---
 title: "Clock in Diary 202406"
-permalink: /clock-in-diary/clock-in-diary-1/
+permalink: /diary-and-clock-in/diary-and-clock-in-1/
 excerpt: "---"
 author_profile: false # 则让作者信息从sidebar消失
 last_modified_at: 2024-06-15T11:00:00+08:00 # 可不写，但layout则要写。+8是东八区
@@ -11,8 +11,8 @@ toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true # "Stick" table of contents to the top of a page. true: toc floats. false: toc fixed
 sidebar:
-  title: "打工日记"
-  nav: sidebar-clock-in-diary # 这是在yaml文件里你要找到的那个导航栏的名字
+  title: "Diary and Clock-in"
+  nav: sidebar-diary-and-clock-in # 这是在yaml文件里你要找到的那个导航栏的名字
 words_per_minute: 20 # Reading time
 ---
 
@@ -20,7 +20,7 @@ words_per_minute: 20 # Reading time
 
 gap结束之后要重新开始工作了，加油鸭！
 
-<!-- 添加完成后去navigation.yml文件里面的sidebar-clock-in-diary添加一下这个上班记录的小目录 -->
+<!-- 添加完成后去navigation.yml文件里面的sidebar-diary-and-clock-in添加一下这个上班记录的小目录 -->
 
 
 ## 本月日历

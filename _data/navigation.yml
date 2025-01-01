@@ -77,29 +77,27 @@ sidebar-sample:
       - title: "Child Page D2"
         url: /
 
-sidebar-clock-in-diary:
+sidebar-diary-and-clock-in:
   - title: 2024 
     children:
-      - title: "2024年6月"
-        url: /clock-in-diary/clock-in-diary-1/ 
-      - title: "2024年7月"
-        url: /clock-in-diary/clock-in-diary-2/
-      - title: "2024年8月"
-        url: /clock-in-diary/clock-in-diary-3/
-      # - title: "2024年9月"
-      #   url: /clock-in-diary/clock-in-diary-4/
+      - title: "打工日记2024年6月"
+        url: /diary-and-clock-in/diary-and-clock-in-1/ 
+      - title: "打工日记2024年7月"
+        url: /diary-and-clock-in/diary-and-clock-in-2/
+      - title: "打工日记2024年8月"
+        url: /diary-and-clock-in/diary-and-clock-in-3/
+      - title: "日记2024年9月"
+        url: /diary-and-clock-in/diary-and-clock-in-4/
   # - title: 2025
   #   children:
   #     - title: "2025年1月"
-  #       url: /clock-in-diary/clock-in-diary-1/ 
+  #       url: /diary-and-clock-in/diary-and-clock-in-1/ 
 
 sidebar-about-new-energy:
   - title: 
     children:
       - title: "about-new-energy-1"
         url: /about-new-energy/ESStest-1/
-      # - title: "2024年9月"
-      #   url: /clock-in-diary/clock-in-diary-4/
 
 sidebar-niche-and-solo:
   - title: 
@@ -110,7 +108,8 @@ sidebar-niche-and-solo:
         url: /niche-and-solo/2/
       - title: "如何从图片提取签名"
         url: /niche-and-solo/3/
-
+      - title: "如何用python操作Excel"
+        url: /niche-and-solo/4/
 
 sidebar-circuits-notes:
   - title: 

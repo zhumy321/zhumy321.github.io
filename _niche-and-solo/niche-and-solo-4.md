@@ -1,0 +1,393 @@
+---
+title:  如何用python操作Excel # 不写的话会从文件名自动生成。但标题不宜太长
+permalink: /niche-and-solo/4/
+excerpt: "How to use python to write excel" # 摘要，可不写
+author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
+author_profile: false # 让作者信息从sidebar消失
+last_modified_at: 2024-12-31T23:00:00+08:00 # 可不写，但layout则要写。+8是东八区
+categories: 
+  - 正经的
+tags:
+  - 学习
+toc: false # true, false都可以
+toc_label: "目录" # or left blank
+toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
+toc_sticky: true # "Stick" table of contents to the top of a page. true: toc floats. false: toc fixed
+words_per_minute: 30 # 经我实验，中文则将WPM设置为30为好
+# 英文则设为200
+sidebar:
+  title: "自娱自乐"
+  nav: sidebar-niche-and-solo # 这是在yaml文件里你要找到的那个导航栏的名字
+---
+
+~~~
+# -*- coding: utf-8 -*-
+import xlwings as xw 
+from datetime import datetime 
+import inflect
+
+# PackingListGenerator_v1.0：last changed on 2024.11.12
+# changes: 
+# 1.set formulas embedded.
+# 2.PLPA-L1-10K2 G.W. was updated to 112kG (comparing to the old 120kG)
+# author: Irene Z. @ UZ
+
+
+'''utf-8:识别中文
+导入xlwings：为了和Excel交互
+导入datetime：为了保存的时候有一个动态的时间后缀显示在文件名上
+导入inflect：为了实现程序把阿拉伯数字换成对应的英文单词
+'''
+# ------------------------------------------------------------------------------------
+# UDF函数
+# ------------------------------------------------------------------------------------
+def print_one_raw_of_product_content(data, MARKS_AND_NOS, PRINTING_LINE):
+  # data这个参数就是整行数据如data_plpa_5k1。data[6]是托数
+  # 如果打印的是尾数，data参数就用如data_remainer_XXX
+    temp_marks_and_nos = MARKS_AND_NOS + int(data[6])
+    sheet['A'+str(PRINTING_LINE)].number_format = '@' 
+    sheet['A'+str(PRINTING_LINE)].value = [str(MARKS_AND_NOS+1) + '-' + str(temp_marks_and_nos)]+data
+    temp_printing_line = PRINTING_LINE + 1
+    return(temp_marks_and_nos, temp_printing_line)
+
+def print_reference_list(generated_book_name, reference_sheet_name):
+  # 二维数组存储待填信息。共17行3列。
+  info_to_be_filled = [
+  ['请填写如下内容，默认值为None', '', '提示'],
+  ['UZ联系人email', '', '<-记得填！！！'],
+  ['SOLD TO', '', '客户公司名称'],
+  ['ADD', '', '客户公司地址'],
+  ['TEL', '', '客户联系电话'],
+  ['ATTN', '', '客户收件联系人'],
+  ['DATE', '', '<-用斜杠格式，如：2024/9/29'],
+  ['INV.NO', '', 'Invoice号码'],
+  ['L/C NO', '', '信用证（如有）'],
+  ['ORIGINAL', 'CHINA', '默认为CHINA'],
+  ['请填写货物数量（数值不得为负数），默认为0', '', ],
+  ['L051100-A1', '0', '<-写在左边这列空格'],
+  ['L051100-B', '0', ''],
+  ['L051100-D', '0', ''],
+  ['PLPA-L1-5K1', '0',''],
+  ['PLPA-L1-10K2', '0', ''],
+  ['PLPA-L1-10K2-U', '0', ''],
+  ]
+  for i in range(1,18):
+    reference_list['A'+str(i)].value = info_to_be_filled[i-1]
+  wb.save(generated_book_name)
+  reference_list.api.UsedRange.HorizontalAlignment = -4108  # 已使用区域水平居中
+  reference_list.api.UsedRange.VerticalAlignment = -4108  # 已使用区域垂直居中
+  reference_list.api.UsedRange.RowHeight = 25 # 已使用区域行高25
+  reference_list.api.UsedRange.ColumnWidth = 40 # 已使用区域列宽40
+  reference_list.api.UsedRange.WrapText = True # 已使用区域自动换行
+  reference_list.api.UsedRange.Font.Name = 'Arial'  # 已使用区域的字体为Arial
+  reference_list.api.UsedRange.Font.Size = 12  # 已使用区域的字体大小为12
+  # reference_list.range('B:B').column_width = 40 # 第二列的列宽
+  set_border_range = reference_list.used_range # 加边框
+  for cell in set_border_range: 
+    for i in range(7,12): # 7-12代表上下左右横竖这6种框线
+      cell.api.Borders(i).LineStyle = 1  # 设置样式为实线
+      cell.api.Borders(i).Weight = 1 # 设置粗细
+  # 第1、11行，客户名和地址行再单独处理下
+  reference_list.range('1:1').api.RowHeight = 60
+  reference_list.range('11:11').api.RowHeight = 60
+  reference_list.range('1:1').api.RowHeight = 30
+  reference_list.range('11:11').api.RowHeight = 30
+  reference_list.range('1:1').api.Font.Bold = True # 加粗
+  reference_list.range('11:11').api.Font.Bold = True # 加粗
+  reference_list.range('A1:B1').api.Merge() # 合并
+  reference_list.range('A11:C11').api.Merge() 
+  print('\n\n  ***  现在请填写弹出的Excel的Reference List页面，并Ctrl+S保存（无需关闭Excel）***  \n\n  ***  Ctrl+S保存后在本程序页面输任意键并回车以继续  ***  \n\n')
+  input() 
+  
+# -----------------------------------------------------------------------------------
+# 数据的获取
+# ------------------------------------------------------------------------------------
+# -------------------------
+### 预设变量
+# -------------------------
+uz_contact_email, customer_name, customer_address, customer_phone = '', '', '', ''
+customer_contact_person, invoice_date, invoice_no, letter_of_credit_no = '', '', '', ''
+original = 'CHINA' # 默认就是CHINA
+total_power_lite_a1_b_d = [0,0,0] # L051100-A1,-B,-D的总数量
+total_plpa_5k1 = 0 # PLPA-L1-5K1的总数量
+total_plpa_10k2 = [0,0] # PLPA-L1-10K2、10K2-U的总数量
+# -------------------------
+### 生成reference_list让用户填写
+# -------------------------
+wb = xw.Book() 
+print('\n 程序至少有以下几个限制: \n')
+print(' 1. 最低运行版本：Python3.10.11。\n')
+print(' 2. 为了方便，没有添加自动导入图片的功能，所以箱单左上方没有UZ的Logo。\n')
+print(' 3. 程序上限托数 = 10,000。如果由数据得出托数大于一万，可能会执行中断。\n')
+print(' 4. 每个型号的产品只能单独打印，凑托需手动处理。如2台-A1和3台-B会各自为1托，不会自动凑成包含5个的1托。\n\n')
+print('  ***  程序准备中，请勿操作Excel。 *** \n\n')
+current_time = datetime.now().strftime('%Y-%m-%d_%H-%M-%S') 
+generated_book_name = f'Generated_PackingList_{current_time}.xlsx'
+reference_list = wb.sheets['sheet1'] 
+wb.sheets['Sheet1'].name = 'Reference List'
+print_reference_list(generated_book_name, reference_list)
+# -------------------------
+### 获取用户刚刚填写的信息
+# -------------------------
+for j in range(2,18): # 这些信息是从第2行开始的，所以从第2行开始拿数据
+  match j:
+    case 2: uz_contact_email = reference_list['B'+str(j)].value
+    case 3: customer_name = reference_list['B'+str(j)].value
+    case 4: customer_address = reference_list['B'+str(j)].value
+    case 5: customer_phone = reference_list['B'+str(j)].value
+    case 6: customer_contact_person = reference_list['B'+str(j)].value
+    case 7: invoice_date = reference_list['B'+str(j)].value
+    case 8: invoice_no = reference_list['B'+str(j)].value
+    case 9: letter_of_credit_no = reference_list['B'+str(j)].value
+    case 10: original = reference_list['B'+str(j)].value
+    case 11: pass
+    case 12: total_power_lite_a1_b_d[0] = reference_list['B'+str(j)].value
+    case 13: total_power_lite_a1_b_d[1] = reference_list['B'+str(j)].value
+    case 14: total_power_lite_a1_b_d[2] = reference_list['B'+str(j)].value
+    case 15: total_plpa_5k1 = reference_list['B'+str(j)].value
+    case 16: total_plpa_10k2[0] = reference_list['B'+str(j)].value
+    case 17: total_plpa_10k2[1] = reference_list['B'+str(j)].value
+    case _: pass
+# ------------------------------------------------------------------------------------
+# 数据的处理
+# ------------------------------------------------------------------------------------
+# -------------------------
+### PLPA-L1-5K1
+# -------------------------
+data_plpa_5k1 = []
+data_remainder_plpa_5k1 = []
+pallet_full_plpa_5k1 = int(divmod(total_plpa_5k1, 8)[0]) # 取商. PLPA-L1-5K1的托数
+remainder_plpa_5k1 = int(divmod(total_plpa_5k1, 8)[1]) # 取余数. 多出来要单放1托的台数
+if (total_plpa_5k1 == 0): pass  # 5K1这个产品的数量为0
+elif (pallet_full_plpa_5k1 == 0 and remainder_plpa_5k1 != 0): # 5K1这个产品有1-7台，让托数为1。data_plpa = []
+  pallet_full_plpa_5k1 = 1 # 
+  layers_plpa_5k1 = divmod(remainder_plpa_5k1,2)[0] if (divmod(remainder_plpa_5k1,2)[1]==0) else (divmod(remainder_plpa_5k1,2)[0]+1) # 计算层数
+  data_remainder_plpa_5k1 = ['','','PLPA-L1-5K1', '/', str(remainder_plpa_5k1), str(remainder_plpa_5k1), str(pallet_full_plpa_5k1), '=50*'+str(remainder_plpa_5k1), '=55*'+str(remainder_plpa_5k1)+'+10', '=50*'+str(remainder_plpa_5k1), '=55*'+str(remainder_plpa_5k1)+'+10', '114*76*'+str(int(107-(4-layers_plpa_5k1)*23.7)), '=114*76*'+str(int(107-(4-layers_plpa_5k1)*23.7))+'/1000000*'+str(pallet_full_plpa_5k1)]
+else: # 5K1有8台或8台以上,data_plpa_5k1和data_remainder_plpa_5k1都不再 = []
+  layers_plpa_5k1 = divmod(remainder_plpa_5k1,2)[0] if (divmod(remainder_plpa_5k1,2)[1]==0) else (divmod(remainder_plpa_5k1,2)[0]+1) # 计算层数
+  data_plpa_5k1 = ['','','PLPA-L1-5K1', '/', str(pallet_full_plpa_5k1*8), str(pallet_full_plpa_5k1*8), str(pallet_full_plpa_5k1), '=50*8', '=55*8+10', '=50*8*'+str(pallet_full_plpa_5k1), '=(55*8+10)*'+str(pallet_full_plpa_5k1), '114*76*107', '=114*76*107/1000000*'+str(pallet_full_plpa_5k1)]
+  data_remainder_plpa_5k1 = ['','','PLPA-L1-5K1', '/', str(remainder_plpa_5k1), str(remainder_plpa_5k1), '1', '=50*'+str(remainder_plpa_5k1), '=55*'+str(remainder_plpa_5k1)+'+10', '=50*'+str(remainder_plpa_5k1), '=55*'+str(remainder_plpa_5k1)+'+10', '114*76*'+str(int(107-(4-layers_plpa_5k1)*23.7)), '=114*76*'+str(int(107-(4-layers_plpa_5k1)*23.7))+'/1000000*'+str(pallet_full_plpa_5k1)]
+# -------------------------
+### PLPA-L1-5K1的配件
+# -------------------------
+
+
+# -------------------------
+### PLPA-L1-10K2与10K2-U
+# -------------------------
+pallet_full_plpa_10k2 = [0,0]
+remainder_plpa_10k2 = [0,0]
+data_plpa_10k2 = [[],[]]
+data_remainder_plpa_10k2 = [[],[]] # 不知道会不会有余数，先给个变量data_remainder
+for i in range (0,2): 
+  pallet_full_plpa_10k2[i] = int(divmod(total_plpa_10k2[i], 6)[0]) # 取商. PLPA-L1-10k2的托数
+  remainder_plpa_10k2[i] = int(divmod(total_plpa_10k2[i], 6)[1]) # 取余数. 多出来要单放1托的台数
+  if (total_plpa_10k2[i] == 0): pass # 10K或10K-U数量为0，不赋值，data_plpa和remainder_plpa都依然 = [[],[]]
+  elif (pallet_full_plpa_10k2[i] == 0 and remainder_plpa_10k2[i] != 0):  # 数量在6以下(1-5个)，算作1托，data_plpa没值，data_remainder有值
+    pallet_full_plpa_10k2[i] = 1 
+    # 下方式子写法是：data_remainder_plpa_10k2[i] = [欧版数据] if(i == 0) else ([美版数据])
+    data_remainder_plpa_10k2[i] = ['','','PLPA-L1-10K2', '/', str(remainder_plpa_10k2[i]), str(remainder_plpa_10k2[i]), str(pallet_full_plpa_10k2[i]), '=94*'+str(remainder_plpa_10k2[i]), '=112*'+str(remainder_plpa_10k2[i]), '=94*'+str(remainder_plpa_10k2[i]), '=112*'+str(remainder_plpa_10k2[i]), '92*68*'+str(remainder_plpa_10k2[i]*34.5), '=92*68*'+str(int(remainder_plpa_10k2[i]*34.5))+'/1000000*'+str(pallet_full_plpa_10k2[i])]if(i==0)else(
+      ['','','PLPA-L1-10K2-U', '/', str(remainder_plpa_10k2[i]), str(remainder_plpa_10k2[i]), str(pallet_full_plpa_10k2[i]), '=115*'+str(remainder_plpa_10k2[i]), '=130*'+str(remainder_plpa_10k2[i]), '=115*'+str(remainder_plpa_10k2[i]), '=130*'+str(remainder_plpa_10k2[i]), '108.7*66.8*'+str(remainder_plpa_10k2[i]*34.5), '=108.7*66.8*'+str(remainder_plpa_10k2[i]*34.5/1000000*pallet_full_plpa_10k2[i])])
+  else: # 数量>=6，data_plpa和data_remainder有对应值 = [[欧版数据][美版数据]]
+    data_plpa_10k2[i] = ['','','PLPA-L1-10K2', '/', str(pallet_full_plpa_10k2[i]*6), str(pallet_full_plpa_10k2[i]*6), str(pallet_full_plpa_10k2[i]), '=94*6', '=112*6', '=94*6*'+str(pallet_full_plpa_10k2[i]), '=112*6*'+str(pallet_full_plpa_10k2[i]), '92*68*207', '=92*68*207/1000000*'+str(pallet_full_plpa_10k2[i])]if(i==0)else(
+      ['','','PLPA-L1-10K2-U', '/', str(pallet_full_plpa_10k2[i]*6), str(pallet_full_plpa_10k2[i]*6), str(pallet_full_plpa_10k2[i]), '=115*6', '=130*6', '=115*6*'+str(pallet_full_plpa_10k2[i]), '=130*6*'+str(pallet_full_plpa_10k2[i]), '108.7*66.8*207', '=108.7*66.8*207/1000000*'+str(pallet_full_plpa_10k2[i])])
+    data_remainder_plpa_10k2[i] = ['','','PLPA-L1-10K2', '/', str(remainder_plpa_10k2[i]), str(remainder_plpa_10k2[i]), str('1'), '=94*'+str(remainder_plpa_10k2[i]), '=112*'+str(remainder_plpa_10k2[i]), '=94*'+str(remainder_plpa_10k2[i])+'*1', '=112*'+str(remainder_plpa_10k2[i]), '92*68*'+str(int(remainder_plpa_10k2[i]*34.5)), '=92*68*'+str(int(remainder_plpa_10k2[i]*34.5))+'/1000000*1']if(i==0)else(
+      ['','','PLPA-L1-10K2-U', '/', str(remainder_plpa_10k2[i]), str(remainder_plpa_10k2[i]), str('1'), '=115*'+str(remainder_plpa_10k2[i]), '=130*'+str(remainder_plpa_10k2[i]), '=115*'+str(remainder_plpa_10k2[i]*1), '=130*'+str(remainder_plpa_10k2[i]*1), '108.7*66.8*'+str(int(remainder_plpa_10k2[i]*34.5)), '=108.7*66.8*'+str(int(remainder_plpa_10k2[i]*34.5))+'/1000000*1'])
+# -------------------------
+### PLPA-L1-10k2与10K2-U的配件
+# -------------------------
+
+
+
+# -------------------------
+### Power Lite L051100-A1,-B,-D的处理
+# -------------------------
+name_pl_a1_b_d = ['-A1','-B','-D'] # 因为这三个型号重量体积数据都是一样的，所以区分名字就好，不用像10K2一样打印不同行
+pallet_full_pl_a1_b_d = [0,0,0]
+remainder_pl_a1_b_d = [0,0,0]
+layers_pl_a1_b_d = [0,0,0]
+data_pl_a1_b_d = [[],[],[]]
+data_remainder_pl_a1_b_d = [[],[],[]]
+for i in range(0,3):
+  pallet_full_pl_a1_b_d[i] = int(divmod(total_power_lite_a1_b_d[i], 8)[0]) # 取商. Power Lite特定型号的托数
+  remainder_pl_a1_b_d[i]  = int(divmod(total_power_lite_a1_b_d[i], 8)[1]) # 取余数. 每个型号多出来要单放1托的台数
+  if (total_power_lite_a1_b_d[i] == 0): pass  # 数量为0，不赋值，data_pl_a1_b_d和data_remainder_pl_a1_b_d都依然 = [[],[],[]]
+  elif (pallet_full_pl_a1_b_d[i] == 0 and remainder_pl_a1_b_d[i] != 0): # 数量8以下(1-7)，让托数为1,data没值=[]，data_remainder有值
+    pallet_full_pl_a1_b_d[i] = 1 # 托数为1，但它作为余数托需要计算层数
+    layers_pl_a1_b_d[i] = divmod(remainder_pl_a1_b_d[i],2)[0] if (divmod(remainder_pl_a1_b_d[i],2)[1]==0) else (divmod(remainder_pl_a1_b_d[i],2)[0]+1) # 计算层数
+    data_remainder_pl_a1_b_d[i] = ['','','L051100'+str(name_pl_a1_b_d[i]), 'Battery Pack', str(remainder_pl_a1_b_d[i]), str(remainder_pl_a1_b_d[i]), str(pallet_full_pl_a1_b_d[i]), '=45*'+str(remainder_pl_a1_b_d[i]), '=48*'+str(remainder_pl_a1_b_d[i])+'+16', '=45*'+str(remainder_pl_a1_b_d[i]), '=48*'+str(remainder_pl_a1_b_d[i])+'+16', '114*71*'+str(int(106-(4-layers_pl_a1_b_d[i])*22.6)), '=114*71*'+str(int(106-(4-layers_pl_a1_b_d[i])*22.6))+'/1000000*'+str(pallet_full_pl_a1_b_d[i])]
+  else: # 数量>=8，data_和data_remainder都有对应值。只有余数托需要计算层数
+    layers_pl_a1_b_d[i] = divmod(remainder_pl_a1_b_d[i],2)[0] if (divmod(remainder_pl_a1_b_d[i],2)[1]==0) else (divmod(remainder_pl_a1_b_d[i],2)[0]+1) # 计算层数
+    data_pl_a1_b_d[i] = ['','','L051100'+str(name_pl_a1_b_d[i]), 'Battery Pack', str(pallet_full_pl_a1_b_d[i]*8), str(pallet_full_pl_a1_b_d[i]*8), str(pallet_full_pl_a1_b_d[i]), '=45*8', '=48*8+16', '=(45*8)*'+str(pallet_full_pl_a1_b_d[i]), '=(48*8+16)*'+str(pallet_full_pl_a1_b_d[i]), '114*71*106', '=114*71*106/1000000*'+str(pallet_full_pl_a1_b_d[i])]
+    data_remainder_pl_a1_b_d[i] = ['','','L051100'+str(name_pl_a1_b_d[i]), 'Battery Pack', str(remainder_pl_a1_b_d[i]), str(remainder_pl_a1_b_d[i]), str('1'), '=45*'+str(remainder_pl_a1_b_d[i]), '=48*'+str(remainder_pl_a1_b_d[i])+'+16', '=45*'+str(remainder_pl_a1_b_d[i]), '=48*'+str(remainder_pl_a1_b_d[i])+'+16', '114*71*'+str(int(106-(4-layers_pl_a1_b_d[i])*22.6)), '=114*71*'+str(int(106-(4-layers_pl_a1_b_d[i])*22.6))+'/1000000*'+str(pallet_full_pl_a1_b_d[i])]
+# -------------------------
+### Power Lite L051100 - A1, B, D的尾数及配件的处理
+# -------------------------
+
+
+
+# ------------------------------------------------------------------------------------
+## 生成新箱单Excel文件的表头
+# ------------------------------------------------------------------------------------
+# wb = xw.Book() # this will open a new work book ≈ click on Excel，但test用下面这个
+# wb = xw.Book(r'C:\\Users\\irenezhu\\irene-ongoing\\py-programs\\PackingListGenerator\\packing-list.xlsx')  
+sheet = wb.sheets.add('Packing List') # 在同一个Excel工作簿里，继Reference List之后再生成一个Packing List的工作表
+# A1-A6是UZ信息
+sheet['A1'].value = ['UZ ENERGY LIMITED', '', '', '', '', '', '', '', '', '', '', '']
+sheet['A2'].value = ['Address:Rooms 06, 13A/F., South Tower, World Finance Centre, Harbour City, 17 Canton Road, Tsim Sha Tsui, Kowloon, Hong Kong', '', '', '', '', '', '', '', '', '', '', '']
+sheet['A3'].value = ['Tel: (00852)2206 0092  Fax: (00852)3003 0133', '', '', '', '', '', '', '', '', '', '', '']
+sheet['A4'].value = ['Web:  www.uzenergy.com         E-mail: ' + str(uz_contact_email), '', '', '', '', '', '', '', '', '', '', '']
+sheet['A5'].value = ['装  箱  单', '', '', '', '', '', '', '', '', '', '', '']
+sheet['A6'].value = ['PACKING LIST', '', '', '', '', '', '', '', '', '', '', '']
+# A7-A10为客户信息
+sheet['A7'].value = ['SOLD TO:', '', str(customer_name), '', '', '', '', '', '', '', 'DATE:', str(invoice_date)]
+sheet['A8'].value = ['ADD:', '', str(customer_address), '', '', '', '', '', '', '', 'INV.NO:', str(invoice_no)]
+sheet['A9'].value = ['TEL:', '', str(customer_phone), '', '', '', '', '', '', '', 'L/C.NO:', str(letter_of_credit_no)]
+sheet['A10'].value = ['ATTN:', '', str(customer_contact_person), '', '', '', '', '', '', '',  'ORIGINAL:', str(original)]
+# A12是箱单表头
+sheet['A12'].value = ['MARKS\n& NOS', '', '', 'ITEM NO.', 'DESCRIPTION', 'QUANTITY\n(SETS)', 'CARTONS', 'PACKAGES\n(PALLETS)', 'N.W. Per\nPallet (KGS)', 'G.W. Per\nPallet (KGS)',  'Total N.W.\n(KGS)', 'Total G.W.\n(KGS)', 'MEAS(CM)', 'VOL(M3)']
+# 注意，data_...[]的长度比sheet['A12']少一个元素
+
+# ------------------------------------------------------------------------------------
+## 打印箱单的主要内容 
+# ------------------------------------------------------------------------------------
+PRINTING_LINE = 13 # 这是在13行及以后引导整个表格打印顺序的变量。A13就是初始第一托的内容
+MARKS_AND_NOS = 0 # 这是在打印货物数据时更新pallet序号变化的变量，每次打完一行都会自动更新
+# -------------------------
+### 打印5K1的箱单
+# -------------------------
+print('\n\n 正在查看PLPA-L1-5K1的数据...\n')
+if data_plpa_5k1 == []: pass# 没有值就不打印
+else: MARKS_AND_NOS, PRINTING_LINE = print_one_raw_of_product_content(data_plpa_5k1, MARKS_AND_NOS, PRINTING_LINE)
+if data_remainder_plpa_5k1 == []: pass# 没有值就不打印
+else: 
+  match remainder_plpa_5k1:
+    case 0: pass
+    case _: MARKS_AND_NOS, PRINTING_LINE = print_one_raw_of_product_content(data_remainder_plpa_5k1, MARKS_AND_NOS, PRINTING_LINE)
+# -------------------------
+### 打印10K2和10K2-U的箱单
+# -------------------------
+print(' 正在查看PLPA-L1-10K2与10K2-U的数据...\n')
+for i in range(0,2): # i=0时处理欧版，i=1时处理美版
+  if data_plpa_10k2[i] == []:  pass # 没有值就不打印
+  else: # 打印data_plpa_10k2[i]
+    MARKS_AND_NOS, PRINTING_LINE = print_one_raw_of_product_content(data_plpa_10k2[i], MARKS_AND_NOS, PRINTING_LINE)
+  if data_remainder_plpa_10k2[i] == []: pass 
+  else: 
+    match remainder_plpa_10k2[i]: # 有值，但余数为0就不打印
+      case 0: pass 
+      case _: MARKS_AND_NOS, PRINTING_LINE = print_one_raw_of_product_content(data_remainder_plpa_10k2[i], MARKS_AND_NOS, PRINTING_LINE)
+# -------------------------
+### 打印L051100-A1、-B、-D的箱单
+# -------------------------
+print(' 正在查看L051100-A1、-B、-D的数据...\n')
+for i in range(0,3): # i=0时处理-A1，i=1时处理-B，i=2时处理-D
+  if data_pl_a1_b_d[i] == []: pass # 没有值就不打印
+  else: # 打印data_pl_a1_b_d[i]
+    MARKS_AND_NOS, PRINTING_LINE = print_one_raw_of_product_content(data_pl_a1_b_d[i], MARKS_AND_NOS, PRINTING_LINE)
+  if data_remainder_pl_a1_b_d[i] == []: pass # 没有值就不打印
+  else: 
+    match remainder_pl_a1_b_d[i]: # 有值，但余数为0就不打印
+      case 0: pass
+      case _: MARKS_AND_NOS, PRINTING_LINE = print_one_raw_of_product_content(data_remainder_pl_a1_b_d[i], MARKS_AND_NOS, PRINTING_LINE)
+# ----------------------
+## 打印Total行
+# ----------------------
+sheet['A'+str(PRINTING_LINE)].value = ['Total']
+sheet.range('F'+str(PRINTING_LINE)).formula = '=sum(F13:F'+str(PRINTING_LINE-1)
+sheet.range('G'+str(PRINTING_LINE)).formula = '=sum(G13:G'+str(PRINTING_LINE-1)
+sheet.range('H'+str(PRINTING_LINE)).formula = '=sum(H13:H'+str(PRINTING_LINE-1)
+sheet.range('K'+str(PRINTING_LINE)).formula = '=sum(K13:K'+str(PRINTING_LINE-1)
+sheet.range('L'+str(PRINTING_LINE)).formula = '=sum(L13:L'+str(PRINTING_LINE-1)
+sheet.range('N'+str(PRINTING_LINE)).formula = '=sum(N13:N'+str(PRINTING_LINE-1)
+# ----------------------
+## 打印最下方的"TOTAL PACKAGE IN XXX ONLY."行
+# ----------------------
+# 生成从1到10000的英文单词，并转为大写单词
+words_0_to_10000 = tuple(inflect.engine().number_to_words(i) for i in range(0, 10001))
+total_pallet = int(sheet.range('H'+str(PRINTING_LINE)).value) # 这个箱单内容的托盘总数
+upper_number = words_0_to_10000[total_pallet].upper() # 把托盘总数的阿拉伯数字转换成大写单词
+PRINTING_LINE = PRINTING_LINE + 1 # 更新PRINTING_LINE的值到"TOTAL PACKAGE IN XXX ONLY."行准备打印
+sheet.range('A'+str(PRINTING_LINE)).value = 'TOTAL PACKAGE IN '+ upper_number + ' ONLY.'
+
+
+# ------------------------------------------------------------------------------------
+## 打印结束后调整Excel的整体格式
+# -----------------------------------------------------------------------------------
+print(' 打印已完成,正在调整表格格式...\n')
+# ----------------------
+## 内容居中，自动换行
+# ----------------------
+sheet.api.UsedRange.HorizontalAlignment = -4108  # xlCenter 水平居中
+sheet.range(str(PRINTING_LINE)+':'+str(PRINTING_LINE)).api.HorizontalAlignment = -4131  # 这行左对齐
+sheet.range('7:10').api.HorizontalAlignment = -4131  # 客户信息也是对齐
+sheet.api.UsedRange.VerticalAlignment = -4108  # xlCenter 垂直居中
+sheet.range('12:'+str(PRINTING_LINE-1)).api.WrapText = True # 12行到Total行自动换行
+sheet.range('E:E').api.WrapText = True # 第E列自动换行
+# ----------------------
+## 调整字体的大小、加粗
+# ----------------------
+sheet.api.UsedRange.Font.Name = 'Arial'  # 已使用区域的字体为Arial
+sheet.api.UsedRange.Font.Size = 10  # 已使用区域的字体大小为10
+sheet.range('1:1').api.Font.Size = 16  # UZ信息有几处字体大小是14的
+sheet.range('5:6').api.Font.Size = 14  # UZ信息有几处字体大小是14的
+sheet.range('1:1').api.Font.Bold = True # UZ信息有几处字体是加粗的
+sheet.range('5:6').api.Font.Bold = True # UZ信息有几处字体是加粗的
+sheet.range('12:12').api.Font.Bold = True # 12行表头区域加粗
+sheet.range('E:E').api.Font.Bold = True # E列Description字体加粗
+sheet.range(str(PRINTING_LINE-1)+':'+str(PRINTING_LINE-1)).api.Font.Bold = True # Total行的字体加粗
+# ----------------------
+## 合并单元格
+# ----------------------
+for i in range(1, 7): # 合并UZ信息部分的单元格
+  sheet.range(f'A{i}:N{i}').api.Merge() 
+sheet.range('C9:E9').api.Merge() # 电话号码的格子要大点
+sheet.range('L8:N8').api.Merge() # Invoice的格子要大点
+sheet.range('L9:N9').api.Merge() # 信用证的格子要大点
+for j in range(12, int(PRINTING_LINE+1)): # 合并12行至Total行的A-C单元格。这里要注意PRINTING_LINE的值此时应是整个表格内容的最后一行
+  sheet.range(f'A{j}:C{j}').api.Merge() 
+sheet.range('A'+str(PRINTING_LINE)+':J'+str(PRINTING_LINE)).api.Merge() # 合并最后一行
+# ----------------------
+## 从12行到Total行的所有边框
+# ----------------------
+set_border_range = sheet.range('A12:N'+str(PRINTING_LINE-1))
+for cell in set_border_range:
+  for i in range(7,12): # 7-12代表上下左右横竖这6种框线
+    cell.api.Borders(i).LineStyle = 1  # 设置样式为实线
+    cell.api.Borders(i).Weight = 2# 设置粗细
+# ----------------------
+## 调整行高与列宽、页面缩放比例
+# ----------------------
+sheet.api.UsedRange.RowHeight = 30  # 将所有已使用区域的行高设为30
+sheet.range('1:11').api.RowHeight = 20 # 再单独更改UZ和客户信息的行高，比30矮一点
+sheet.range('1:1').api.RowHeight = 25 # 
+sheet.range(str(PRINTING_LINE)+':'+str(PRINTING_LINE)).api.RowHeight = 25 # "TOTAL PACKAGE IN XXX ONLY."行也矮一点
+sheet.range('A:A').column_width = 9
+sheet.range('B:B').column_width = 1
+sheet.range('C:C').column_width = 1
+sheet.range('D:N').column_width = 13
+sheet.range('E:L').column_width = 12
+sheet.range('M:M').column_width = 14
+sheet.api.PageSetup.Zoom = 80 # 设置缩放比例为80%，测试时这个值比较适合导pdf
+sheet.api.PageSetup.Orientation = 2  # 设置纸张方向为横向。纵向的话就=1
+# ----------------------
+## 调整数据格式，日期与文本等
+# ----------------------
+sheet.range('C9').api.NumberFormat = '0' # 这里是电话号码
+sheet.range('L7').api.NumberFormat = 'dd-mmm-yyyy'# 这里是日期
+sheet.range('L8').number_format = '0' # 文本
+sheet.range('L9').number_format = '0' # 文本
+# 参考列表部分的格式
+# ---------------------------------------------------------------------
+## Excel的保存与退出
+# ---------------------------------------------------------------------
+wb.sheets['Reference List'].delete() # 删除用户刚刚填写的Reference List表格
+wb.save()
+print('\n  ***  已删除您刚才填写的Reference List，文件已保存为: '+generated_book_name+'  ***  \n\n')
+print('\n  ***  输入任意键并回车，或鼠标点击窗口右上角叉号以退出程序  ***\n\n\n')
+input()
+wb.close()
+# ------------------------------------------------------------------------------------
+##                                  END  OF  PROGRAM                                  
+# ------------------------------------------------------------------------------------
+~~~

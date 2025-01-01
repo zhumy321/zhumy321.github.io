@@ -1,53 +1,34 @@
 ---
-# examples go and see https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-# gif的动图也是可以添加的哈
-
 title:  火车来回看牙记 # 不写的话会从文件名自动生成。但标题不宜太长
 excerpt: "" # 摘要，可不写
 author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
-
-# header: # 这张图会出现在文章页面的上方而且很大
-#   image: /assets/images/img_20220803_221239.jpg
-#   caption: Photo by the author # 图片水印，如"Photo credit: [**Unsplash**](https://unsplash.com)"
-
-# header也可这么写：
-# header:
-  # teaser: "unsplash-gallery-image-2-th.jpg"
-
 last_modified_at: 2024-08-01T19:00:02+08:00 # 可不写，但layout则要写。+8是东八区
 categories: 
-  - Jekyll
+  - 回忆录
 tags:
-  - edge case
+  - 流水账
 toc: true # true, false都可以
 toc_label: "目录" # or left blank
 toc_icon: "cog" # null or heart or cag, anyway corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true # "Stick" table of contents to the top of a page. true: toc floats. false: toc fixed
-# link: https://github.com # 感觉不太对，这个link应该出现在超链接部分的引用中，但是试验后发现会变成文章标题的url，所以注释掉了
-
-# yml文件values的默认设置如下，可以重新覆盖。图表上是可在https://fontawesome.com/start找
-# layout: single
-# author_profile: true # if false 则让作者信息从sidebar消失
-# read_time: true
-# comments: false
-# share: true
-# related: true
-# show_date: true # true, false (default) 
-# 以上都可以在post的此处覆盖
-
 words_per_minute: 30 # 经我实验，中文则将WPM设置为30为好
 # 英文则设为200
-
 ---
 
 我只买到无座票。
 
 这个给我让座的老哥，穿着一件白色Tshirt，背后写着红色的LEO和黑色的大字“狮子”。平常人“摸不着头脑”的时候爱摸的那个脑袋上的位置，两边都有一点秃。
+
 五点半发车，差不多八点钟的时候，他起来面色严肃地跟那两个小女孩和她们的家长说，“你们能不能安静一点，吵了四五个小时了”，然后坐回位置，把头靠在桌子边缘的手臂上，好像是继续睡了。
+
 我没想到他会给我让座。快十点了才到路上的第二个站，原本四个小时的车程，现在五个小时过去了，路程才过半。他跟我说“你坐吧”。我说不用不用，你坐。他又说，你坐吧，我想站会。我：“哦，好，好，谢谢你，你一会要坐的话跟我说哦”。然后他就走了，去了隔壁车厢。
+
 终于坐下了，坐下就可以不用看电子书了，之前一直举着手机好累啊。今天带的是艾丽丝门罗的《快乐影子之舞》。过了一阵子这老哥回来了，我起身然后把位子还给他，他有点欲言又止，但是我催他：你坐吧，谢谢啊。他于是坐下了，掏出手机看。
+
 我把书搭火车座位的靠背上继续看。乘务员刚好路过的，拍了拍我：小姑娘不要站在这了，过去7号车厢有空位了。啊，哦好，谢谢叔叔。虽然我有点疑惑，乘务员是怎么看出我是姑娘的，因为我戴着学校logo的鸭舌帽和口罩，一般别人见了我都是喊帅哥，然后我再解释我是女生的。不过疑惑了几秒钟我就没管了，开始从所在的2号车厢往7号走，心里大喜：大爷我这五个钟头站得可是腿都软了啊！走没多远我又觉得还是应该回来跟这老哥道个谢，于是又折返，回到刚刚的位置，拿手机的手拍了拍他肩膀，说“老哥谢谢你啊”，他一回头有点惊讶：“哦不用不用”，我：我走啦拜拜，谢谢。然后我走到3号车厢就找到了空座。
+
 又过了半个钟头，到了XX站停留了一会。3号车厢的乘务员应该是位女性，听声音比较尖比较细，喊了好多遍“XX到了啊还有没有下的！XX要开车了啊！”，“要下的快点下，XX马上要开车了啊！”，本来没有人应，可突然有个男声：“赶快开赶快开！”，把我们都逗笑了。
+
 这列火车仿佛是听见了我们的心声似的，很快就发车了。3号车厢的乘客现在零零散散，每个人都拥有着四个座位以上的领地。我听到后面大概一两排的距离内，有人在放歌听着，是周杰伦的稻香。斜对面的一个老哥把座位的布撩起来，把对面的座位用来搭腿。
 
 老火车就有这种魅力，我称之为“生活感”。和任何一个人说话都是自然而然的，有一种真实的人和人交往的感觉。。。。。所以我一般只有赶时间的时候坐高铁，其他时候更愿意选普通火车。

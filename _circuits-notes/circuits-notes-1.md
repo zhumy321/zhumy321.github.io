@@ -19,3 +19,6 @@ sidebar:
 ---
 
 Ready to add this column.
+
+
+也打算加上一些强电相关的，接触器什么的，文章

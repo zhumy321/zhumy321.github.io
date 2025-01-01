@@ -1,6 +1,6 @@
 ---
 title:  Clock in Diary 202408 # 不写的话会从文件名自动生成。但标题不宜太长
-permalink: /clock-in-diary/clock-in-diary-3/
+permalink: /diary-and-clock-in/diary-and-clock-in-3/
 excerpt: "" # 摘要
 author_profile: false # 则让作者信息从sidebar消失
 last_modified_at: 2024-08-18T17:32:00+08:00 # 可不写，但layout则要写。+8是东八区
@@ -12,8 +12,8 @@ toc_sticky: true # "Stick" table of contents to the top of a page. true: toc flo
 # link: https://github.com # 感觉不太对，这个link应该出现在超链接部分的引用中，但是试验后发现会变成文章标题的url，所以注释掉了
 words_per_minute: 20
 sidebar:
-  title: "打工日记"
-  nav: sidebar-clock-in-diary # 这是在yaml文件里你要找到的那个导航栏的名字
+  title: "Diary and Clock-in"
+  nav: sidebar-diary-and-clock-in # 这是在yaml文件里你要找到的那个导航栏的名字
 ---
 
 
