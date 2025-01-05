@@ -223,15 +223,6 @@ collections: #这里主要是我自己整理的合集，是独立于博客之外
 #   docs:
 #     output: true
     # permalink: /:collection/:path/
-  about-new-energy: # 新能源相关
-    output: true
-    permalink: /:collection/:path/
-  diary-and-clock-in: # 打工日记
-    output: true
-    permalink: /:collection/:path/
-  # recipes: 这是模板自带的原来的例子
-  #   output: true
-  #   permalink: /:collection/:path/
   niche-and-solo:
     output: true
     permalink: /:collection/:path/
@@ -241,7 +232,15 @@ collections: #这里主要是我自己整理的合集，是独立于博客之外
   math-notes:
     output: true
     permalink: /:collection/:path/
-
+  diary-and-clock-in: # 打工日记
+    output: true
+    permalink: /:collection/:path/
+  # recipes: 这是模板自带的原来的例子
+  #   output: true
+  #   permalink: /:collection/:path/
+  about-new-energy: # 新能源相关
+    output: true
+    permalink: /:collection/:path/
 
 # Sass/SCSS
 sass:

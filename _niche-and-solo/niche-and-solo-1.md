@@ -34,10 +34,111 @@ sidebar:
 
 <!-- 框、梁、档、珠四个基本部分组成。改进后的算盘又增加了清盘器、计位点和垫脚 -->
 
-## 2. 算盘加减法
+## 2. 加法
+
+先看一下加法口决
+
+![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Snipaste_2025-01-05_08-12-12.png).
+
+口决网上很好找，都大差不差，如[某度](https://baike.baidu.com/item/%E7%8F%A0%E7%AE%97%E5%8F%A3%E8%AF%80/4066897)
 
 
-## 3. 算盘乘法
+### 2.1 直加（不进位也不用随上珠变化下珠）
+
+直加是最简单的，口决也就是“N上N”：
+
+第一个N：指加数，如你要计算 1 + 7，那N在这里就是7。
+
+“上”：指把算珠拨成靠梁的状态
+
+第二个N：指要拨动的珠子的个数。
+
+如这里，要计算 1 + 7 = 8，步骤就是：
+
+1. 将被加数1先拨在算盘上。![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250105_085322.jpg)
+
+2. 往靠梁方向拨动7个珠子![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250105_085327.jpg)
+
+
+再比如，要计算 4 + 5 = 9，步骤就是：
+
+1. 将被加数4先拨在算盘上。![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250105_085331.jpg)
+
+2. 往靠梁方向拨动1个上珠（上珠代表5）![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250105_085335.jpg)
+
+
+### 2.2 满五加（不进位但需上下珠一起变化）
+
+这里只有**四**种情况，分别是一下五去四，二下五去三，三下五去二（这就是这句谚语的出处），四下五去一。
+
+把这句口决变成公式的话，就是(N)下五去(5-N)，
+
+第一个N：指加数，如你要计算 3 + 4，那N在这里就是4。
+
+下五：指要把一个代表5的上珠拨到梁上。
+
+去(5-N)：指原来在梁上的下珠，要去掉(5-N)个。
+
+如这里，要计算 3 + 4 = 7，步骤就是：
+
+1. 将被加数3先拨在算盘上（同时要反应过来，下珠为3的情况下，只要加数 ＞ 1，就会进入满五加的状态，不要用错口决了），记得加数是 4 => 口决使用：四下五去一![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250105_090309.jpg)
+
+2. 拨一个上珠到梁上。（下五）![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250105_090342.jpg)
+
+3. 去掉原在梁上的下珠中的2个（去一）![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250105_090600.jpg)
+
+
+### 2.3 进十加（进位但不用上珠）
+
+这里有**九**种情况，把这些口决变成公式的话，就是(N)去(10-N)进一，
+
+第一个N：指加数，如你要计算 4 + 7，那N在这里就是7。
+
+去(10-N)：指要把现有的算珠去掉（10-n）个
+
+进一：指要在现在用的那一档的左边那一档加一
+
+如这里，要计算 4 + 7 = 11，步骤就是：
+
+1. 将被加数4先拨在算盘上（同时要反应过来，下珠为4的情况下，只要9 ≥ 加数 ≥ 6，就会进入进十加的状态，不要用错口决了），记得加数是 7 => 口决使用：七去三进一![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250105_091751.jpg)
+
+
+2. 去掉梁上的三个下珠。（去三）![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250105_091756.jpg)
+
+3. 在当前档的左边那一档加一（进一）![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250105_091800.jpg)
+
+### 2.4 破五进十加（既进位又要用上珠）
+
+
+这里也只有**四**种情况，分别是六上一去五进一，七上二去五进一，八上三去五进一，九上四去五进一。
+
+
+把这句口决变成公式的话，就是(N)上(N-5)去五进一，
+
+第一个N：指加数，如你要计算 6 + 8，那N在这里就是8。
+
+上(N-5)：指要把(N-5)个下珠拨到梁上。
+
+去五进一：指去掉一个原来在梁上的下珠，并在现在用的那一档的左边那一档加一。
+
+如这里，要计算 6 + 8 = 14，步骤就是：
+
+1. 将被加数6先拨在算盘上（同时要反应过来，下珠为6的情况下，只要8 ≥ 加数 ≥ 6，就会进入破五进十加的状态，不要用错口决了），记得加数是 8 => 口决使用：八上三去五进一![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250105_092604.jpg)
+
+2. 拨三个下珠到梁上。（上三）![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250105_092932.jpg)
+
+
+3. 去掉一个上珠（去五）![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250105_092936.jpg)
+
+4. 在当前档的左边那一档加一（进一）![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250105_092940.jpg)
+
+
+### 3. 减法
+
+其实减法就是加法的逆运算，口决也是很类似的。![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Snipaste_2025-01-05_08-17-55.png)
+
+
+## 4. 算盘乘法
 
 **学算盘算乘法前首先确保自己会背九九乘法表。**在这个前提下，可以用来运算乘法的方式有好几种，我只学了两种。其中，又觉得3.1这种比较方便。但不管是哪一种，都要先定位。定位的方法是：
 
@@ -66,13 +167,38 @@ III. 若数字 A × D 不进位，而发现 实首 = 法首 = 积首，即积首
 如若 ABC × DEF = GHIJKL 对应 123 × 123 = 15129, 发现 积首 G = A = D，即 1 = 1 = 1 ，那么此时比较次高位 B、E与H。此处 B × E = 2 × 2 = 4，不进位，那么此时的积15129的次高位H为5， H = 5 同时满足H ≥ B 且 H ≥ E 即 H ≥ 2 且 H ≥ 2。积15129的位数等于 m + n - 1 = 5
 
 
-### 3.1 空盘前乘法
+### 4.1 空盘前乘法
+
+知道如何定位之后就可以开始算乘法了。
+
+空盘就是，乘数（实数）和被乘数（法数）都不用放在算盘上，算盘上只放你口算出来的得数，所以这也就要求要自己把这两个数都记住，或者要眼睛看着实数，默记法数。
+
+如若 ABC × DEF 对应 183 × 825，假设A为左一档。
+
+空盘：
+
+![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250104_165638_.jpg)
+
+1. 看着ABC，默记DEF => 看着183，默记825。用 D × A => 一八零八，左一档为零，左二档为八；![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250104_165647_com.jpg)
+
+2. 用 D × B => 八八六十四，左二档原来为八，现在加六为四，且左一档变为一。同时，左三档为四；![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250104_165658_.jpg)
+
+3. 用 D × C => 三八二十四，左三档原来为四，现在加二为六，同时，左四档变为四；![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250104_165710_.jpg)
 
 
+4. 现在到E了。 看着ABC，默记DEF => 看着183，默记825。用 E × A => 一二零二，左二档加零，也就是不变，还是第2.中得到的四；左三档原为3.中得到的六，现在加二变为八；![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250104_165719_.jpg)
 
+5. 用 E × B => 二八一十六，左三档加一，也就是九；左四档原为3.中的四，现在加六变为零，同时进一，就是刚刚已经为九的左三档再加一，现在又要进位了，左三档变成零，左二档加一变成五；![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250104_165732_.jpg)
 
+6. 以此类推，E × C；![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250104_165743_.jpg)
 
-### 3.2 破头后乘法
+7. 然后F × A，F × B，F × C。最后得到 183 × 825 = 150975。![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250104_165803_.jpg)
+![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250104_165812_.jpg)
+![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Screenshot_20250104_165817_.jpg)
+
+### 4.2 破头后乘法
+
+这个是要把被乘数放在算盘上，然后默记乘数的。
 
 注意乘法口诀中的比如 1 × 6 = 6，我们在口算时可以背作一六得六，但是在用算盘时则要注意位一六**零六**，下面例子会体现这个用法规则。
 
@@ -100,6 +226,6 @@ III. 若数字 A × D 不进位，而发现 实首 = 法首 = 积首，即积首
 
 
 
-## 4. 算盘除法
+## 5. 算盘除法
 
 
