@@ -16,44 +16,47 @@ sidebar:
 
 ## 基础逻辑
 
-### 原力觉醒
+### 1 原力觉醒
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-1-Begin.png)
 
-### 与非门
+### 2 与非门
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-2-NAND.png)
 
-### 非门
+### 3 非门
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-3-NOT.png)
 
-### 与门
+### 4-1 与门
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-4-1-AND.png)
 
-### 或非门
+### 4-2 或非门
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-4-2-NOR.png)
 
-### 或门
+### 4-3 或门
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-4-3-OR.png)
 
-### 高电平
+### 5 高电平
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-5-Always-high.png)
 
-### 第二刻
+### 6 第二刻
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-6-Second-second.png)
 
-
-### 异或门
+### 7 异或门
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-7-XOR.png)
 
-### 三输入或门
+### 8-1 三输入或门
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-8-1-Tri-OR.png)
 
-### 三输入与门
+### 8-2 三输入与门
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-8-2-Tri-AND.png)
 
-### 同或门
+### 9 同或门
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-9-XNOR.png)
 
-### 成对的麻烦
+## 算术运算与存储器
+
+### 10-1 二进制速算：略
+
+### 10-2 成对的麻烦
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-10-2-Even-trouble.png)
 
 | CD\\AB | 00 | 01 | 11 | 10  |
@@ -65,7 +68,7 @@ sidebar:
 
 得到 Y = AB + AC + AD + BC + BD + CD
 
-### 奇数个信号
+### 10-3 奇数个信号
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-10-3-Odd-signal.png)
 
 
@@ -87,8 +90,10 @@ sidebar:
 
 得到 Y = (A ⊕ B) ⊕ (C ⊕ D)
 
+### 10-4 循环依赖：略
 
-### 信号计数
+
+### 11-1 信号计数
 
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-11-1-Signal-Counting.png)
 
@@ -102,6 +107,7 @@ sidebar:
 最后输出的三个比特分别是上、中、下比特，则
 
 上：
+
 | CD\\AB  | 00 | 01 | 11 | 10  |
 |----|----|----|----|-----|
 | 00 |    | 1  |    | 1   |
@@ -112,6 +118,7 @@ sidebar:
 上 = (A ⊕ B) ⊕ (C ⊕ D)
 
 中：
+
 | CD\\AB  | 00 | 01 | 11 | 10  |
 |----|----|----|----|-----|
 | 00 |    |    | 1  |     |
@@ -122,6 +129,7 @@ sidebar:
 中 = AB(~C)+A(~B)D+AC(~D)+(~A)BD+(~A)CD+(~A)BC
 
 下：
+
 | CD\\AB  | 00 | 01 | 11 | 10  |
 |----|----|----|----|-----|
 | 00 |    |    |    |     |
@@ -133,8 +141,31 @@ sidebar:
 下 = ABCD
 
 
-### 半加器
+### 11-2 半加器
 
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-11-2-Half-Adderl.png)
 
+
+### 11-3 延迟线：略
+
+
+### 12-1 加倍
+
+
+
+## 处理器架构与可运行的计算机
+
+
+
+
+## 编程
+
+
+## 处理器架构2
+
+
+## 函数
+
+
+## 汇编挑战
 
