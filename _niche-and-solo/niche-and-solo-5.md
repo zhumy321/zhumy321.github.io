@@ -1,5 +1,5 @@
 ---
-title:  学法语 # 不写的话会从文件名自动生成。但标题不宜太长
+title:  法语小作文 # 不写的话会从文件名自动生成。但标题不宜太长
 permalink: /niche-and-solo/5/
 excerpt: "Learning French" # 摘要，可不写
 author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
@@ -29,13 +29,14 @@ Je m’appelle Irène, je suis une joueuse de Rubik's Cube chinoise. Je ne mesur
 J'ai quelques amies, elles sont aimables et intelligentes. Parmi elles, il y a des comptables, des fonctionnaires du gouvernement et des conseillers juridiques. Comme moi, elles parlent l'anglais aussi. Quand nous sommes disponibles, nous sortons pour nous amuser. 
 
 
-Je lave ma voiture, et je me salis. Alors, je me lave. Le lendemain matin, je me regarde dans le miroir, je me sens énergique, et puis je sors et conduis ma voiture au travail. À 11 heures du soir, je me couche.
-
 语法点：系词être，名词和形容词都有阴阳性之分，也都有单复数之分。否定句式用ne ... pas来表示。自反代词。
 
 
-##  
+## 形容动物，人
 
+Dans ma université, il y a des arbres et des chats. Les chats, leurs parents partent tôt. Devant ma porte de chambre, il y a un chat qui s'appelle 'AFU', il est mignon. Parfois, AFU va au bureau de la gardienne, parfois il va aux arbres. Il a les yeux noirs es les pupilles jaunes. L'oreille d'AFU a été coupée, c'est le signe de la stérilisation. La couleur des pattes d'AFU sont blanches.
+
+Quand j'ai faim, je vais à la cantine, et c'est à ce moment-là que je passe devant AFU. Petit à petit, les étudiants apportent des cartons et des couvertures pour AFU, pour qu'il ne soit pas froid. Je trouve que mes camarades de classe sont très gentils.
 
 语法点：定冠词与不定冠词，a和de（au和du...），des与les，ce和cette与ces，avoir和il y a
 
