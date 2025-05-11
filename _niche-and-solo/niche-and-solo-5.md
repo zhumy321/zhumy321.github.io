@@ -1,5 +1,5 @@
 ---
-title:  法语小作文 # 不写的话会从文件名自动生成。但标题不宜太长
+title:  法语笔记本 # 不写的话会从文件名自动生成。但标题不宜太长
 permalink: /niche-and-solo/5/
 excerpt: "Learning French" # 摘要，可不写
 author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写

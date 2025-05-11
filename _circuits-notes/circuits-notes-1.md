@@ -1,5 +1,5 @@
 ---
-title:  Irene预留的电分基础笔记专栏 # 
+title:  预留的电分基础笔记专栏 # 
 permalink: /circuits-notes/circuits-notes-chinese-1/
 excerpt: "" # 摘要，可不写
 # author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
@@ -22,3 +22,5 @@ Ready to add this column.
 
 
 也打算加上一些强电相关的，接触器什么的，文章
+
+https://www.worldstandards.eu/electricity/plugs-and-sockets/ab/

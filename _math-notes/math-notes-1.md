@@ -1,5 +1,5 @@
 ---
-title:  Irene预留的数学笔记专栏 # 
+title: "预留数学学习笔记-1" # 
 permalink: /math-notes/math-notes-chinese-1/
 excerpt: "" # 摘要，可不写
 # author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写

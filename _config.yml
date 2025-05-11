@@ -116,11 +116,11 @@ author:
   avatar           : "https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/irene_z_avatar.jpg"
   bio              : "人生海海，山山而川，不过尔尔"
   location         : "Shenzhen, China"
-  # email            : "Irene_Z_@outlook.com"
+  # email            : "2018163014@email.szu.edu.cn"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto：Irene_Z_@outlook.com"
+      url: "mailto：2018163014@email.szu.edu.cn"
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://zhumy321.github.io"

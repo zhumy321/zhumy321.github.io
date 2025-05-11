@@ -104,7 +104,7 @@ words_per_minute: 30 # 经我实验，中文则将WPM设置为30为好
 
 - ConvertToUTF8，可以解决中文乱码问题
 
-
+- Markdown Preview
 To be added…
 
 

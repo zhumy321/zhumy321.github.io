@@ -1,5 +1,5 @@
 ---
-title: "Clock in Diary 202406"
+title: "打工日记2024年6月"
 permalink: /diary-and-clock-in/diary-and-clock-in-1/
 excerpt: "---"
 author_profile: false # 则让作者信息从sidebar消失

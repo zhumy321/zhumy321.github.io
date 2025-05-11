@@ -34,48 +34,9 @@ main: # main menu
   - title: "关于"
     url: /about/
 
-# sidebar navigation list sample
-sidebar-sample:
-  - title: "Parent Page A"
-    children:
-      - title: "Child Page A1"
-        url: /
-      - title: "Child Page A2"
-        url: /
-      - title: "Child Page A3"
-        url: /
-      - title: "Child Page A4"
-        url: /
-  - title: "Parent Page B"
-    children:
-      - title: "Child Page B1"
-        url: /
-      - title: "Child Page B2"
-        url: /
-      - title: "Child Page B3"
-        url: /
-      - title: "Child Page B4"
-        url: /
-      - title: "Child Page B5"
-        url: /
-  - title: "Parent Page C"
-    children:
-      - title: "Child Page C1"
-        url: /
-      - title: "Child Page C2"
-        url: /
-      - title: "Child Page C3"
-        url: /
-      - title: "Child Page C4"
-        url: /
-      - title: "Child Page C5"
-        url: /
-  - title: "Parent Page D"
-    children:
-      - title: "Child Page D1"
-        url: /
-      - title: "Child Page D2"
-        url: /
+
+
+
 
 sidebar-diary-and-clock-in:
   - title: 2024 
@@ -86,10 +47,10 @@ sidebar-diary-and-clock-in:
         url: /diary-and-clock-in/diary-and-clock-in-2/
       - title: "打工日记2024年8月"
         url: /diary-and-clock-in/diary-and-clock-in-3/
-      - title: "日记2024年9月"
+      - title: "日记2024的8-12月"
         url: /diary-and-clock-in/diary-and-clock-in-4/
-  # - title: 2025
-  #   children:
+  - title: 2025
+    children:
   #     - title: "2025年1月"
   #       url: /diary-and-clock-in/diary-and-clock-in-1/ 
 
@@ -110,8 +71,12 @@ sidebar-niche-and-solo:
         url: /niche-and-solo/3/
       - title: "如何用python操作Excel"
         url: /niche-and-solo/4/
-      - title: "法语小作文"
+      - title: "法语笔记本"
         url: /niche-and-solo/5/
+      - title: "Minimal Mistakes的Win10本地预览"
+        url: /niche-and-solo/6/
+      - title: "业余无线电手台功能说明"
+        url: /niche-and-solo/7/
 
 sidebar-circuits-notes:
   - title: 
@@ -120,12 +85,14 @@ sidebar-circuits-notes:
         url: /circuits-notes/circuits-notes-chinese-1/
       - title: "Python碎片知识整理"
         url: /circuits-notes/circuits-notes-chinese-2/
-      - title: "3"
+      - title: "预留其他编程笔记专栏、sublime text积累"
         url: /circuits-notes/circuits-notes-chinese-3/
-      - title: "4sublime text 积累"
-        url: /circuits-notes/circuits-notes-chinese-1/
-      - title: "5"
+      - title: "常用网站汇总"
+        url: /circuits-notes/circuits-notes-chinese-4/
+      - title: "三相电与TN系统"
         url: /circuits-notes/circuits-notes-chinese-5/
+      - title: "插头、插座与导线"
+        url: /circuits-notes/circuits-notes-chinese-6/
 
 sidebar-math-notes:
   - title: 
