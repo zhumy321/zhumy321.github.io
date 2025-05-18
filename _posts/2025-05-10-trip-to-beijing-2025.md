@@ -34,7 +34,7 @@ words_per_minute: 30 # Reading time
 | 丹霞->北京大兴机场 | 颐和园+圆明园（提前一周买票） | 雍和宫（提前一周买票）| 故宫（提前一周买票）<br>天安门（提前一周内买票） | 八达岭长城（提前买门票/缆车。提前买北京北-八达岭的往返高铁票） | 大兴机场->丹霞   |
 | 紫光园北京烤鸭+酸奶 | 铜锅涮肉。炸酱面。驴打滚（不好吃） | 中国工艺美术馆（提前一周预约。非遗体验需提前预订） | 炙子烤肉| 晋阳饭庄香酥鸭  |      |
 
-## 出发
+## 2025/5/2出发
 
 丹霞机场
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20250502_110920.jpg)
@@ -47,7 +47,7 @@ words_per_minute: 30 # Reading time
 奶皮子酸奶
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20250502_183022.jpg)
 
-## 正式行程第一天
+## 2025/5/3第一天
 
 
 
@@ -63,18 +63,18 @@ words_per_minute: 30 # Reading time
 
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20250503_195541.jpg)
 
-## 正式行程第二天
+## 2025/5/4第二天
 
 
 
-![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Videoframe_20250510_141144_com.huawei.himovie.local.jpg)
+<!-- ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Videoframe_20250510_141144_com.huawei.himovie.local.jpg) -->
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Videoframe_20250510_141246_com.huawei.himovie.local.jpg)
 
 
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Videoframe_20250510_153124_com.huawei.himovie.local.jpg)
 
 
-## 正式行程第三天
+## 2025/5/5第三天
 
 天安门
 
@@ -91,7 +91,7 @@ words_per_minute: 30 # Reading time
 
 
 
-## 正式行程第四天
+## 2025/5/6第四天
 
 
 复兴号
@@ -104,7 +104,7 @@ words_per_minute: 30 # Reading time
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20250506_172117.jpg)
 
 
-## 返程
+## 2025/5/7返程
 
 
 
