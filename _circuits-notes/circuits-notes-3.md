@@ -23,12 +23,3 @@ sidebar:
 - 选中Sublime text中的所有文本，然后ctrl k，然后ctrl u，可以把所有文本变成大写。类似的，变小写则是ctrl + k，然后ctrl + L。
 
 
-
-
-https://www.digikey.cn/zh/resources/conversion-calculators/conversion-calculator-wire-size
-
-此工具用于计算线径的标称等效值，如美国线规 [AWG]、平方毫米面积 [mm²、圆密尔面积 [CMA] 等。只需输入已知测量值或导线号数，所有等效值即会自动计算并显示。
-
-注意：本计算器的换算值基于实心导线。
-
-美国线规 (AWG) 亦称“布朗-沙普”线规，于 1855 年制订。这种测量标准起源于计算导线通过模具拉拔的次数，以达到所需的尺寸。因此，线径大小跟号数是成反比的，并呈对数比例关系，也就是导线越粗，电线的 AWG 值越小，如 10 AWG 电线比 20AWG 电线的横截面积约要大上 10 倍。AWG 在北美和超过 65 个其他国家普遍使用。
