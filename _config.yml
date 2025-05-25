@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dirt" # "default" "air", "aqua", "contrast", "dark",
 locale                   : "zh" # "en-US"
 title                    : "Irene_Z_的码字网盘" # "My Awesome Site"
 title_separator          : "-" #
-subtitle                 : "2024重整的新版" # "Version 2.0" site tagline that appears below site title in masthead
+subtitle                 : "2024开始重整的新版" # "Version 2.0" site tagline that appears below site title in masthead
 name                     : &name "Minyi ZHU"
 description              : &description "A personal sharing website"
 url                      : "https://zhumy321.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"

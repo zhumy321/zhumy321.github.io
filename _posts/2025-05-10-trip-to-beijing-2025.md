@@ -53,6 +53,7 @@ words_per_minute: 30 # Reading time
 
 我对这次自己订的酒店还是挺满意的，六天五晚总共2200，设施都完善、且不老旧，装潢顺眼，现代舒适，有免费的洗衣机烘干机，即使是一次性用品也是很厚实，不是塑料感很重的廉价用品。除了浴室比较小，几乎没啥缺点。地理位置也不错，就在牛街，基本上吃东西走一段路就可以了，不用打车去吃。
 
+对了，这次的房间号是136号，我特别喜欢，且我与6这个数字也一直很结缘，后面去颐和园、故宫的旅游团里，我们也正正好，都是“6号家庭”，真巧。
 
 
 ![奶皮子酸奶](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20250502_183022.jpg)
@@ -72,6 +73,11 @@ words_per_minute: 30 # Reading time
 
 也不知道这个万寿山是用挖湖的土方堆的，且高度记说59.8米，因为乾隆为了给母亲过六十大寿，“寿比山高”。
 
+
+
+2025-05-03 10:43:07
+相关笔记
+#1 6号家庭，136房间
 
 ![圆明园湖景](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20250503_124505.jpg)
 
@@ -113,25 +119,36 @@ words_per_minute: 30 # Reading time
 
 从故宫出来，去了天安门。
 
-![炙子烤肉](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Videoframe_20250510_154205_com.huawei.himovie.local.jpg)
+从天安门出来，就在五四大街边上，刚好进一家卖护肤品的店，看到了久仰大名的协和精心的产品，整点回去做纪念。
 
+
+![炙子烤肉](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Videoframe_20250510_154205_com.huawei.himovie.local.jpg)
 
 
 ## 2025/5/6：长城
 
 
-复兴号
-![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20250506_071152.jpg)
+![复兴号](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20250506_071152.jpg)
 
-游客止步
-![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20250506_111757.jpg)
+买北京北-八达岭的往返高铁票，去长城才比较方便。
+
+但是长城边上好冷啊，给我冷的都过敏起荨麻疹了。因为走错路了，直接到了缆车入口，在那里买早餐的时候店员跟我们说长城这里的温度普遍比市区里低个好几度——据说是比较高。
+
+还好后来走回步行登长城入口，慢慢接近中午，气温也上来了。
+
+![游客止步](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20250506_111757.jpg)
+
+爬完了！！！
+
 
 香酥鸭
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20250506_172117.jpg)
 
-买北京北-八达岭的往返高铁票
+
+
 
 ## 2025/5/7返程
+
 
 
 
@@ -141,21 +158,13 @@ words_per_minute: 30 # Reading time
 街头
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20250503_193842.jpg)
 
-
+我跟老妈说，在北方这边不像我们在广东，见谁都叫“靓女”，这边得叫“姑娘”，哈哈。
 
 小熊
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/IMG_20250507_113812.jpg)
 
 
 希望妈妈平安，健康，开心。
-
-2025-05-03 10:43:07
-相关笔记
-#1 6号家庭，136房间
-
-
-2025-05-02 18:29:00
-#1 奶皮子酸奶真的不错
 
 
 2025-05-02 14:32:31
