@@ -91,20 +91,20 @@ words_per_minute: 30 # 经我实验，中文则将WPM设置为30为好
 ### 一些插件说明（个人向）
 
 大部分插件都可以在菜单栏中找到或者配置
-- colorsublime，可以安装不同的主题（在命令面板，或者preferences处可以选择主题）。我个人喜欢暗色的界面、同时对常用编程语言高亮比较顺眼的主题.
+#### colorsublime，可以安装不同的主题（在命令面板，或者preferences处可以选择主题）。我个人喜欢暗色的界面、同时对常用编程语言高亮比较顺眼的主题.
 ![图-1](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-17.png)
  
 ![图-1](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-18.png)
 
 
-- 最近比较喜欢chameleon。（图中用的是python举例）
+#### 最近比较喜欢chameleon。（图中用的是python举例）
 ![图-1](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-19.png)
 
-- [sublimerge](https://www.sublimerge.com/)可以比较不同文件的内容。
+#### [sublimerge](https://www.sublimerge.com/)可以比较不同文件的内容。
 
-- ConvertToUTF8，可以解决中文乱码问题
+#### ConvertToUTF8，可以解决中文乱码问题
 
-- Markdown Preview
+#### Markdown Preview
 To be added…
 
 

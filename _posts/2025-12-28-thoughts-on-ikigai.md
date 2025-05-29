@@ -2,7 +2,7 @@
 # examples go and see https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
 title:  人生的意义与选择 # 不写的话会从文件名自动生成。但标题不宜太长
-excerpt: "写在毕业两周年。" # 摘要
+excerpt: "写在毕业三周年。" # 摘要
 author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
 
 header: # 这张图会出现在文章页面的上方而且很大
