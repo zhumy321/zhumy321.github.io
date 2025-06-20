@@ -20,9 +20,18 @@ sidebar:
   nav: sidebar-niche-and-solo # 这是在yaml文件里你要找到的那个导航栏的名字
 ---
 
+以表格形式列出会不会好一点？
 
 ## 我要常常复习
 http://www.catb.org/~esr/faqs/smart-questions.html 如何聪明地问问题
+
+
+
+## 各种工具
+
+
+
+https://symbl.cc/cn/tools/braille/ 盲文转换器（及哥特文本生成、Unicode字符生成与解码、摩斯电码转换器、密码生成器等）
 
 
 ## 个人博客或网站
