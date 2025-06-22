@@ -22,14 +22,16 @@ sidebar:
 
 ## 本地环境查看
 
-> 这种情况就是本地啥也没有、啥都缺：
+ruby、bundle、jekyll是三个必要条件
+
+> 这种情况就是现在三个必要条件都缺少：
 
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Pasted image 20250430182307.png)
 
 
 ## 1. 安装Ruby和Bundler（仅需一次）
 
-去 [RubyInstaller.org](https://rubyinstaller.org/downloads/ "点击跳转") 下载Ruby+Devkit，并运行.exe文件：
+去官网[RubyInstaller.org](https://rubyinstaller.org/downloads/ "点击跳转") 下载Ruby+Devkit，并运行下载好的.exe文件：
 
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Pasted image 20250509115259.png)
 
@@ -65,16 +67,12 @@ sidebar:
 
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Pasted image 20250429160045.png)
 
-> i. 其实安装完Ruby+Devkit，Bundle也就安装好了：
-
-![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Pasted image 20250429163204.png)
-
-> j. 所以现在有Ruby、Bundle，缺个Jekyll 
+> i. 所以现在有Ruby、Bundle，缺个Jekyll 
 
 ![](https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/Pasted image 20250430183313.png)
 
 
-！如果在i步骤中没有Bundler，则去命令行（要有管理员权限哈）
+>！如果在i步骤中没有Bundler，则去命令行（要有管理员权限哈）
 
 `gem`是 Ruby 的包管理工具，安装后会全局可用。
 输入`gem install bundler`

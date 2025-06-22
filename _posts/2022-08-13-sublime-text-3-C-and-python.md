@@ -196,8 +196,9 @@ C:/Users/IreneZ/AppData/Local/Programs/Python/Python310/python.exe
 
 
 
-### 在Sublime里面运行Python
+### 在Sublime里面运行Python（可选）
 
+> ！！！其实Sublime的building Systems里已经支持python，此处操作可以免去。但有多个版本的python时，可以参照如下方法分别给不同版本python在Sublime text 3里配置编译系统
 
 - 在Sublime Text 3新建配置一个Python3编译系统并保存，此处cmd用的就是刚刚安装Python时选择的路径
 
