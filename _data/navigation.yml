@@ -47,7 +47,9 @@ sidebar-diary-and-clock-in:
         url: /diary-and-clock-in/diary-and-clock-in-2/
       - title: "打工日记2024年8月"
         url: /diary-and-clock-in/diary-and-clock-in-3/
-      - title: "日记2024的8-12月"
+      - title: "Diary：2024的8-12月"
+        url: /diary-and-clock-in/diary-and-clock-in-4/
+      - title: "Diary：2025的1-8月"
         url: /diary-and-clock-in/diary-and-clock-in-4/
   - title: 2025
     children:

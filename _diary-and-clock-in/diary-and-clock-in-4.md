@@ -1,5 +1,5 @@
 ---
-title:  "日记2024的8-12月" # 不写的话会从文件名自动生成。但标题不宜太长
+title:  "Diary：2024的8-12月" # 不写的话会从文件名自动生成。但标题不宜太长
 permalink: /diary-and-clock-in/diary-and-clock-in-4/
 excerpt: "" # 摘要
 author_profile: false # 则让作者信息从sidebar消失

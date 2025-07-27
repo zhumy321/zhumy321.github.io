@@ -34,13 +34,24 @@ sidebar:
 | Github      | [访问](https://github.com/zhumy321)                                | Choose the best | [访问](https://www.slant.co/) | 
 | Google Drive | [访问](https://drive.google.com/drive/my-drive)                   | 中国移动云盘 | [访问](https://yun.139.com/w/#/) | 
 | 沐云主域名 | [访问](https://mucloud.one/user)                                     | 沐云备用网站 | [访问](http://tt.mucloud.xyz/) |
-| 沐云中国大陆网址 | [访问](https://world.mucloud.one/)                             |
+| 沐云中国大陆网址 | [访问](https://world.mucloud.one/)                             | 坚果云 | [访问](https://www.jianguoyun.com/d/home#/)|
 
 | 标题 | 链接 | 标题 | 链接 |
 |------|------|------|------|
 | 志愿深圳 | [访问](https://v.sva.org.cn/)                                          | 韶关民声网 | [访问](https://www.sgmsw.cn/) |
 | 中国铁路12306 | [访问](https://www.12306.cn/index/index.html)                     | 工信部申诉首页 | [访问](https://yhssglxt.miit.gov.cn/web/) |
 | 亚马逊| [访问](https://www.amazon.cn/)                                            | 推理罪论坛 | [访问](https://www.tuiliz.com/portal.php)
+
+## 常用软件
+
+
+| 标题 | 标题 | 标题 | 标题 | 标题 | 标题 |
+|-------------|-----|------|----|------|----------------|
+| Office全家桶 | WPS | 微信 | QQ | Anki | 嘉立创EDA专业版 |
+| Github Desktop | Sublime Text 3 | Clash Verge | 小黑盒 | Steam | Any Desk |
+| QQ音乐 | 网易云 | 百度网盘 | Cakewalk Sonar | Autodesk Fusion | Cherry Studio |
+| 谷歌浏览器 | Edge浏览器 | Flomo | Python | 7zip | ---- |
+
 
 ## 在线工具
 
@@ -55,12 +66,12 @@ sidebar:
 | tineye.com反向搜索图片 | [访问](https://tineye.com/) | Yandex反向搜索图片 | [访问](https://yandex.com/) |
 | insta360相机应用下载 | [访问](https://www.insta360.com/cn/download/insta360-go3s) | 学生云服务器特惠套餐 | [访问](https://cloud.tencent.com/act/campus) |
 | 找颜色Paletton | [访问](https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF) | 找颜色Designs.ai Color Matcher | [访问](https://designs.ai/colors/color-meanings) |
-| 盲文转换器 | [访问](https://symbl.cc/cn/tools/braille/) | 
+| 盲文转换器 | [访问](https://symbl.cc/cn/tools/braille/) | Mermaid流程图在线 | [访问](https://www.mermaidflow.app/editor) |
 | 电子显微镜实验Virtual Scanning Electron Microscope Simulator | [访问](https://myscope-explore.org/virtualSEM_explore.html) |
 | 波特兰州立大学在线电子显微镜实验（但必须要学生才能进去） | [访问](https://www.e-microscopy.org/) |
 | 电子显微镜实验Microscopy Australia Facilities | [访问](https://myscope.training/) |
 | 万维网虚拟图书馆：显微镜 | [访问](https://www.ou.edu/research/electron/www-vl/long.shtml) |
-
+| 线径计算（德捷） | [访问](https://www.digikey.cn/zh/resources/conversion-calculators/conversion-calculator-wire-size) |||
 
 ## 学习相关
 
@@ -70,6 +81,7 @@ sidebar:
 |------|------|
 | 人人讲 | [访问](https://ke.renrenjiang.cn/#/course) |
 | 网易公开课 | [访问](https://open.163.com/) |
+| Cakewalk论坛 | [访问](discuss.cakewalk.com) |
 | ArtOfMemory | [访问](https://forum.artofmemory.com/) |
 | 虫部落 | [访问](https://www.chongbuluo.com/) |
 | AnkiWeb卡牌 | [访问](https://ankiweb.net/shared/decks/) |
