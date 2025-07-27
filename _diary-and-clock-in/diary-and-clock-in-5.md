@@ -1,6 +1,6 @@
 ---
 title:  "Diary：2025的1-8月" # 不写的话会从文件名自动生成。但标题不宜太长
-permalink: /diary-and-clock-in/diary-and-clock-in-4/
+permalink: /diary-and-clock-in/diary-and-clock-in-5/
 excerpt: "" # 摘要
 author_profile: false # 则让作者信息从sidebar消失
 last_modified_at: 2025-5-25T22:54:02+08:00 # 可不写，但layout则要写。+8是东八区
