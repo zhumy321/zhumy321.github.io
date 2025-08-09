@@ -1,7 +1,7 @@
 ---
 title:  Minimal Mistakes的Win10本地预览 # 不写的话会从文件名自动生成。但标题不宜太长
 permalink: /niche-and-solo/6/
-excerpt: "Minimal Mistakes" # 摘要，可不写
+excerpt: "目测也适用于Win11" # 摘要，可不写
 author: "Minyi ZHU" # 不写则默认config.yml的网站作者。感觉没必要写
 author_profile: false # 让作者信息从sidebar消失
 last_modified_at: 2025-05-08T15:43:00+08:00 # 可不写，但layout则要写。+8是东八区

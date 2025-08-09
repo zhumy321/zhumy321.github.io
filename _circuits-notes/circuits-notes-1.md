@@ -21,6 +21,8 @@ sidebar:
 Ready to add this column.
 
 
+“电流强度”也常直接简称为“电流” 或称为“电流量”，所以缩写是I
+
 也打算加上一些强电相关的，接触器什么的，文章
 
 https://www.worldstandards.eu/electricity/plugs-and-sockets/ab/
