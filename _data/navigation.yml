@@ -81,11 +81,12 @@ sidebar-niche-and-solo:
         url: /niche-and-solo/7/
       - title: "电子仓鼠（书签整理）"
         url: /niche-and-solo/8/
-      - title: "扒点谱子"
+      - title: "用Python的manim做动画"
         url: /niche-and-solo/9/
       - title: "编曲软件操作笔记"
         url: /niche-and-solo/10/
-
+      - title: "扒点谱子"
+        url: /niche-and-solo/11/
 sidebar-circuits-notes:
   - title: 
     children:
