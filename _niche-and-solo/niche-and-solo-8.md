@@ -34,7 +34,10 @@ sidebar:
 | Github      | [访问](https://github.com/zhumy321)                                | Choose the best | [访问](https://www.slant.co/) | 
 | Google Drive | [访问](https://drive.google.com/drive/my-drive)                   | 中国移动云盘 | [访问](https://yun.139.com/w/#/) | 
 | 沐云主域名 | [访问](https://mucloud.one/user)                                     | 沐云备用网站 | [访问](http://tt.mucloud.xyz/) |
-| 沐云中国大陆网址 | [访问](https://world.mucloud.one/)                             | 坚果云 | [访问](https://www.jianguoyun.com/d/home#/)|
+| 沐云中国大陆网址 | [访问](https://world.mucloud.one/)                             | 海獭VPN | [访问](https://haita.org/login)|
+| 坚果云 | [访问](https://www.jianguoyun.com/d/home#/)| XXX | [访问]()|
+
+
 
 | 标题 | 链接 | 标题 | 链接 |
 |------|------|------|------|

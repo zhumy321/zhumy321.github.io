@@ -92,9 +92,9 @@ sidebar-circuits-notes:
     children:
       - title: "电分基础笔记-1"
         url: /circuits-notes/circuits-notes-chinese-1/
-      - title: "Python碎片知识整理"
+      - title: "如何阅读协议"
         url: /circuits-notes/circuits-notes-chinese-2/
-      - title: "预留其他编程笔记专栏、sublime text积累"
+      - title: "编程笔记专栏"
         url: /circuits-notes/circuits-notes-chinese-3/
       - title: "常用网站汇总"
         url: /circuits-notes/circuits-notes-chinese-4/

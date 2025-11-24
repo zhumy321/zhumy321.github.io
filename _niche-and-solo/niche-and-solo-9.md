@@ -107,3 +107,9 @@ sidebar:
 ## 开始做动画
 
 
+[Manim主页](https://www.manim.community/)
+
+
+[Manim Community文档](https://docs.manim.community/en/stable/)
+
+
