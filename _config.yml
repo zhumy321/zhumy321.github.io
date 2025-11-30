@@ -11,14 +11,14 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "dirt" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # Site Settings
 locale                   : "zh" # "en-US"
-title                    : "Irene_Z_的码字网盘" # "My Awesome Site"
-title_separator          : "-" #
-subtitle                 : "2024开始重整的新版" # "Version 2.0" site tagline that appears below site title in masthead
+rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
+title                    : "Irene_Z_的码字网盘"
+title_separator          : "-"
+subtitle                 : "2024开始重整的新版" # site tagline that appears below site title in masthead
 name                     : &name "Minyi ZHU"
 description              : &description "A personal sharing website"
 url                      : "https://zhumy321.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -26,9 +26,10 @@ baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "zhumy321/zhumy321.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "" # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs              : # true, false (default)
 words_per_minute         : 100 # Reading time
+enable_copy_code_button  : # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
@@ -54,7 +55,7 @@ comments:
     theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
     strict               : # 1 for enabled, 0 for disabled (default)
     input_position       : # "top", "bottom" # The comment input box will be placed above or below the comments
-    emit_metadata        : # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage ???
+    emit_metadata        : # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
     lang                 : # "en" (default)
     lazy                 : # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
   staticman:
@@ -65,10 +66,10 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : true # true, false (default)
-search                   : true # true, false (default)
-search_full_content      : true # true, false (default)
-search_provider          :  # lunr (default), algolia, google
+  hide                   : # true, false (default)
+search                   : # true, false (default)
+search_full_content      : # true, false (default)
+search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : # true, false (default)
 algolia:
@@ -103,7 +104,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          :
     anonymize_ip         : # true, false (default)
@@ -116,38 +117,38 @@ author:
   avatar           : "https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/irene_z_avatar.jpg"
   bio              : "人生海海，山山而川，不过尔尔"
   location         : "Shenzhen, China"
-  # email            : "2018163014@email.szu.edu.cn"
+  email            : "2018163014@email.szu.edu.cn"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto：2018163014@email.szu.edu.cn"
-    # - label: "Website"
-    #   icon: "fas fa-fw fa-link"
-    #   url: "https://zhumy321.github.io"
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-    #   url: "https://twitter.com/"
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-facebook-square"
-    #   url: "https://facebook.com/"
-    # - label: "GitHub"
-    #   icon: "fab fa-fw fa-github"
-    #   url: "https://github.com/"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/"
+      url: "mailto:2018163014@email.szu.edu.cn"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://zhumy321.github.io"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/zhumy321"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
+      # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
@@ -158,6 +159,7 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
+  since: "2021"
 
 
 # Reading Files
@@ -183,14 +185,15 @@ exclude:
   - gulpfile.js
   - LICENSE
   - log
+  - minimal-mistakes-jekyll.gemspec
   - node_modules
   - package.json
   - package-lock.json
   - Rakefile
   - README
   - tmp
-  # - /docs # ignore Minimal Mistakes /docs
-  # - /test # ignore Minimal Mistakes /test
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
@@ -218,30 +221,6 @@ kramdown:
   enable_coderay: false
 
 
-# Collections
-collections: #这里主要是我自己整理的合集，是独立于博客之外的文章们
-#   docs:
-#     output: true
-    # permalink: /:collection/:path/
-  niche-and-solo:
-    output: true
-    permalink: /:collection/:path/
-  circuits-notes:
-    output: true
-    permalink: /:collection/:path/
-  math-notes:
-    output: true
-    permalink: /:collection/:path/
-  diary-and-clock-in: # 打工日记
-    output: true
-    permalink: /:collection/:path/
-  # recipes: 这是模板自带的原来的例子
-  #   output: true
-  #   permalink: /:collection/:path/
-  column-to-be-added: # 新能源相关
-    output: true
-    permalink: /:collection/:path/
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
@@ -250,10 +229,33 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-# paginate_path: /page:num/ #这是默认的
-paginate_path: /assets/page:num/ # 不改的话就会以文章list为主页了
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Pagination with jekyll-paginate
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+# paginate_path: /assets/page:num/ # 不改的话就会以文章list为主页了???真的吗？
+
+# Pagination with jekyll-paginate-v2
+# See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
+#   for configuration details
+pagination:
+  # Set enabled to true to use paginate v2
+  # enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
 
 
 # Plugins (previously gems:)
@@ -262,7 +264,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
@@ -271,7 +272,6 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-include-cache
 
 
@@ -311,8 +311,32 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections: #这里主要是我自己整理的合集，是独立于博客之外的文章们
+#   docs:
+#     output: true
+    # permalink: /:collection/:path/
+  niche-and-solo:
+    output: true
+    permalink: /:collection/:path/
+  circuits-notes:
+    output: true
+    permalink: /:collection/:path/
+  math-notes:
+    output: true
+    permalink: /:collection/:path/
+  diary-and-clock-in: # 打工日记
+    output: true
+    permalink: /:collection/:path/
+  # recipes: 这是模板自带的原来的例子
+  #   output: true
+  #   permalink: /:collection/:path/
+  column-to-be-added: # 新能源相关
+    output: true
+    permalink: /:collection/:path/
 
-
+# 添加这一行让 Jekyll 处理 _pages 文件夹
+include: ["_pages"]
 
 # Defaults
 defaults:
@@ -322,41 +346,11 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true # if false 则让作者信息从sidebar消失
+      author_profile: true
       read_time: true
-      comments: false # not ready yet
+      comments: # true
       share: true
       related: true
-      show_date: true # true, false (default) 感觉这两行没有用啊
-      # The default date format is "%B %-d, %Y" (displayed like “February 24, 2016”.)
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # # _docs
-  # - scope:
-  #     path: ""
-  #     type: docs
-  #   values:
-  #     layout: single
-  #     read_time: false
-  #     author_profile: false
-  #     share: false
-  #     comments: false
-  #     sidebar:
-  #       nav: "docs"
-  # _recipes # 这里注释掉的是原模板中的例子
-  # - scope:
-  #     path: ""
-  #     type: recipes
-  #   values:
-  #     layout: single
-  #     author_profile: true
-  #     share: true
-  #     comments: true
 
 
   # _diary-and-clock-in # 注意这里有_前缀

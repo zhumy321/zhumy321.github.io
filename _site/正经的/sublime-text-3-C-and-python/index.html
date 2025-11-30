@@ -1,0 +1,811 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="zh" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Sublime Text 3配置Python和C环境（Win 10） - Irene_Z_的码字网盘</title>
+<meta name="description" content="A personal sharing website">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh">
+<meta property="og:site_name" content="Irene_Z_的码字网盘">
+<meta property="og:title" content="Sublime Text 3配置Python和C环境（Win 10）">
+<meta property="og:url" content="http://localhost:4001/%E6%AD%A3%E7%BB%8F%E7%9A%84/sublime-text-3-C-and-python/">
+
+
+  <meta property="og:description" content="A personal sharing website">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-08-13T00:00:00+08:00">
+
+
+
+  <meta property="article:modified_time" content="2022-08-13T19:00:02+08:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4001/%E6%AD%A3%E7%BB%8F%E7%9A%84/sublime-text-3-C-and-python/">
+
+
+
+
+
+
+
+
+  <meta name="msvalidate.01" content="E1FA3E755BDE4E8E68F17E3E0134BFAB">
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Irene_Z_的码字网盘 Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">转到主导航栏</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">转到内容</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">转到底部</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Irene_Z_的码字网盘
+          <span class="site-subtitle">2024开始重整的新版</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >主页</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/year-archive/"
+                
+                
+              >Blog汇总</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/collection-archive/"
+                
+                
+              >专栏归档</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >关于</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切换菜单</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4001/" itemprop="url"></a>
+    </h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">关注</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Sublime Text 3配置Python和C环境（Win 10）">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2022-08-13T00:00:00+08:00">
+    <meta itemprop="dateModified" content="2022-08-13T19:00:02+08:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4001/%E6%AD%A3%E7%BB%8F%E7%9A%84/sublime-text-3-C-and-python/" itemprop="url">Sublime Text 3配置Python和C环境（Win 10）
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          6 分钟阅读
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-cog"></i> 目录</h4></header>
+              <ul class="toc__menu"><li><a href="#sublime-text-3">Sublime Text 3</a><ul><li><a href="#安装sublime-text-3">安装Sublime Text 3</a></li><li><a href="#安装package-control插件">安装Package Control插件</a></li><li><a href="#用package-control安装常用插件">用Package Control安装常用插件</a></li><li><a href="#一些插件说明个人向">一些插件说明（个人向）</a><ul><li><a href="#colorsublime可以安装不同的主题在命令面板或者preferences处可以选择主题我个人喜欢暗色的界面同时对常用编程语言高亮比较顺眼的主题">colorsublime，可以安装不同的主题（在命令面板，或者preferences处可以选择主题）。我个人喜欢暗色的界面、同时对常用编程语言高亮比较顺眼的主题.</a></li><li><a href="#最近比较喜欢chameleon图中用的是python举例">最近比较喜欢chameleon。（图中用的是python举例）</a></li><li><a href="#sublimerge可以比较不同文件的内容">sublimerge可以比较不同文件的内容。</a></li><li><a href="#converttoutf8可以解决中文乱码问题">ConvertToUTF8，可以解决中文乱码问题</a></li><li><a href="#markdown-preview">Markdown Preview</a></li></ul></li></ul></li><li><a href="#配置c环境">配置C环境</a><ul><li><a href="#下载mingw">下载MinGW</a></li><li><a href="#在sublime里面编译c">在Sublime里面编译C</a></li></ul></li><li><a href="#配置python环境">配置Python环境</a><ul><li><a href="#下载python">下载Python</a></li><li><a href="#在sublime里面运行python可选">在Sublime里面运行Python（可选）</a></li></ul></li><li><a href="#ok">OK!</a></li></ul>
+            </nav>
+          </aside>
+        
+        <h2 id="sublime-text-3">Sublime Text 3</h2>
+
+<h3 id="安装sublime-text-3">安装Sublime Text 3</h3>
+
+<ul>
+  <li>
+    <p>先去官网<a href="https://www.sublimetext.com/3">Sublime Text 3官网</a>下载Sublime Text 3，选择自己需要的版本即可，
+流程如下：
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-1.png" alt="图-1" /></p>
+  </li>
+  <li>
+    <p>把下载下来的.exe文件用管理员身份运行：
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-2.png" alt="图-2" /></p>
+  </li>
+  <li>
+    <p>选择安装的路径，然后点Next：
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-3.png" alt="图-3" /></p>
+  </li>
+  <li>
+    <p>建议勾选加入菜单，然后点Next：
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-4.png" alt="图-4" /></p>
+  </li>
+  <li>
+    <p>点击install开始安装：
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-5.png" alt="图-5" /></p>
+  </li>
+  <li>
+    <p>安装完毕之后点Finish：
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-6.png" alt="图-1" /></p>
+  </li>
+  <li>
+    <p>然后点击菜单，Sublime Text 3出现在开始菜单里，就安装好啦
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-7.png" alt="图-1" /></p>
+  </li>
+  <li>
+    <p>打开后如下图：（这里新版本提示界面点取消就好了，因为Sublime Text现在已经出到了4，但是3也还是很好用的）
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-8.png" alt="图-1" /></p>
+  </li>
+</ul>
+
+<h3 id="安装package-control插件">安装Package Control插件</h3>
+
+<ul>
+  <li>
+    <p>打开Tools菜单下的Command Paletter，或者使用ctrl+shift+p快捷键，来打开Sublime Text 3的命令面板。在命令面板中输入install找到安装Package Control插件的选项，鼠标左键或者回车安装Package Control
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-9.png" alt="图-1" /></p>
+  </li>
+  <li>
+    <p>安装好后会有提示
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-10.png" alt="图-1" /></p>
+  </li>
+  <li>
+    <p>重新进入Command Paletter，输入Package Control可以在下拉列表里找到“Install package”选项（如果没有，则在安装先后重启Sublime Text 3，再进入Package Control 即可），这样就可以安装插件了
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-11.png" alt="图-1" /></p>
+  </li>
+</ul>
+
+<h3 id="用package-control安装常用插件">用Package Control安装常用插件</h3>
+
+<p>下面以中文汉化插件为例。<br /></p>
+
+<ul>
+  <li>
+    <p>ctrl+shift+p把命令面板叫出来，在命令面板输入（或找到）Package Control：Install package，鼠标左键点击或方向键选中并回车进入。
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-11.png" alt="图-1" /></p>
+  </li>
+  <li>
+    <p>此时左下方会有一个小等号来回移动提示你等待一会，联网后完成后会出现插件列表
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-12.png" alt="图-1" /></p>
+  </li>
+  <li>
+    <p>插件列表大概如下：
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-13.png" alt="图-1" /></p>
+  </li>
+  <li>
+    <p>输入插件的全名或部分名字，比如输入chinese，然后可以在下拉的联想菜单里选中ChineseLocalizationgs插件，左键单击（或移动方向键选中并回车）即可安装
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-14.png" alt="图-1" /></p>
+  </li>
+  <li>
+    <p>左下角再次出现小等号，等待一会。插件安装好后会在新页面弹出提示，同时可以看到整个界面已经变成中文了（如果没有，尝试重启Sublime Text 3 ）：
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-15.png" alt="图-1" /></p>
+  </li>
+  <li>
+    <p>这个时候就可以进入帮助[Help]菜单，语言[Language]选项后就可以选择中文或者切换回英文。
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-16.png" alt="图-1" /></p>
+  </li>
+  <li>
+    <p>注意，已经安装过的插件，你再回到Package Control页去搜就搜不到了</p>
+  </li>
+</ul>
+
+<h3 id="一些插件说明个人向">一些插件说明（个人向）</h3>
+
+<p>大部分插件都可以在菜单栏中找到或者配置</p>
+<h4 id="colorsublime可以安装不同的主题在命令面板或者preferences处可以选择主题我个人喜欢暗色的界面同时对常用编程语言高亮比较顺眼的主题">colorsublime，可以安装不同的主题（在命令面板，或者preferences处可以选择主题）。我个人喜欢暗色的界面、同时对常用编程语言高亮比较顺眼的主题.</h4>
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-17.png" alt="图-1" /></p>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-18.png" alt="图-1" /></p>
+
+<h4 id="最近比较喜欢chameleon图中用的是python举例">最近比较喜欢chameleon。（图中用的是python举例）</h4>
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_download-19.png" alt="图-1" /></p>
+
+<h4 id="sublimerge可以比较不同文件的内容"><a href="https://www.sublimerge.com/">sublimerge</a>可以比较不同文件的内容。</h4>
+
+<h4 id="converttoutf8可以解决中文乱码问题">ConvertToUTF8，可以解决中文乱码问题</h4>
+
+<h4 id="markdown-preview">Markdown Preview</h4>
+<p>To be added…</p>
+
+<h2 id="配置c环境">配置C环境</h2>
+
+<h3 id="下载mingw">下载MinGW</h3>
+
+<ul>
+  <li>前往官网下载自己所需要的MinGW版本即可，流程如下：</li>
+  <li>如果有网，下载了.exe文件后直接点击执行即可(https://sourceforge.net/projects/mingw/)。此处举例主要是离线安装哈：下载好安装MinGW压缩包( https://sourceforge.net/projects/mingw-w64/ 选择files然后往下拉)，zip或者7z都可以</li>
+  <li>在你想指定的文件夹下新建MinGW文件夹（可以是Program Files (x86)也可以直接在C盘，或者你希望放的其他文件夹），把解压之后的mingw64文件夹放到MinGW下</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_C_Edited_1_4.png" alt="图1-4" /></p>
+
+<ul>
+  <li>注意，解压好的文件夹内会有一个bin文件夹。去系统   环境变量   添加MinGW64 bin路径。你可以右键单击“此电脑”，选择“属性”-&gt;“高级系统设置”-&gt;“高级”-&gt;“环境变量”进入设置环境变量的页面，也可以直接在搜索栏搜索“环境变量”</li>
+  <li>
+    <p>选中系统变量的“Path”，点击“编辑”，然后选择“新建”，添加好路径后点击“确定”
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_C_Edited_6_10.png" alt="图5-8" /></p>
+  </li>
+  <li>测试一下 gcc/g++，看装好了没。 打开命令行（可以通过win + R，输入“cmd”唤出命令行，或者在桌面win + X唤出windows power shell），分别输入 gcc -v 和 g++ -v ，如图有正常响应即可</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_C_Edited_11_12.png" alt="图9-11" /></p>
+
+<h3 id="在sublime里面编译c">在Sublime里面编译C</h3>
+
+<ul>
+  <li>在Sublime Text 3里build一个new的system（新建编译系统），配置如下，可以保存命名为C（你自己认得就行）</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{    
+    "cmd"        : ["gcc","${file}", "-o", "${file_path}/${file_base_name}"],
+    "file_regex" :"^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "working_dir":"${file_path}",
+    "selector"   : "source.c",
+    "encoding"   : "utf8",
+    
+    "variants"   :
+    [
+        {
+            "name"  : "Run",
+            "cmd"   : ["cmd","/c", "gcc", "${file}", "-o", "${file_path}/${file_base_name}","&amp;&amp;", "cmd", "/c","${file_path}/${file_base_name}"]
+        },
+        {
+            "name"  :"RunInCommand",
+            "cmd" : ["cmd","/c", "gcc", "${file}", "-o","${file_path}/${file_base_name}", "&amp;&amp;","start","cmd","/","${file_path}/${file_base_name} &amp;&amp; pause"]
+        }
+    ]
+}
+</code></pre></div></div>
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_C_Edited_13_14.png" alt="图12-13" /></p>
+
+<ul>
+  <li>
+    <p>再打开Tools -&gt; Build System，可以看到出现了刚才保存好的C的编译系统</p>
+  </li>
+  <li>
+    <p>在Sublime Text 3里新建一个文件，输入一小段C代码做测试，如图。选择右下角的Plain Text，会弹出上拉列表，可以在列表中选择当前代码是C语言，这样Sublime Text 3会以C的语法高亮对应代码。保存这个文件为test.c</p>
+  </li>
+  <li>
+    <p>在Sublime Text 3中按快捷键Ctrl + B，选Run即可</p>
+  </li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_C_Edited_15_17.png" alt="图14-16" /></p>
+
+<p><br />如果显示No Build System，大概率是编码或者格式问题，这个情况应该是自己再把配置编译系统的代码纯手敲一遍就可以解决。</p>
+
+<h2 id="配置python环境">配置Python环境</h2>
+
+<h3 id="下载python">下载Python</h3>
+
+<ul>
+  <li>前往<a href="https://www.python.org/downloads/windows/">官网</a>下载并安装Python，这里以编辑此文时的最新版本Python为例，下载好并运行python.exe</li>
+  <li>没有什么特殊要求的话就点选Install Now，注意勾选Add Path，不过之后自己再去环境变量添加Path也行。安装好之后找到Python的路径。你可以通过菜单找到它的路径（配置编译系统的时候要用）
+比如下面（注意斜杠）：
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:/Users/IreneZ/AppData/Local/Programs/Python/Python310/python.exe
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_PY_Edited_1_4.png" alt="图14-16" /></p>
+
+<ul>
+  <li>期间，你可以再在命令行敲Python看看是否安装成功</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_PY_5.png" alt="图14-16" /></p>
+
+<h3 id="在sublime里面运行python可选">在Sublime里面运行Python（可选）</h3>
+
+<blockquote>
+  <p>！！！其实Sublime的building Systems里已经支持python，此处操作可以免去。但有多个版本的python时，可以参照如下方法分别给不同版本python在Sublime text 3里配置编译系统</p>
+</blockquote>
+
+<ul>
+  <li>在Sublime Text 3新建配置一个Python3编译系统并保存，此处cmd用的就是刚刚安装Python时选择的路径</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+"cmd":["C:/Users/IreneZ/AppData/Local/Programs/Python/Python310/python.exe","-u","$file"],
+"file_regex":"^[ ]File "(...?)", line ([0-9]*)",
+"selector":"source.python",
+} 
+</code></pre></div></div>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_PY_Edited_6_7.png" alt="图14-16" /></p>
+
+<ul>
+  <li>测试一下能不能用<br />
+新建一个文件，编写Python代码，把右下角的Plain Text改为Python，选择Build System为刚刚配置的编译系统（例中是Python10），在Sublime Text 3中按快捷键Ctrl + B查看是否有结果输出</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/ST_PY_Edited_8_9.png" alt="图14-16" /></p>
+
+<h2 id="ok">OK!</h2>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 标签: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#%E5%AD%A6%E4%B9%A0" class="page__taxonomy-item p-category" rel="tag">学习</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 分类: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#%E6%AD%A3%E7%BB%8F%E7%9A%84" class="page__taxonomy-item p-category" rel="tag">正经的</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新时间:</strong> <time class="dt-published" datetime="2022-08-13">August 13, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">分享</h4>
+
+  <a href="https://x.com/intent/tweet?text=Sublime+Text+3%E9%85%8D%E7%BD%AEPython%E5%92%8CC%E7%8E%AF%E5%A2%83%EF%BC%88Win+10%EF%BC%89%20http%3A%2F%2Flocalhost%3A4001%2F%25E6%25AD%25A3%25E7%25BB%258F%25E7%259A%2584%2Fsublime-text-3-C-and-python%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4001%2F%25E6%25AD%25A3%25E7%25BB%258F%25E7%259A%2584%2Fsublime-text-3-C-and-python%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4001/%E6%AD%A3%E7%BB%8F%E7%9A%84/sublime-text-3-C-and-python/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=Sublime+Text+3%E9%85%8D%E7%BD%AEPython%E5%92%8CC%E7%8E%AF%E5%A2%83%EF%BC%88Win+10%EF%BC%89%20http%3A%2F%2Flocalhost%3A4001%2F%25E6%25AD%25A3%25E7%25BB%258F%25E7%259A%2584%2Fsublime-text-3-C-and-python%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/%E6%B5%81%E6%B0%B4%E8%B4%A6/won-the-lottery-for-the-nine-valent-vaccine/" class="pagination--pager" title="9价中签！">上一页</a>
+    
+    
+      <a href="/%E5%9B%9E%E5%BF%86%E5%BD%95/strange-serendipities-happen-3/" class="pagination--pager" title="奇怪的经历增加了（三）">下一页</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">猜您还喜欢</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%E6%AD%A3%E7%BB%8F%E7%9A%84/trip-to-zhuhai/" rel="permalink">你好，珠海！
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">图片都由Hazel Tang拍摄提供。
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%E6%AD%A3%E7%BB%8F%E7%9A%84/trip-to-beijing-2025/" rel="permalink">2025的五一假期出游
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 分钟阅读
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">2025五一。许愿是家人朋友健康平安。
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%E6%AD%A3%E7%BB%8F%E7%9A%84/success-diary-2024/" rel="permalink">成功日记2024年刊
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 分钟阅读
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%E6%B5%81%E6%B0%B4%E8%B4%A6/bookish-2024/" rel="permalink">2024年书单
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 分钟阅读
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>关注:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2021 - 2025 <a href="http://localhost:4001">Irene_Z_的码字网盘</a>. 技术来自于 <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

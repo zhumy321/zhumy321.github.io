@@ -1,0 +1,948 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="zh" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>游戏Turing Complete与数字电路 - Irene_Z_的码字网盘</title>
+<meta name="description" content="Look into the game Turing Complete">
+
+
+  <meta name="author" content="Minyi ZHU">
+  
+  <meta property="article:author" content="Minyi ZHU">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh">
+<meta property="og:site_name" content="Irene_Z_的码字网盘">
+<meta property="og:title" content="游戏Turing Complete与数字电路">
+<meta property="og:url" content="http://localhost:4001/niche-and-solo/2/">
+
+
+  <meta property="og:description" content="Look into the game Turing Complete">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2025-11-30T19:50:50+08:00">
+
+
+
+  <meta property="article:modified_time" content="2024-12-01T22:00:00+08:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4001/niche-and-solo/2/">
+
+
+
+
+
+
+
+
+  <meta name="msvalidate.01" content="E1FA3E755BDE4E8E68F17E3E0134BFAB">
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Irene_Z_的码字网盘 Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">转到主导航栏</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">转到内容</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">转到底部</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Irene_Z_的码字网盘
+          <span class="site-subtitle">2024开始重整的新版</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >主页</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/year-archive/"
+                
+                
+              >Blog汇总</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/collection-archive/"
+                
+                
+              >专栏归档</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >关于</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切换菜单</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  <h3 class="nav__title" style="padding-left: 0;">自娱自乐</h3>
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">切换菜单</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title"></span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/niche-and-solo/1/">如何使用算盘</a></li>
+            
+              <li><a href="/niche-and-solo/2/" class="active">游戏*Turing Complete*与数字电路</a></li>
+            
+              <li><a href="/niche-and-solo/3/">如何从图片提取签名</a></li>
+            
+              <li><a href="/niche-and-solo/4/">如何用python操作Excel</a></li>
+            
+              <li><a href="/niche-and-solo/5/">法语笔记本</a></li>
+            
+              <li><a href="/niche-and-solo/6/">Minimal Mistakes的Win10本地预览</a></li>
+            
+              <li><a href="/niche-and-solo/7/">业余无线电手台功能说明</a></li>
+            
+              <li><a href="/niche-and-solo/8/">电子仓鼠（书签整理）</a></li>
+            
+              <li><a href="/niche-and-solo/9/">用Python的manim做动画</a></li>
+            
+              <li><a href="/niche-and-solo/10/">编曲软件操作笔记</a></li>
+            
+              <li><a href="/niche-and-solo/11/">扒点谱子</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="游戏Turing Complete与数字电路">
+    <meta itemprop="description" content="Look into the game Turing Complete">
+    
+    <meta itemprop="dateModified" content="2024-12-01T22:00:00+08:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4001/niche-and-solo/2/" itemprop="url">游戏<em>Turing Complete</em>与数字电路
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-cog"></i> 目录</h4></header>
+              <ul class="toc__menu"><li><a href="#基础逻辑">基础逻辑</a><ul><li><a href="#1-原力觉醒">1 原力觉醒</a></li><li><a href="#2-与非门">2 与非门</a></li><li><a href="#3-非门">3 非门</a></li><li><a href="#4-1-与门">4-1 与门</a></li><li><a href="#4-2-或非门">4-2 或非门</a></li><li><a href="#4-3-或门">4-3 或门</a></li><li><a href="#5-高电平">5 高电平</a></li><li><a href="#6-第二刻">6 第二刻</a></li><li><a href="#7-异或门">7 异或门</a></li><li><a href="#8-1-三输入或门">8-1 三输入或门</a></li><li><a href="#8-2-三输入与门">8-2 三输入与门</a></li><li><a href="#9-同或门">9 同或门</a></li></ul></li><li><a href="#算术运算与存储器">算术运算与存储器</a><ul><li><a href="#10-1-二进制速算略">10-1 二进制速算：略</a></li><li><a href="#10-2-成对的麻烦">10-2 成对的麻烦</a></li><li><a href="#10-3-奇数个信号">10-3 奇数个信号</a></li><li><a href="#10-4-循环依赖略">10-4 循环依赖：略</a></li><li><a href="#11-1-信号计数">11-1 信号计数</a></li><li><a href="#11-2-半加器">11-2 半加器</a></li><li><a href="#11-3-延迟线略">11-3 延迟线：略</a></li><li><a href="#12-1-加倍">12-1 加倍</a></li><li><a href="#12-2-全加器">12-2 全加器</a></li><li><a href="#12-3-奇变偶不变">12-3 奇变偶不变</a></li><li><a href="#13-1-1位开关">13-1 1位开关</a></li><li><a href="#13-2-1位取反器">13-2 1位取反器</a></li><li><a href="#14-1-8位或">14-1 8位或</a></li><li><a href="#14-2-8位非">14-2 8位非</a></li><li><a href="#14-3-8位加法器">14-3 8位加法器</a></li><li><a href="#15-1-负数">15-1 负数</a></li><li><a href="#15-2-数据选择器">15-2 数据选择器</a></li><li><a href="#16-1-相反数">16-1 相反数</a></li><li><a href="#16-2-总线">16-2 总线</a></li><li><a href="#16-3-优雅存储">16-3 优雅存储</a></li><li><a href="#17-存储1字节">17 存储1字节</a></li><li><a href="#18-1位解码器">18 1位解码器</a></li><li><a href="#19-3位解码器">19 3位解码器</a></li><li><a href="#20-1-逻辑引擎">20-1 逻辑引擎</a></li><li><a href="#20-2-小盒子">20-2 小盒子</a></li><li><a href="#20-3-计数器">20-3 计数器</a></li></ul></li><li><a href="#处理器架构与可运行的计算机">处理器架构与可运行的计算机</a><ul><li><a href="#21-1-算数引擎">21-1 算数引擎</a></li><li><a href="#21-2-寄存器之间">21-2 寄存器之间</a></li><li><a href="#23-元件工坊">23 元件工坊</a></li><li><a href="#24-指令解码器">24 指令解码器</a></li><li><a href="#25-计算单元">25 计算单元</a></li><li><a href="#26-1-条件判断">26-1 条件判断</a></li><li><a href="#26-2-程序">26-2 程序</a></li><li><a href="#27-立即数">27 立即数</a></li><li><a href="#28-图灵完备-可运行的计算机">28 图灵完备-可运行的计算机</a></li></ul></li><li><a href="#编程">编程</a><ul><li><a href="#29-加5等于几">29 加5等于几</a></li><li><a href="#30-激光炮直瞄">30 激光炮直瞄</a></li><li><a href="#30-1-太空入侵者">30-1 太空入侵者</a></li><li><a href="#30-2-密码锁">30-2 密码锁</a></li><li><a href="#30-3-时间掩码">30-3 时间掩码</a></li><li><a href="#31-迷宫">31 迷宫</a></li></ul></li><li><a href="#处理器架构2">处理器架构2</a><ul><li><a href="#32-1-异或">32-1 异或</a></li><li><a href="#32-2-8位常数">32-2 8位常数</a></li><li><a href="#33-1-8位异或">33-1 8位异或</a></li><li><a href="#33-2-相等">33-2 相等</a></li><li><a href="#34-1-无符号小于">34-1 无符号小于</a></li><li><a href="#34-2-有符号小于">34-2 有符号小于</a></li><li><a href="#35-宽指令">35 宽指令</a></li><li><a href="#36-一把线像挂面">36 一把线，像挂面</a></li><li><a href="#37-操作码">37 操作码</a></li><li><a href="#38-立即数">38 立即数</a></li><li><a href="#39-条件判断">39 条件判断</a></li></ul></li><li><a href="#函数">函数</a><ul><li><a href="#40-1-16进制速算">40-1 16进制速算</a></li><li><a href="#40-2-移位">40-2 移位</a></li><li><a href="#40-3-随机存储器">40-3 随机存储器</a></li><li><a href="#40-4延迟量">40-4延迟量</a></li><li><a href="#41-1-半字节乘法">41-1 半字节乘法</a></li><li><a href="#41-2-栈">41-2 栈</a></li><li><a href="#41-3-实验室">41-3 实验室</a></li><li><a href="#42-1-除法">42-1 除法</a></li><li><a href="#42-2-压栈与弹栈">42-2 压栈与弹栈</a></li><li><a href="#43-函数">43 函数</a></li></ul></li><li><a href="#汇编挑战">汇编挑战</a><ul><li><a href="#44-1-ai打牌">44-1 AI打牌</a></li><li><a href="#44-2-机器赛跑">44-2 机器赛跑</a></li><li><a href="#44-3-新品上市">44-3 新品上市</a></li><li><a href="#44-4-美味排序">44-4 美味排序</a></li><li><a href="#45-1-跳舞机器">45-1 跳舞机器</a></li><li><a href="#45-2-核金汉诺塔">45-2 核金汉诺塔</a></li><li><a href="#45-3-行星之名">45-3 行星之名</a></li><li><a href="#46-水世界">46 水世界</a></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <h2 id="基础逻辑">基础逻辑</h2>
+
+<h3 id="1-原力觉醒">1 原力觉醒</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-1-Begin.png" alt="" /></p>
+
+<h3 id="2-与非门">2 与非门</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-2-NAND.png" alt="" /></p>
+
+<h3 id="3-非门">3 非门</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-3-NOT.png" alt="" /></p>
+
+<h3 id="4-1-与门">4-1 与门</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-4-1-AND.png" alt="" /></p>
+
+<h3 id="4-2-或非门">4-2 或非门</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-4-2-NOR.png" alt="" /></p>
+
+<h3 id="4-3-或门">4-3 或门</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-4-3-OR.png" alt="" /></p>
+
+<h3 id="5-高电平">5 高电平</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-5-Always-high.png" alt="" /></p>
+
+<h3 id="6-第二刻">6 第二刻</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-6-Second-second.png" alt="" /></p>
+
+<h3 id="7-异或门">7 异或门</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-7-XOR.png" alt="" /></p>
+
+<h3 id="8-1-三输入或门">8-1 三输入或门</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-8-1-Tri-OR.png" alt="" /></p>
+
+<h3 id="8-2-三输入与门">8-2 三输入与门</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-8-2-Tri-AND.png" alt="" /></p>
+
+<h3 id="9-同或门">9 同或门</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-9-XNOR.png" alt="" /></p>
+
+<h2 id="算术运算与存储器">算术运算与存储器</h2>
+
+<h3 id="10-1-二进制速算略">10-1 二进制速算：略</h3>
+
+<h3 id="10-2-成对的麻烦">10-2 成对的麻烦</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-10-2-Even-trouble.png" alt="" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">CD\AB</th>
+      <th style="text-align: center">00</th>
+      <th style="text-align: center">01</th>
+      <th style="text-align: center">11</th>
+      <th style="text-align: center">10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">00</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">01</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>得到 Y = AB + AC + AD + BC + BD + CD</p>
+
+<h3 id="10-3-奇数个信号">10-3 奇数个信号</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-10-3-Odd-signal.png" alt="" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">CD\AB</th>
+      <th style="text-align: center">00</th>
+      <th style="text-align: center">01</th>
+      <th style="text-align: center">11</th>
+      <th style="text-align: center">10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">00</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">01</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>化简后</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">下方C⊕D\右A⊕B</th>
+      <th style="text-align: center">0</th>
+      <th style="text-align: center">1</th>
+      <th style="text-align: center">0</th>
+      <th style="text-align: center">1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>得到 Y = (A ⊕ B) ⊕ (C ⊕ D)</p>
+
+<h3 id="10-4-循环依赖略">10-4 循环依赖：略</h3>
+
+<h3 id="11-1-信号计数">11-1 信号计数</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-11-1-Signal-Counting.png" alt="" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">CD\AB</th>
+      <th style="text-align: center">00</th>
+      <th style="text-align: center">01</th>
+      <th style="text-align: center">11</th>
+      <th style="text-align: center">10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">00</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">01</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>最后输出的三个比特分别是上、中、下比特，则</p>
+
+<p>上：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>CD\AB</th>
+      <th>00</th>
+      <th>01</th>
+      <th>11</th>
+      <th>10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>00</td>
+      <td> </td>
+      <td>1</td>
+      <td> </td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td>1</td>
+      <td> </td>
+      <td>1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td> </td>
+      <td>1</td>
+      <td> </td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1</td>
+      <td> </td>
+      <td>1</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>上 = (A ⊕ B) ⊕ (C ⊕ D)</p>
+
+<p>中：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>CD\AB</th>
+      <th>00</th>
+      <th>01</th>
+      <th>11</th>
+      <th>10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>00</td>
+      <td> </td>
+      <td> </td>
+      <td>1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td> </td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>1</td>
+      <td>1</td>
+      <td> </td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td> </td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>中 = AB(~C)+A(~B)D+AC(~D)+(~A)BD+(~A)CD+(~A)BC</p>
+
+<p>下：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>CD\AB</th>
+      <th>00</th>
+      <th>01</th>
+      <th>11</th>
+      <th>10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>00</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td> </td>
+      <td> </td>
+      <td>1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>下 = ABCD</p>
+
+<h3 id="11-2-半加器">11-2 半加器</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-11-2-Half-Adder.png" alt="" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>AB</th>
+      <th>00</th>
+      <th>01</th>
+      <th>11</th>
+      <th>10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SUM</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>SUM = A⊕B</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>AB</th>
+      <th>00</th>
+      <th>01</th>
+      <th>11</th>
+      <th>10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CAR</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>CAR = AB</p>
+
+<h3 id="11-3-延迟线略">11-3 延迟线：略</h3>
+
+<h3 id="12-1-加倍">12-1 加倍</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-12-1-Double.png" alt="" /></p>
+
+<h3 id="12-2-全加器">12-2 全加器</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-12-2-Full-Adder-1.png" alt="" /></p>
+
+<h3 id="12-3-奇变偶不变">12-3 奇变偶不变</h3>
+
+<p>缺</p>
+
+<h3 id="13-1-1位开关">13-1 1位开关</h3>
+
+<p>缺</p>
+
+<h3 id="13-2-1位取反器">13-2 1位取反器</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-13-2-one_bit_inverter_that_is_xor.png" alt="" /></p>
+
+<h3 id="14-1-8位或">14-1 8位或</h3>
+
+<p><img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-14-1-8bit_or_1.png" alt="" />
+<img src="https://raw.githubusercontent.com/zhumy321/diy-imagehost/main/img/TC-14-1-8bit_or_2.png" alt="" /></p>
+
+<h3 id="14-2-8位非">14-2 8位非</h3>
+
+<h3 id="14-3-8位加法器">14-3 8位加法器</h3>
+
+<h3 id="15-1-负数">15-1 负数</h3>
+
+<h3 id="15-2-数据选择器">15-2 数据选择器</h3>
+
+<h3 id="16-1-相反数">16-1 相反数</h3>
+
+<h3 id="16-2-总线">16-2 总线</h3>
+
+<h3 id="16-3-优雅存储">16-3 优雅存储</h3>
+
+<h3 id="17-存储1字节">17 存储1字节</h3>
+
+<h3 id="18-1位解码器">18 1位解码器</h3>
+
+<h3 id="19-3位解码器">19 3位解码器</h3>
+
+<h3 id="20-1-逻辑引擎">20-1 逻辑引擎</h3>
+
+<h3 id="20-2-小盒子">20-2 小盒子</h3>
+
+<h3 id="20-3-计数器">20-3 计数器</h3>
+
+<h2 id="处理器架构与可运行的计算机">处理器架构与可运行的计算机</h2>
+
+<h3 id="21-1-算数引擎">21-1 算数引擎</h3>
+
+<h3 id="21-2-寄存器之间">21-2 寄存器之间</h3>
+
+<h3 id="23-元件工坊">23 元件工坊</h3>
+
+<h3 id="24-指令解码器">24 指令解码器</h3>
+
+<h3 id="25-计算单元">25 计算单元</h3>
+
+<h3 id="26-1-条件判断">26-1 条件判断</h3>
+
+<h3 id="26-2-程序">26-2 程序</h3>
+
+<h3 id="27-立即数">27 立即数</h3>
+
+<h3 id="28-图灵完备-可运行的计算机">28 图灵完备-可运行的计算机</h3>
+
+<h2 id="编程">编程</h2>
+
+<h3 id="29-加5等于几">29 加5等于几</h3>
+
+<h3 id="30-激光炮直瞄">30 激光炮直瞄</h3>
+
+<h3 id="30-1-太空入侵者">30-1 太空入侵者</h3>
+
+<h3 id="30-2-密码锁">30-2 密码锁</h3>
+
+<h3 id="30-3-时间掩码">30-3 时间掩码</h3>
+
+<h3 id="31-迷宫">31 迷宫</h3>
+
+<h2 id="处理器架构2">处理器架构2</h2>
+
+<h3 id="32-1-异或">32-1 异或</h3>
+
+<h3 id="32-2-8位常数">32-2 8位常数</h3>
+
+<h3 id="33-1-8位异或">33-1 8位异或</h3>
+
+<h3 id="33-2-相等">33-2 相等</h3>
+
+<h3 id="34-1-无符号小于">34-1 无符号小于</h3>
+
+<h3 id="34-2-有符号小于">34-2 有符号小于</h3>
+
+<h3 id="35-宽指令">35 宽指令</h3>
+
+<h3 id="36-一把线像挂面">36 一把线，像挂面</h3>
+
+<h3 id="37-操作码">37 操作码</h3>
+
+<h3 id="38-立即数">38 立即数</h3>
+
+<h3 id="39-条件判断">39 条件判断</h3>
+
+<h2 id="函数">函数</h2>
+
+<h3 id="40-1-16进制速算">40-1 16进制速算</h3>
+
+<h3 id="40-2-移位">40-2 移位</h3>
+<h3 id="40-3-随机存储器">40-3 随机存储器</h3>
+<h3 id="40-4延迟量">40-4延迟量</h3>
+
+<h3 id="41-1-半字节乘法">41-1 半字节乘法</h3>
+
+<h3 id="41-2-栈">41-2 栈</h3>
+
+<h3 id="41-3-实验室">41-3 实验室</h3>
+
+<h3 id="42-1-除法">42-1 除法</h3>
+
+<h3 id="42-2-压栈与弹栈">42-2 压栈与弹栈</h3>
+
+<h3 id="43-函数">43 函数</h3>
+
+<h2 id="汇编挑战">汇编挑战</h2>
+
+<h3 id="44-1-ai打牌">44-1 AI打牌</h3>
+
+<h3 id="44-2-机器赛跑">44-2 机器赛跑</h3>
+
+<h3 id="44-3-新品上市">44-3 新品上市</h3>
+
+<h3 id="44-4-美味排序">44-4 美味排序</h3>
+
+<h3 id="45-1-跳舞机器">45-1 跳舞机器</h3>
+
+<h3 id="45-2-核金汉诺塔">45-2 核金汉诺塔</h3>
+
+<h3 id="45-3-行星之名">45-3 行星之名</h3>
+
+<h3 id="46-水世界">46 水世界</h3>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新时间:</strong> <time class="dt-published" datetime="2024-12-01">December 1, 2024</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">分享</h4>
+
+  <a href="https://x.com/intent/tweet?text=%E6%B8%B8%E6%88%8F%2ATuring+Complete%2A%E4%B8%8E%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF%20http%3A%2F%2Flocalhost%3A4001%2Fniche-and-solo%2F2%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4001%2Fniche-and-solo%2F2%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4001/niche-and-solo/2/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=%E6%B8%B8%E6%88%8F%2ATuring+Complete%2A%E4%B8%8E%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF%20http%3A%2F%2Flocalhost%3A4001%2Fniche-and-solo%2F2%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/niche-and-solo/11/" class="pagination--pager" title="扒点谱子">上一页</a>
+    
+    
+      <a href="/niche-and-solo/3/" class="pagination--pager" title="如何从图片提取签名">下一页</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>关注:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2021 - 2025 <a href="http://localhost:4001">Irene_Z_的码字网盘</a>. 技术来自于 <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

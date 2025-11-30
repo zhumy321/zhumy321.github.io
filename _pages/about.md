@@ -2,14 +2,16 @@
 title: "About"
 # excerpt: "Excerpt here"
 sitemap: false 
+layout: single
 permalink: /about/
 # layouts_gallery:
 #   - url: /assets/images/about-intro.png
 #     image_path: /assets/images/about-intro.png
 #     alt: "about-intro.png" # 是一个积分的图片
 
-# last_modified_at: 2024-04-25T16:22:26-16:23 # or left blank
-# toc: true
+last_modified_at: 2024-04-25T16:22:26-16:23 # or left blank
+toc: false
+author_profile: true
 ---
 
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>L</mi><mi>i</mi><mi>f</mi><mi>e</mi><mo>=</mo><msub><mo data-mjx-texclass="OP">∫</mo><mrow><mi>t</mi></mrow></msub><mi>L</mi><mi>e</mi><mi>a</mi><mi>r</mi><mi>n</mi><mstyle scriptlevel="0"><mspace width="1em"></mspace></mstyle><mrow><mi mathvariant="normal">d</mi></mrow><mi>t</mi></math>

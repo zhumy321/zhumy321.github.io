@@ -1,23 +1,18 @@
-  # example navigation
-foo:
-  - title: "Parent Link 1"
-    url: /parent-1-page-url/
-    children:
-      - title: "Child Link 1"
-        url: /child-1-page-url/
-      - title: "Child Link 2"
-        url: /child-2-page-url/
-  - title: "Parent Link 2"
-    url: /parent-2-page-url/
-    children:
-      - title: "Child Link 1"
-        url: /child-1-page-url/
-      - title: "Child Link 2"
-        url: /child-2-page-url/
-      - title: "Child Link 3"
-        url: /child-3-page-url/
-
 # main links
+# main:
+#   - title: "Quick-Start Guide"
+#     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+
+
+  # main links
 main: # main menu
   - title: "主页"
     url: /
@@ -33,9 +28,6 @@ main: # main menu
     url: /collection-archive/
   - title: "关于"
     url: /about/
-
-
-
 
 
 sidebar-diary-and-clock-in:
@@ -56,11 +48,7 @@ sidebar-diary-and-clock-in:
   #     - title: "2025年1月"
   #       url: /diary-and-clock-in/diary-and-clock-in-1/ 
 
-sidebar-column-to-be-added:
-  - title: 
-    children:
-      - title: "column-to-be-added-1"
-        url: /column-to-be-added/ESStest-1/
+
 
 sidebar-niche-and-solo:
   - title: 
@@ -87,6 +75,7 @@ sidebar-niche-and-solo:
         url: /niche-and-solo/10/
       - title: "扒点谱子"
         url: /niche-and-solo/11/
+
 sidebar-circuits-notes:
   - title: 
     children:
@@ -114,3 +103,10 @@ sidebar-math-notes:
         url: /math-notes/math-notes-chinese-1/
       - title: "线性规划"
         url: /math-notes/math-notes-chinese-5/
+
+
+sidebar-column-to-be-added:
+  - title: 
+    children:
+      - title: "column-to-be-added-1"
+        url: /column-to-be-added/ESStest-1/

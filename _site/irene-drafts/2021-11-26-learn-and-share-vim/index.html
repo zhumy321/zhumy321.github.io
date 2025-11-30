@@ -1,0 +1,207 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="zh" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>vim学习与分享 - Irene_Z_的码字网盘</title>
+<meta name="description" content="A personal sharing website">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh">
+<meta property="og:site_name" content="Irene_Z_的码字网盘">
+<meta property="og:title" content="vim学习与分享">
+<meta property="og:url" content="http://localhost:4001/irene-drafts/2021-11-26-learn-and-share-vim/">
+
+
+  <meta property="og:description" content="A personal sharing website">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4001/irene-drafts/2021-11-26-learn-and-share-vim/">
+
+
+
+
+
+
+
+
+  <meta name="msvalidate.01" content="E1FA3E755BDE4E8E68F17E3E0134BFAB">
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Irene_Z_的码字网盘 Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--page" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">转到主导航栏</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">转到内容</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">转到底部</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Irene_Z_的码字网盘
+          <span class="site-subtitle">2024开始重整的新版</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >主页</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/year-archive/"
+                
+                
+              >Blog汇总</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/collection-archive/"
+                
+                
+              >专栏归档</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >关于</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切换菜单</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <p>vim这个玩意的最初印象，来自于在网络上的一些笑话——打开vim界面后一脸懵逼，只好重启来退出云云(<a href="https://stackoverflow.com/questions/11828270/how-do-i-exit-the-vim-editor">从vi - How do I exit the Vim editor? - Stack Overflow来看确实不假</a>）。于是知难而退。可接触服务器以后就明白了，vim这个编辑器是不会也得会的。探索后发现，它也不是那么难，甚至觉得很方便。了解一段时间后觉得，Swaroop的A Byte  of Vim写得很好。上网一查它有一个中文版（ <a href="https://a-byte-of-vim-chinese.readthedocs.io/en/latest/index.html">A Byte of Vim (Chinese) — A Byte of Vim (Chinese) documentation (a-byte-of-vim-chinese.readthedocs.io)</a> ），但可惜的是不知道咋的，这位朋友没有翻译完。所以我想开一个vim的专栏，记录和分享一下vim的学习。</p>
+
+<p>因为我主要是跟这本书学的，所以这次写主要是翻译一下Swaroop 先生的A Byte of Vim, v0.51 (for Vim version 7)，原书可以在<a href="https://swaroopch.com/">Swaroop 先生自己的网站</a>上找到。
+另外还有一个小姐姐做的<a href="https://vimjc.com/">网站</a>我也觉得挺好的，只是不知何故，2020年3月后就没有更新了。</p>
+
+<p>立个flag，如果我真能把这本书翻译完，我就去给Swaroop大佬发邮件，告诉他现在真的真的有中文版了！</p>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>关注:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2021 - 2025 <a href="http://localhost:4001">Irene_Z_的码字网盘</a>. 技术来自于 <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
