@@ -33,9 +33,9 @@ sidebar:
 | 金山文档     | [访问](https://www.kdocs.cn/latest?from=docs)                      | 魅族查找手机 | [访问](https://finder.flyme.cn/browser/findphone.jsp) |
 | Github      | [访问](https://github.com/zhumy321)                                | Choose the best | [访问](https://www.slant.co/) | 
 | Google Drive | [访问](https://drive.google.com/drive/my-drive)                   | 中国移动云盘 | [访问](https://yun.139.com/w/#/) | 
-| 沐云主域名 | [访问](https://mucloud.one/user)                                     | 沐云备用网站 | [访问](http://tt.mucloud.xyz/) |
-| 沐云中国大陆网址 | [访问](https://world.mucloud.one/)                             | 海獭VPN | [访问](https://haita.org/login)|
-| 坚果云 | [访问](https://www.jianguoyun.com/d/home#/)| XXX | [访问]()|
+| 沐云中国大陆网址 | [访问](https://world.mucloud.one/)                             | 沐云备用网站 | [访问](http://tt.mucloud.xyz/) |
+| 海獭VPN | [访问](https://haita.org/login)                                         | 微信读书 | [访问](https://weread.qq.com/)| 
+| 坚果云 | [访问](https://www.jianguoyun.com/d/home#/) | 荣耀查找手机  |  [访问](https://cloud.hihonor.com/findmydevice/webFindPhone.html)|
 
 
 
